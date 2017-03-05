@@ -1,0 +1,49 @@
+.slick-prev,
+.slick-next {
+  @include skew-button;
+  z-index: 10;
+  top: calc(50% - 20px);
+
+  &:hover,
+  &:focus{
+    background-color: $color-primary;
+    
+    &:before {
+      color: $text-color-bright;
+    }
+  }
+}
+
+.slick-prev {
+  left: calc(50% - 522px);
+}
+
+.slick-next {
+  right: calc(50% - 522px);
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: "Glyphicons Halflings";
+  font-size: 16px;
+  color: $text-color-dark;
+}
+
+.slick-prev:before {
+  content: "\e257";
+}
+.slick-next:before {
+   content: "\e258";
+}
+
+.main_slider {
+  .slick-slide img{
+    transform: scale(.95);
+    opacity: 0.8;
+    transition: all 300ms ease;
+  }
+
+  .slick-center img{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
