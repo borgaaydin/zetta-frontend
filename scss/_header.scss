@@ -1,5 +1,11 @@
 header {
   height: 100px;
+  position: relative;
+  z-index: 15;
+
+  .head-logo {
+    max-height: 44px;
+  }
 }
 
 .fixed-head-menu {
@@ -8,17 +14,24 @@ header {
   background-color: $background-color;
   width: 100%;
   padding: 0 0 15px 0;
+
+  @include box-shadow();
 }
 
 .auth-bar {
   text-align: right;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 
   button {
-    background-color: $color-primary;
-    color: $text-color-bright;
+    background-color: transparent;
+    color: $color-primary;
     padding: 0 10px;
     border: 2px solid $color-primary;
+  }
+
+  .sign-up-button {
+    background-color: $color-primary;
+    color: #ffffff;
   }
 }
 .auth-private {
@@ -27,7 +40,7 @@ header {
 
 .search-input {
   float: left;
-  width: calc(100% - 132px);
+  width: calc(100% - 164px);
 
   input {
     display: block;
@@ -79,11 +92,115 @@ header {
 }
 
 .category-button {
-  padding: 12px;
+  padding: 9px;
+  margin: 0 16px;
+  border:2px solid $color-primary;
+  background-color: transparent;
   text-align: center;
+  color: $color-primary;
 
   span {
     font-weight: 400;
     font-size: 16px;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 44px;
+    left: 16px;
+    background-color: #ffffff;
+    padding: 16px 0;
+
+    .container,
+    .container>div {
+      padding: 0;
+    }
+  }
+  
+  &:hover {
+    cursor: pointer;
+    background-color: $color-primary;
+    color: #ffffff;
+
+    .nav {
+      display: block;
+    }
+  }
+
+  .nav-list-lv1 {
+    padding: 0;
+    list-style: none;
+    text-align: left;
+
+    >li {
+      line-height: 50px;
+      padding: 0 15px;
+
+      &:hover {
+        background-color: $color-primary;
+        color: white;
+        cursor: pointer;
+
+        >a {
+          color: #ffffff;
+        }
+
+        .menu-lv2 {
+          display: block;
+        }
+      }
+    }
+
+    a {
+      color: $text-color-dark;
+
+      &:hover {
+        text-decoration: none;
+        cursor: pointer;
+
+      }
+    }
+  }
+
+  .menu-lv2 {
+    position: absolute;
+    left: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #ffffff;
+    border-left: 1px solid $text-color-soft;
+    display: none;
+    width: 541px;
+    padding: 8px 0;
+    margin: 15px 0;
+  }
+
+  .nav-list-lv2 {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    width: 240px;
+
+    >li {
+      line-height: 50px;
+      padding: 0 15px;
+
+      &:hover {
+        background-color: $text-color-soft;
+        color: $text-color-dark;
+        cursor: pointer;
+
+        >a {
+          color: $text-color-dark;
+          cursor: pointer;
+        }
+
+        .menu-lv2 {
+          display: block;
+        }
+      }
+
+    }
   }
 }

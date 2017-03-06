@@ -8,7 +8,81 @@ footer{
     font-weight: 300;
   }
 
-  .social-block {
+  .social-block,
+  .footer-logo{
     display: inline-block;
+  }
+
+  .social-block {
+    float: right;
+
+    h2 {
+      display: inline-block;
+    }
+  }
+
+  .footer-banner {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ffffff;
+  }
+}
+
+.social-link {
+  @include skew-button;
+  display: inline-block;
+  margin-left: 10px;
+  padding: 9px;
+
+  .fa {
+    font-size: 24px;
+    @include skew(10deg);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.facebook-link {
+  padding-left: 12px ;
+
+  &:hover {
+    background-color: #3b5998;
+    color: #ffffff;
+  }
+}
+
+.twitter-link {
+  &:hover {
+    background-color: #1da1f2;
+    color: #ffffff;
+  }
+}
+
+.instagram-link {
+  padding-left: 9px ;
+
+  &:hover {
+    background-color: #405de6;
+    color: #ffffff;
+  }
+}
+
+.footer-links {
+  padding: 20px 0;
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      line-height: 24px;
+    }
+
+    a {
+      color: $text-color-dark;
+
+      &:hover {}
+    }
   }
 }

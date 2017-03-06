@@ -1,5 +1,6 @@
 .product {
   width: 20%;
+  min-width: 220px;
   float: left;
   padding: 0 4px;
   margin: 8px 0;
@@ -28,4 +29,56 @@
       @include box-shadow-hover;
     }
   }
+  
+  .product-popper {
+    min-height: 38px;
+    
+    i {
+      color: $color-primary;
+    }
+  }
+}
+
+.sale-products {
+  background-color: #003663;
+  margin: 20px 0;
+  padding: 16px 0;
+
+  h2 {
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: expanded;
+    color: $text-color-soft;
+    font-size: 36px;
+    margin-bottom: 70px;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 30px;
+    color: $text-color-soft;
+    margin: 0;
+  }
+
+  .remaining-time {
+    font-size: 36px;
+    color: $text-color-soft;
+  }
+
+  .slick-slide .product {
+    float: initial;
+    margin: 8px auto;
+  }
+
+  .slick-prev {
+    left: calc(50% - 450px);
+  }
+
+  .slick-next {
+    right: calc(50% - 450px);
+  }
+}
+
+.product-banner-container {
+
 }

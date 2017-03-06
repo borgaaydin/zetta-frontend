@@ -11,6 +11,13 @@ $(function() {
         variableWidth: true
 
     });
+
+    $(".sale_slider").slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: true
+    });
+
     $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -24,5 +31,11 @@ $(function() {
         asNavFor: '.slider-for',
         dots: true,
         focusOnSelect: true
+    });
+
+    $('.category-button').mouseenter(function(){
+        $('.overlay').toggle();
+    }).mouseleave(function() {
+        $('.overlay').toggle();
     });
 });

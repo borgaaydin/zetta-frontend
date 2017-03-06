@@ -59,7 +59,7 @@ gulp.task('default', function () {
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(concat('style.css'))
         .pipe(uncss({
-            html: ['index.html', 'http://localhost:8888/'],
+            html: ['index.html', 'http://localhost:8888/', 'http://localhost:8888/product.html'],
             ignore: ["modal",
                 /.*noTouch.*/]
         }))
