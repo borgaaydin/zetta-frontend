@@ -14,7 +14,9 @@ header {
   background-color: $background-color;
   width: 100%;
   padding: 0 0 15px 0;
+}
 
+.menu-shadow {
   @include box-shadow();
 }
 
@@ -187,12 +189,12 @@ header {
       padding: 0 15px;
 
       &:hover {
-        background-color: $text-color-soft;
-        color: $text-color-dark;
+        background-color: $color-primary-soft;
+        color: #ffffff;
         cursor: pointer;
 
         >a {
-          color: $text-color-dark;
+          color: #ffffff;
           cursor: pointer;
         }
 

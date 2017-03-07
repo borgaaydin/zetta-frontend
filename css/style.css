@@ -8375,7 +8375,9 @@ header {
   z-index: 12;
   background-color: #f4f5f9;
   width: 100%;
-  padding: 0 0 15px 0;
+  padding: 0 0 15px 0; }
+
+.menu-shadow {
   -webkit-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4); }
@@ -8509,11 +8511,11 @@ header {
       line-height: 50px;
       padding: 0 15px; }
       .category-button .nav-list-lv2 > li:hover {
-        background-color: #c7c7c7;
-        color: #454545;
+        background-color: rgba(204, 51, 51, 0.8);
+        color: #ffffff;
         cursor: pointer; }
         .category-button .nav-list-lv2 > li:hover > a {
-          color: #454545;
+          color: #ffffff;
           cursor: pointer; }
         .category-button .nav-list-lv2 > li:hover .menu-lv2 {
           display: block; }
