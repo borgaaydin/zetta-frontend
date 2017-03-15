@@ -76,7 +76,7 @@
 @import "../bower_components/slick-carousel/slick/slick-theme.scss";
 
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&subset=latin-ext');
 
 //CUSTOM
 @import "variables";
@@ -86,10 +86,12 @@
 @import "main";
 @import "header";
 @import "footer";
+@import "auth";
 
 @import "slider";
 @import "product";
 @import "product_page";
+@import "category_page";
 @import "basket";
 
 //Media Queries

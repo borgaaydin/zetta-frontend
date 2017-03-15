@@ -14,12 +14,14 @@
   }
 }
 
+$slider-arrow-distance: calc(50% - 480px);
+
 .slick-prev {
-  left: calc(50% - 522px);
+  left: $slider-arrow-distance;
 }
 
 .slick-next {
-  right: calc(50% - 522px);
+  right: $slider-arrow-distance;
 }
 
 .slick-prev:before, .slick-next:before {

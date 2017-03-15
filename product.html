@@ -34,7 +34,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    <script src="js/product_page.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -42,14 +42,16 @@
 <body>
 <!-- HEADER / _header.scss -->
 <header class="header">
-    <div class="container-fluid fixed-head-menu">
+    <div class="container-fluid fixed-head-menu menu-shadow">
         <div class="container ">
             <div class="auth-bar ">
                 <div class="auth-public">
                     <button type="submit" class="login-button">
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>
                         GİRİŞ YAP
                     </button>
                     <button type="submit" class="sign-up-button">
+                        <i class="fa fa-user-plus" aria-hidden="true"></i>
                         ÜYE OL
                     </button>
                 </div>
@@ -62,7 +64,7 @@
             </div>
             <div class="search-bar">
                 <div class="col-xs-12 col-sm-2">
-                    <img src="img/zetta_logo.png" srcset="img/zetta_logo.png 1x, img/zetta_logo@2x.png 2x" alt="ZETTA" class="img-responsive">
+                    <img class="head-logo" src="img/zetta_logo.png" srcset="img/zetta_logo.png 1x, img/zetta_logo@2x.png 2x" alt="ZETTA" class="img-responsive">
                 </div>
                 <div class="col-xs-12 col-sm-2">
                     <div class="category-button">
@@ -70,6 +72,78 @@
                         <span>
                                 KATEGORİLER
                             </span>
+
+                        <div class="nav">
+                            <div >
+                                <div >
+                                    <ul class="nav-list-lv1">
+                                        <li>
+                                            <a href="#">BİLGİSAYAR</a>
+
+                                            <div class="menu-lv2">
+                                                <ul class="nav-list-lv2">
+                                                    <li><a href="">Notebook</a></li>
+                                                    <li><a href="">Tabletler</a></li>
+                                                    <li><a href="">Mönitörler</a></li>
+                                                    <li><a href="">Ekran Kartları</a></li>
+                                                    <li><a href="">Masaüstü Bilgisayarlar</a></li>
+                                                    <li><a href="">Bilgisayar Bileşenleri</a></li>
+
+                                                </ul>
+                                                <ul class="nav-list-lv2">
+                                                    <li><a href="">Notebook</a></li>
+                                                    <li><a href="">Tabletler</a></li>
+                                                    <li><a href="">Mönitörler</a></li>
+                                                    <li><a href="">Ekran Kartları</a></li>
+                                                    <li><a href="">Masaüstü Bilgisayarlar</a></li>
+                                                    <li><a href="">Bilgisayar Bileşenleri</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">BİLGİSAYAR PARÇALARI</a>
+
+                                            <div class="menu-lv2">
+                                                <ul class="nav-list-lv2">
+                                                    <li><a href="">Notebook</a></li>
+                                                    <li><a href="">Tabletler</a></li>
+                                                    <li><a href="">Mönitörler</a></li>
+                                                    <li><a href="">Ekran Kartları</a></li>
+                                                    <li><a href="">Masaüstü Bilgisayarlar</a></li>
+                                                    <li><a href="">Bilgisayar Bileşenleri</a></li>
+
+                                                </ul>
+                                                <ul class="nav-list-lv2">
+                                                    <li><a href="">Notebook</a></li>
+                                                    <li><a href="">Tabletler</a></li>
+                                                    <li><a href="">Mönitörler</a></li>
+                                                    <li><a href="">Ekran Kartları</a></li>
+                                                    <li><a href="">Masaüstü Bilgisayarlar</a></li>
+                                                    <li><a href="">Bilgisayar Bileşenleri</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">FOTO & KAMERA</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">TV ve EV ELEKTRONİĞİ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">OFİS MALZEMELERİ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">AKSESUARLAR</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">OYUN ve HOBİ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-8">
@@ -91,17 +165,20 @@
     </div>
 </header>
 
-<div class="container">
+<div class="container product_page_container">
     <div class="breadcrumbs">
-        <span class="level1">Bilgisayar</span>
-        <span class="level2">Laptop</span>
-        <span class="level3"></span>
+        <span class="level1"><a href="#">Bilgisayar</a></span>
+        <span class="level2"><a href="#">Laptop</a></span>
+        <!--<span class="level3"></span>-->
     </div>
 
     <div class="product-code">
-        <p>
-
-        </p>
+        <span>
+            ÜRÜN KODU:
+        </span>
+        <span>
+            123456
+        </span>
     </div>
 
     <div class="product-title">
@@ -111,18 +188,7 @@
     </div>
 
     <div class="product-details">
-        <div class="col-sm-6">
-            <div class="slider-for">
-                <div>
-                    <img src="img/MACBOOKPRO.png" alt="" class="img-responsive">
-                </div>
-                <div>
-                    <img src="img/MACBOOKPRO.png" alt="" class="img-responsive">
-                </div>
-                <div>
-                    <img src="img/MACBOOKPRO.png" alt="" class="img-responsive">
-                </div>
-            </div>
+        <div class="col-sm-1">
             <div class="slider-nav">
                 <div>
                     <img src="img/MACBOOKPRO.png" alt="" class="img-responsive">
@@ -135,9 +201,26 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6">
-            <div class="product-discount">
 
+        <div class="col-sm-6">
+            <div class="slider-for">
+                <div>
+                    <img src="img/MACBOOKPRO.png" alt="" class="img-responsive">
+                </div>
+                <div>
+                    <img src="img/MACBOOKPRO.png" alt="" class="img-responsive">
+                </div>
+                <div>
+                    <img src="img/MACBOOKPRO.png" alt="" class="img-responsive">
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm-5">
+            <div class="product-discount">
+                <div>
+                    %10 İNDİRİM
+                </div>
             </div>
             <div class="product-price">
                 <del class="old-price">
@@ -149,43 +232,646 @@
                     <i class="fa fa-try" aria-hidden="true"></i>
                 </div>
             </div>
-            <div class="product-button">
 
+            <div class="product-count">
+                <input id="qty" value="1" />
+                <label for="qty">ADET</label>
+
+                <button class="product-count-minus" onclick="modify_qty(-1)">
+                    <i class="fa fa-minus" aria-hidden="true"></i>
+                </button>
+                <button class="product-count-plus" onclick="modify_qty(1)">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
             </div>
-            <div class="product-poppers">
 
+            <div class="product-button">
+                <button>
+                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                    SEPETE EKLE
+                </button>
+            </div>
+
+
+            <div class="product-popper">
+                <div class="free-shipping-pop">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <span>
+                        KARGO BEDAVA
+                    </span>
+                </div>
+                <div class="fast-shipping-pop">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <span>
+                        HIZLI GÖNDERİ
+                    </span>
+                </div>
             </div>
             <div class="product-share">
                 <h4>
                     ÜRÜNÜ PAYLAŞ
                 </h4>
-                <span class="facebook-share">
-
+                <span class="social-link facebook-link">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
                 </span>
-                <span class="twitter-share">
-
+                <span class="social-link twitter-link">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
                 </span>
             </div>
         </div>
     </div>
 </div>
 
+<div class="container product-tabs-container">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+            <a href="#product-description" aria-controls="product-description" role="tab" data-toggle="tab">
+                ÜRÜN AÇIKLAMASI
+            </a>
+        </li>
+        <li role="presentation">
+            <a href="#taksit" aria-controls="taksit" role="tab" data-toggle="tab">
+                TAKSİT SEÇENEKLERİ
+            </a>
+        </li>
+        <li role="presentation">
+            <a href="#comments" aria-controls="comments" role="tab" data-toggle="tab">
+                YORUMLAR
+            </a>
+        </li>
+    </ul>
 
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="product-description">
+            <h2>
+                Apple Macbook
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet mi semper lacus imperdiet pellentesque non quis augue. Nunc pellentesque augue eros, at commodo lorem iaculis ac. Quisque eget convallis lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum tincidunt sit amet nunc sit amet pretium. Aenean accumsan libero ut quam commodo euismod. Nam cursus quam eu turpis consectetur, in ornare enim eleifend. Etiam et est gravida, cursus massa in, efficitur sapien. Aenean elementum tincidunt lectus ac imperdiet. Suspendisse potenti. Proin tempus felis vel nisl iaculis pharetra. Nam laoreet elit id quam tempor lobortis. Vivamus posuere tortor magna.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet mi semper lacus imperdiet pellentesque non quis augue. Nunc pellentesque augue eros, at commodo lorem iaculis ac. Quisque eget convallis lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum tincidunt sit amet nunc sit amet pretium. Aenean accumsan libero ut quam commodo euismod. Nam cursus quam eu turpis consectetur, in ornare enim eleifend. Etiam et est gravida, cursus massa in, efficitur sapien. Aenean elementum tincidunt lectus ac imperdiet. Suspendisse potenti. Proin tempus felis vel nisl iaculis pharetra. Nam laoreet elit id quam tempor lobortis. Vivamus posuere tortor magna.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet mi semper lacus imperdiet pellentesque non quis augue. Nunc pellentesque augue eros, at commodo lorem iaculis ac. Quisque eget convallis lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum tincidunt sit amet nunc sit amet pretium. Aenean accumsan libero ut quam commodo euismod. Nam cursus quam eu turpis consectetur, in ornare enim eleifend. Etiam et est gravida, cursus massa in, efficitur sapien. Aenean elementum tincidunt lectus ac imperdiet. Suspendisse potenti. Proin tempus felis vel nisl iaculis pharetra. Nam laoreet elit id quam tempor lobortis. Vivamus posuere tortor magna.
+            </p>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="taksit">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                    <div class="installmentSelect">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Taksit</th>
+                                <th>Taksit tutarı</th>
+                                <th>Toplam tutar</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Tek</td>
+                                <td>139,90</td>
+                                <td>139,90</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>69,95</td>
+                                <td>139,90</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>46,63</td>
+                                <td>139,90</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>34,97</td>
+                                <td>139,90</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>27,98</td>
+                                <td>139,90</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>23,32</td>
+                                <td>139,90</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>21,43</td>
+                                <td>150,03</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>18,89</td>
+                                <td>151,10</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>16,91</td>
+                                <td>152,16</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                    <div class="installmentSelect">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Taksit</th>
+                                <th>Taksit tutarı</th>
+                                <th>Toplam tutar</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Tek</td>
+                                <td>139,90</td>
+                                <td>139,90</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>69,95</td>
+                                <td>139,90</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>46,63</td>
+                                <td>139,90</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>37,43</td>
+                                <td>149,71</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>30,11</td>
+                                <td>150,54</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>25,35</td>
+                                <td>152,10</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>21,96</td>
+                                <td>153,69</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>19,41</td>
+                                <td>155,27</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>17,43</td>
+                                <td>156,87</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                    <div class="installmentSelect">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Taksit</th>
+                                <th>Taksit tutarı</th>
+                                <th>Toplam tutar</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Tek</td>
+                                <td>139,90</td>
+                                <td>139,90</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>69,95</td>
+                                <td>139,90</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>46,63</td>
+                                <td>139,90</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>36,85</td>
+                                <td>147,42</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>29,80</td>
+                                <td>148,99</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>25,10</td>
+                                <td>150,59</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>21,77</td>
+                                <td>152,40</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>19,26</td>
+                                <td>154,07</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>17,31</td>
+                                <td>155,79</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="installmentSelect">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Taksit</th>
+                                <th>Taksit tutarı</th>
+                                <th>Toplam tutar</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Tek</td>
+                                <td>139,90</td>
+                                <td>139,90</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>73,40</td>
+                                <td>146,80</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>46,63</td>
+                                <td>139,90</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>37,43</td>
+                                <td>149,71</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>30,12</td>
+                                <td>150,59</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>23,32</td>
+                                <td>139,90</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>21,56</td>
+                                <td>150,92</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>18,94</td>
+                                <td>151,49</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>15,54</td>
+                                <td>139,90</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div role="tabpanel" class="tab-pane" id="comments">
+            <div class="comment-container">
+                <div class="col-xs-12 col-sm-offset-3 col-sm-9">
+                    <h3>
+                        Şahane Ürün
+                    </h3>
+                </div>
+
+                <div class="col-sm-3 col-xs-12">
+                    <p>
+                        <strong>Ali Veli</strong>
+
+                    </p>
+                    <span>
+                        30.12.2017
+                    </span>
+                </div>
+                <div class="col-sm-9 col-xs-12">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet mi semper lacus imperdiet pellentesque non quis augue. Nunc pellentesque augue eros, at commodo lorem iaculis ac. Quisque eget convallis lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum tincidunt sit amet nunc sit amet pretium. Aenean accumsan libero ut quam commodo euismod. Nam cursus quam eu turpis consectetur, in ornare enim eleifend. Etiam et est gravida, cursus massa in, efficitur sapien. Aenean elementum tincidunt lectus ac imperdiet. Suspendisse potenti. Proin tempus felis vel nisl iaculis pharetra. Nam laoreet elit id quam tempor lobortis. Vivamus posuere tortor magna.
+                    </p>
+                </div>
+            </div>
+            <div class="comment-container">
+                <div class="col-xs-12 col-sm-offset-3 col-sm-9">
+                    <h3>
+                        Şahane Ürün
+                    </h3>
+                </div>
+
+                <div class="col-sm-3 col-xs-12">
+                    <p>
+                        <strong>Ali Veli</strong>
+
+                    </p>
+                    <span>
+                        30.12.2017
+                    </span>
+                </div>
+                <div class="col-sm-9 col-xs-12">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet mi semper lacus imperdiet pellentesque non quis augue. Nunc pellentesque augue eros, at commodo lorem iaculis ac. Quisque eget convallis lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum tincidunt sit amet nunc sit amet pretium. Aenean accumsan libero ut quam commodo euismod. Nam cursus quam eu turpis consectetur, in ornare enim eleifend. Etiam et est gravida, cursus massa in, efficitur sapien. Aenean elementum tincidunt lectus ac imperdiet. Suspendisse potenti. Proin tempus felis vel nisl iaculis pharetra. Nam laoreet elit id quam tempor lobortis. Vivamus posuere tortor magna.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container featured-products">
+    <h1>BENZER ÜRÜNLER</h1>
+    <div class="product">
+        <div class="product-inner">
+            <div class="product-popper">
+                <div class="free-shipping-pop">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <span>
+                        KARGO BEDAVA
+                    </span>
+                </div>
+                <div class="fast-shipping-pop">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <span>
+                        HIZLI GÖNDERİ
+                    </span>
+                </div>
+            </div>
+            <img src="img/sample-product.png" alt="Sample" class="img-responsive">
+            <div class="product-description">
+                <p>
+                    Apple Macbook MJLQ2TU/A Intel Core i7 2.2GHz 16GB 256GB SSD 15.4" OS X Notebookook Pro 15”
+                </p>
+                <div class="price">
+                    <del class="old-price">
+                        10078,00
+                        <i class="fa fa-try" aria-hidden="true"></i>
+                    </del>
+                    <div class="actual-price">
+                        <span>9078,00</span>
+                        <i class="fa fa-try" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-inner">
+            <div class="product-popper">
+                <div class="free-shipping-pop">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <span>
+                        KARGO BEDAVA
+                    </span>
+                </div>
+                <div class="fast-shipping-pop">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <span>
+                        HIZLI GÖNDERİ
+                    </span>
+                </div>
+            </div>
+            <img src="img/sample-product.png" alt="Sample" class="img-responsive">
+            <div class="product-description">
+                <p>
+                    Apple Macbook MJLQ2TU/A Intel Core i7 2.2GHz 16GB 256GB SSD 15.4" OS X Notebookook Pro 15”
+                </p>
+                <div class="price">
+                    <del class="old-price">
+                        10078,00
+                        <i class="fa fa-try" aria-hidden="true"></i>
+                    </del>
+                    <div class="actual-price">
+                        <span>9078,00</span>
+                        <i class="fa fa-try" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-inner">
+            <div class="product-popper">
+                <div class="free-shipping-pop">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <span>
+                        KARGO BEDAVA
+                    </span>
+                </div>
+                <div class="fast-shipping-pop">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <span>
+                        HIZLI GÖNDERİ
+                    </span>
+                </div>
+            </div>
+            <img src="img/sample-product.png" alt="Sample" class="img-responsive">
+            <div class="product-description">
+                <p>
+                    Apple Macbook MJLQ2TU/A Intel Core i7 2.2GHz 16GB 256GB SSD 15.4" OS X Notebookook Pro 15”
+                </p>
+                <div class="price">
+                    <del class="old-price">
+                        10078,00
+                        <i class="fa fa-try" aria-hidden="true"></i>
+                    </del>
+                    <div class="actual-price">
+                        <span>9078,00</span>
+                        <i class="fa fa-try" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-inner">
+            <div class="product-popper">
+                <div class="free-shipping-pop">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <span>
+                        KARGO BEDAVA
+                    </span>
+                </div>
+                <div class="fast-shipping-pop">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <span>
+                        HIZLI GÖNDERİ
+                    </span>
+                </div>
+            </div>
+            <img src="img/sample-product.png" alt="Sample" class="img-responsive">
+            <div class="product-description">
+                <p>
+                    Apple Macbook MJLQ2TU/A Intel Core i7 2.2GHz 16GB 256GB SSD 15.4" OS X Notebookook Pro 15”
+                </p>
+                <div class="price">
+                    <del class="old-price">
+                        10078,00
+                        <i class="fa fa-try" aria-hidden="true"></i>
+                    </del>
+                    <div class="actual-price">
+                        <span>9078,00</span>
+                        <i class="fa fa-try" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-inner">
+            <div class="product-popper">
+                <div class="free-shipping-pop">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <span>
+                        KARGO BEDAVA
+                    </span>
+                </div>
+                <div class="fast-shipping-pop">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <span>
+                        HIZLI GÖNDERİ
+                    </span>
+                </div>
+            </div>
+            <img src="img/sample-product.png" alt="Sample" class="img-responsive">
+            <div class="product-description">
+                <p>
+                    Apple Macbook MJLQ2TU/A Intel Core i7 2.2GHz 16GB 256GB SSD 15.4" OS X Notebookook Pro 15”
+                </p>
+                <div class="price">
+                    <del class="old-price">
+                        10078,00
+                        <i class="fa fa-try" aria-hidden="true"></i>
+                    </del>
+                    <div class="actual-price">
+                        <span>9078,00</span>
+                        <i class="fa fa-try" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- FOOTER / _footer.scss -->
 <footer class="footer">
     <div class="container-fluid social-bar">
         <div class="container">
-            <img src="img/zetta_logo.png" srcset="img/zetta_logo.png 1x, img/zetta_logo@2x.png 2x" alt="Zetta" class="img-responsive">
-
+            <div class="footer-logo">
+                <img src="img/zetta_logo.png" srcset="img/zetta_logo.png 1x, img/zetta_logo@2x.png 2x" alt="Zetta" class="img-responsive">
+            </div>
             <div class="social-block">
                 <h2>
                     Bizi Takip Edin!
                 </h2>
+                <span class="social-link facebook-link">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </span>
+                <span class="social-link twitter-link">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </span>
+                <span class="social-link instagram-link">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </span>
             </div>
         </div>
     </div>
+    <div class="container footer-links">
+        <div class="col-xs-12 col-sm-3">
+            <h4>
+                MÜŞTERİ HİZMETLERİ
+            </h4>
+            <ul>
+                <li><a href="">Üyelik İşlemleri</a></li>
+                <li><a href="">Güvenlik Hakkında</a></li>
+                <li><a href="">Ödeme Hakkında</a></li>
+                <li><a href="">Sipariş Hakkında</a></li>
+                <li><a href="">Kargo ve Teslimat</a></li>
+                <li><a href="">İade İşlemleri</a></li>
+                <li><a href="">Ödeme Seçenekleri</a></li>
+                <li><a href="">Banka Hesap Bilgileri</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+            <h4>
+                KATEGORİLER
+            </h4>
+            <ul>
+                <li><a href="">Bilgisayar</a></li>
+                <li><a href="">Cep Telefonu</a></li>
+                <li><a href="">Tablet PC</a></li>
+                <li><a href="">Akıllı Saat</a></li>
+                <li><a href="">Vestel TV</a></li>
+                <li><a href="">Oyun Bilgisayarı</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+
+            <ul>
+                <li><a href="">Küçük Ev Aletleri</a></li>
+                <li><a href="">Kişisel Bakım Ürünleri</a></li>
+                <li><a href="">Elektrikli Süpürge</a></li>
+                <li><a href="">Ütü</a></li>
+                <li><a href="">Masaüstü Bilgisayar</a></li>
+                <li><a href="">Sabit Diskler</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+            <h4>
+                ZETTA
+            </h4>
+            <ul>
+                <li><a href="#">İletişim</a></li>
+                <li><a href="#">Ön Bilgilendirme Formu</a></li>
+                <li><a href="#">Mesafeli Satış Sözleşmesi</a></li>
+                <li><a href="#">Tüketici Yasası</a></li>
+                <li><a href="#">Üyelik Sözleşmesi</a></li>
+                <li><a href="#">Sıkça Sorulan Sorular</a></li>
+                <li><a href="#">Hedefe Mesaj</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid footer-banner">
+        <img src="img/bank_logo_list.png" alt="Banka Logo">
+    </div>
 </footer>
+
+<div class="overlay" style="display: none;"></div>
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
