@@ -4,7 +4,6 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
 var uncss = require('gulp-uncss');
-var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var nano = require('gulp-cssnano');
 var modernizr = require('gulp-modernizr');
@@ -59,9 +58,17 @@ gulp.task('default', function () {
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(concat('style.css'))
         .pipe(uncss({
-            html: ['index.html', 'http://localhost:8888/', 'http://localhost:8888/product.html'],
+            html: ['index.html',
+                'http://localhost:8888/',
+                'http://localhost:8888/product.html',
+                'http://localhost:8888/category.html',
+                'http://localhost:8888/signin.html',
+                'http://localhost:8888/signup.html',
+                'http://localhost:8888/basket.html'
+            ],
             ignore: ["modal",
-                /.*noTouch.*/]
+                /.*listed.*/,
+                /.*slick.*/]
         }))
         .pipe(stripCssComments({preserve: false}))
         .pipe(nano())

@@ -24,6 +24,12 @@
   transition: $args;
 }
 
+@mixin button(){
+  border: 1px solid $color-primary;
+  background-color: $color-primary;
+  color: #ffffff;
+}
+
 @mixin placeholder {
   ::-webkit-input-placeholder {@content}
   :-moz-placeholder           {@content}

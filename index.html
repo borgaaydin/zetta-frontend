@@ -37,13 +37,11 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
-
-
 <body>
     <!-- HEADER / _header.scss -->
     <header class="header">
         <div class="container-fluid fixed-head-menu menu-shadow">
-            <div class="container ">
+            <div class="container">
                 <div class="auth-bar ">
                     <div class="auth-public">
                         <button type="submit" class="login-button">
@@ -64,80 +62,71 @@
                 </div>
                 <div class="search-bar">
                     <div class="col-xs-12 col-sm-2">
-                        <img class="head-logo" src="img/zetta_logo.png" srcset="img/zetta_logo.png 1x, img/zetta_logo@2x.png 2x" alt="ZETTA" class="img-responsive">
+                        <img src="img/zetta_logo.png" srcset="img/zetta_logo.png 1x, img/zetta_logo@2x.png 2x" alt="ZETTA" class="head-logo img-responsive">
                     </div>
-                    <div class="col-xs-12 col-sm-2">
-                        <div class="category-button">
+                    <div class="col-xs-2 col-sm-2">
+                        <div class="category-button hover">
                             <i class="fa fa-bars" aria-hidden="true"></i>
                             <span>
                                 KATEGORİLER
                             </span>
-
                             <div class="nav">
-                                <div >
-                                    <div >
+                                <div>
+                                    <div>
                                         <ul class="nav-list-lv1">
                                             <li>
+                                                <i class="icon-ico_phone"></i>
+                                                <a href="#">TELEFON</a>
+                                                <div class="menu-lv2">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <i class="icon-ico_laptop"></i>
                                                 <a href="#">BİLGİSAYAR</a>
-
                                                 <div class="menu-lv2">
-                                                    <ul class="nav-list-lv2">
+                                                    <ul class="col-xs-4 nav-list-lv2">
                                                         <li><a href="">Notebook</a></li>
                                                         <li><a href="">Tabletler</a></li>
                                                         <li><a href="">Mönitörler</a></li>
                                                         <li><a href="">Ekran Kartları</a></li>
                                                         <li><a href="">Masaüstü Bilgisayarlar</a></li>
                                                         <li><a href="">Bilgisayar Bileşenleri</a></li>
-
                                                     </ul>
-                                                    <ul class="nav-list-lv2">
+                                                    <ul class="col-xs-4 nav-list-lv2">
                                                         <li><a href="">Notebook</a></li>
                                                         <li><a href="">Tabletler</a></li>
                                                         <li><a href="">Mönitörler</a></li>
                                                         <li><a href="">Ekran Kartları</a></li>
                                                         <li><a href="">Masaüstü Bilgisayarlar</a></li>
                                                         <li><a href="">Bilgisayar Bileşenleri</a></li>
-
                                                     </ul>
+                                                    <a href="#">
+                                                        <img src="img/MACBOOKPRO.png" alt="Ad" class="col-xs-4 img-responsive">
+                                                    </a>
                                                 </div>
                                             </li>
                                             <li>
+                                                <i class="icon-ico_processor"></i>
                                                 <a href="#">BİLGİSAYAR PARÇALARI</a>
-
-                                                <div class="menu-lv2">
-                                                    <ul class="nav-list-lv2">
-                                                        <li><a href="">Notebook</a></li>
-                                                        <li><a href="">Tabletler</a></li>
-                                                        <li><a href="">Mönitörler</a></li>
-                                                        <li><a href="">Ekran Kartları</a></li>
-                                                        <li><a href="">Masaüstü Bilgisayarlar</a></li>
-                                                        <li><a href="">Bilgisayar Bileşenleri</a></li>
-
-                                                    </ul>
-                                                    <ul class="nav-list-lv2">
-                                                        <li><a href="">Notebook</a></li>
-                                                        <li><a href="">Tabletler</a></li>
-                                                        <li><a href="">Mönitörler</a></li>
-                                                        <li><a href="">Ekran Kartları</a></li>
-                                                        <li><a href="">Masaüstü Bilgisayarlar</a></li>
-                                                        <li><a href="">Bilgisayar Bileşenleri</a></li>
-
-                                                    </ul>
-                                                </div>
                                             </li>
                                             <li>
-                                                <a href="#">FOTO & KAMERA</a>
+                                                <i class="icon-ico_camera"></i>
+                                                <a href="#">FOTO ve KAMERA</a>
                                             </li>
                                             <li>
+                                                <i class="icon-ico_tv"></i>
                                                 <a href="#">TV ve EV ELEKTRONİĞİ</a>
                                             </li>
                                             <li>
+                                                <i class="icon-ico_printer"></i>
                                                 <a href="#">OFİS MALZEMELERİ</a>
                                             </li>
                                             <li>
+                                                <i class="icon-ico_speaker"></i>
                                                 <a href="#">AKSESUARLAR</a>
                                             </li>
                                             <li>
+                                                <i class="icon-ico_joystick"></i>
                                                 <a href="#">OYUN ve HOBİ</a>
                                             </li>
                                         </ul>
@@ -146,9 +135,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-8">
+                    <div class="col-xs-10 col-sm-8">
                         <div class="search-input">
-                            <input type="search" name="Search" id="search" placeholder="Ürün ara...">
+                            <div class="inputFields floatLabel">
+                                <input type="search" name="Search" id="search" placeholder=" ">
+                                <label class="float">Ürün ara...</label>
+                            </div>
                             <button type="submit">
                                 <i class="fa fa-search" aria-hidden="true"></i>
                                 ARA
@@ -156,7 +148,10 @@
                         </div>
                         <div class="basket-button">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            SEPETİM
+                            <span>SEPETİM</span>
+                            <span class="basket-counter">
+                                0
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -208,6 +203,23 @@
                     <div>
                         <div class="product">
                             <div class="product-inner">
+                                <img src="img/sample-product.png" alt="Sample" class="img-responsive">
+                                <div class="product-description">
+                                    <p>
+                                        Apple Macbook MJLQ2TU/A Intel Core i7 2.2GHz 16GB 256GB SSD 15.4" OS X Notebookook Pro 15”
+                                    </p>
+                                    <div class="price">
+                                        <del class="old-price">
+                                            10078,00
+                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                        </del>
+                                        <div class="actual-price">
+                                            <span>9078,00</span>
+                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="product-popper">
                                     <div class="free-shipping-pop">
                                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -222,6 +234,38 @@
                                     </span>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="product">
+                            <div class="product-inner">
+
+                                <img src="img/sample-product.png" alt="Sample" class="img-responsive">
+                                <div class="product-description">
+                                    <p>
+                                        Apple Macbook MJLQ2TU/A Intel Core i7 2.2GHz 16GB 256GB SSD 15.4" OS X Notebookook Pro 15”
+                                    </p>
+                                    <div class="price">
+                                        <del class="old-price">
+
+                                        </del>
+                                        <div class="actual-price">
+                                            <span>9078,00</span>
+                                            <i class="fa fa-try" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-popper">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="product">
+                            <div class="product-inner">
                                 <img src="img/sample-product.png" alt="Sample" class="img-responsive">
                                 <div class="product-description">
                                     <p>
@@ -238,39 +282,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="product">
-                            <div class="product-inner">
-                                <div class="product-popper">
-
-
-                                </div>
-                                <img src="img/sample-product.png" alt="Sample" class="img-responsive">
-                                <div class="product-description">
-                                    <p>
-                                        Apple Macbook MJLQ2TU/A Intel Core i7 2.2GHz 16GB 256GB SSD 15.4" OS X Notebookook Pro 15”
-                                    </p>
-                                    <div class="price">
-                                        <del class="old-price">
-
-                                        </del>
-                                        <div class="actual-price">
-                                            <span>9078,00</span>
-                                            <i class="fa fa-try" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="product">
-                            <div class="product-inner">
                                 <div class="product-popper">
                                     <div class="free-shipping-pop" style="display: none;">
                                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -285,22 +296,6 @@
                     </span>
                                     </div>
                                 </div>
-                                <img src="img/sample-product.png" alt="Sample" class="img-responsive">
-                                <div class="product-description">
-                                    <p>
-                                        Apple Macbook MJLQ2TU/A Intel Core i7 2.2GHz 16GB 256GB SSD 15.4" OS X Notebookook Pro 15”
-                                    </p>
-                                    <div class="price">
-                                        <del class="old-price">
-                                            10078,00
-                                            <i class="fa fa-try" aria-hidden="true"></i>
-                                        </del>
-                                        <div class="actual-price">
-                                            <span>9078,00</span>
-                                            <i class="fa fa-try" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -344,20 +339,7 @@
                     <div>
                         <div class="product">
                             <div class="product-inner">
-                                <div class="product-popper">
-                                    <div class="free-shipping-pop">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <span>
-                        KARGO BEDAVA
-                    </span>
-                                    </div>
-                                    <div class="fast-shipping-pop">
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        <span>
-                        HIZLI GÖNDERİ
-                    </span>
-                                    </div>
-                                </div>
+
                                 <img src="img/sample-product.png" alt="Sample" class="img-responsive">
                                 <div class="product-description">
                                     <p>
@@ -372,6 +354,20 @@
                                             <span>9078,00</span>
                                             <i class="fa fa-try" aria-hidden="true"></i>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="product-popper">
+                                    <div class="free-shipping-pop">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <span>
+                        KARGO BEDAVA
+                    </span>
+                                    </div>
+                                    <div class="fast-shipping-pop">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span>
+                        HIZLI GÖNDERİ
+                    </span>
                                     </div>
                                 </div>
                             </div>
@@ -381,20 +377,7 @@
                     <div>
                         <div class="product">
                             <div class="product-inner">
-                                <div class="product-popper">
-                                    <div class="free-shipping-pop">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <span>
-                        KARGO BEDAVA
-                    </span>
-                                    </div>
-                                    <div class="fast-shipping-pop">
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        <span>
-                        HIZLI GÖNDERİ
-                    </span>
-                                    </div>
-                                </div>
+
                                 <img src="img/sample-product.png" alt="Sample" class="img-responsive">
                                 <div class="product-description">
                                     <p>
@@ -409,6 +392,20 @@
                                             <span>9078,00</span>
                                             <i class="fa fa-try" aria-hidden="true"></i>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="product-popper">
+                                    <div class="free-shipping-pop">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <span>
+                        KARGO BEDAVA
+                    </span>
+                                    </div>
+                                    <div class="fast-shipping-pop">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span>
+                        HIZLI GÖNDERİ
+                    </span>
                                     </div>
                                 </div>
                             </div>
@@ -438,20 +435,7 @@
         <h1>ÖNE ÇIKAN ÜRÜNLER</h1>
         <div class="product">
             <div class="product-inner">
-                <div class="product-popper">
-                    <div class="free-shipping-pop">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <span>
-                        KARGO BEDAVA
-                    </span>
-                    </div>
-                    <div class="fast-shipping-pop">
-                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                        <span>
-                        HIZLI GÖNDERİ
-                    </span>
-                    </div>
-                </div>
+
                 <img src="img/sample-product.png" alt="Sample" class="img-responsive">
                 <div class="product-description">
                     <p>
@@ -466,26 +450,27 @@
                             <span>9078,00</span>
                             <i class="fa fa-try" aria-hidden="true"></i>
                         </div>
+                    </div>
+                </div>
+                <div class="product-popper">
+                    <div class="free-shipping-pop">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <span>
+                        KARGO BEDAVA
+                    </span>
+                    </div>
+                    <div class="fast-shipping-pop">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span>
+                        HIZLI GÖNDERİ
+                    </span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="product">
             <div class="product-inner">
-                <div class="product-popper">
-                    <div class="free-shipping-pop">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <span>
-                        KARGO BEDAVA
-                    </span>
-                    </div>
-                    <div class="fast-shipping-pop">
-                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                        <span>
-                        HIZLI GÖNDERİ
-                    </span>
-                    </div>
-                </div>
+
                 <img src="img/sample-product.png" alt="Sample" class="img-responsive">
                 <div class="product-description">
                     <p>
@@ -500,26 +485,27 @@
                             <span>9078,00</span>
                             <i class="fa fa-try" aria-hidden="true"></i>
                         </div>
+                    </div>
+                </div>
+                <div class="product-popper">
+                    <div class="free-shipping-pop">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <span>
+                        KARGO BEDAVA
+                    </span>
+                    </div>
+                    <div class="fast-shipping-pop">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span>
+                        HIZLI GÖNDERİ
+                    </span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="product">
             <div class="product-inner">
-                <div class="product-popper">
-                    <div class="free-shipping-pop">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <span>
-                        KARGO BEDAVA
-                    </span>
-                    </div>
-                    <div class="fast-shipping-pop">
-                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                        <span>
-                        HIZLI GÖNDERİ
-                    </span>
-                    </div>
-                </div>
+
                 <img src="img/sample-product.png" alt="Sample" class="img-responsive">
                 <div class="product-description">
                     <p>
@@ -534,26 +520,27 @@
                             <span>9078,00</span>
                             <i class="fa fa-try" aria-hidden="true"></i>
                         </div>
+                    </div>
+                </div>
+                <div class="product-popper">
+                    <div class="free-shipping-pop">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <span>
+                        KARGO BEDAVA
+                    </span>
+                    </div>
+                    <div class="fast-shipping-pop">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span>
+                        HIZLI GÖNDERİ
+                    </span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="product">
             <div class="product-inner">
-                <div class="product-popper">
-                    <div class="free-shipping-pop">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <span>
-                        KARGO BEDAVA
-                    </span>
-                    </div>
-                    <div class="fast-shipping-pop">
-                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                        <span>
-                        HIZLI GÖNDERİ
-                    </span>
-                    </div>
-                </div>
+
                 <img src="img/sample-product.png" alt="Sample" class="img-responsive">
                 <div class="product-description">
                     <p>
@@ -568,26 +555,27 @@
                             <span>9078,00</span>
                             <i class="fa fa-try" aria-hidden="true"></i>
                         </div>
+                    </div>
+                </div>
+                <div class="product-popper">
+                    <div class="free-shipping-pop">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <span>
+                        KARGO BEDAVA
+                    </span>
+                    </div>
+                    <div class="fast-shipping-pop">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span>
+                        HIZLI GÖNDERİ
+                    </span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="product">
             <div class="product-inner">
-                <div class="product-popper">
-                    <div class="free-shipping-pop">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <span>
-                        KARGO BEDAVA
-                    </span>
-                    </div>
-                    <div class="fast-shipping-pop">
-                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                        <span>
-                        HIZLI GÖNDERİ
-                    </span>
-                    </div>
-                </div>
+
                 <img src="img/sample-product.png" alt="Sample" class="img-responsive">
                 <div class="product-description">
                     <p>
@@ -602,27 +590,29 @@
                             <span>9078,00</span>
                             <i class="fa fa-try" aria-hidden="true"></i>
                         </div>
+                    </div>
+                </div>
+                <div class="product-popper">
+                    <div class="free-shipping-pop">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <span>
+                        KARGO BEDAVA
+                    </span>
+                    </div>
+                    <div class="fast-shipping-pop">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span>
+                        HIZLI GÖNDERİ
+                    </span>
                     </div>
                 </div>
             </div>
         </div>
 
+
         <div class="product">
             <div class="product-inner">
-                <div class="product-popper">
-                    <div class="free-shipping-pop">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <span>
-                        KARGO BEDAVA
-                    </span>
-                    </div>
-                    <div class="fast-shipping-pop">
-                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                        <span>
-                        HIZLI GÖNDERİ
-                    </span>
-                    </div>
-                </div>
+
                 <img src="img/sample-product.png" alt="Sample" class="img-responsive">
                 <div class="product-description">
                     <p>
@@ -639,10 +629,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product-inner">
                 <div class="product-popper">
                     <div class="free-shipping-pop">
                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -657,6 +643,11 @@
                     </span>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-inner">
+
                 <img src="img/sample-product.png" alt="Sample" class="img-responsive">
                 <div class="product-description">
                     <p>
@@ -673,10 +664,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product-inner">
                 <div class="product-popper">
                     <div class="free-shipping-pop">
                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -691,6 +678,11 @@
                     </span>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-inner">
+
                 <img src="img/sample-product.png" alt="Sample" class="img-responsive">
                 <div class="product-description">
                     <p>
@@ -707,10 +699,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product-inner">
                 <div class="product-popper">
                     <div class="free-shipping-pop">
                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -725,6 +713,11 @@
                     </span>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-inner">
+
                 <img src="img/sample-product.png" alt="Sample" class="img-responsive">
                 <div class="product-description">
                     <p>
@@ -741,10 +734,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product-inner">
                 <div class="product-popper">
                     <div class="free-shipping-pop">
                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -759,6 +748,11 @@
                     </span>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-inner">
+
                 <img src="img/sample-product.png" alt="Sample" class="img-responsive">
                 <div class="product-description">
                     <p>
@@ -775,8 +769,23 @@
                         </div>
                     </div>
                 </div>
+                <div class="product-popper">
+                    <div class="free-shipping-pop">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <span>
+                        KARGO BEDAVA
+                    </span>
+                    </div>
+                    <div class="fast-shipping-pop">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span>
+                        HIZLI GÖNDERİ
+                    </span>
+                    </div>
+                </div>
             </div>
         </div>
+
 
     </div>
 
@@ -785,8 +794,21 @@
     <footer class="footer">
         <div class="container-fluid social-bar">
             <div class="container">
-                <div class="footer-logo">
-                    <img src="img/zetta_logo.png" srcset="img/zetta_logo.png 1x, img/zetta_logo@2x.png 2x" alt="Zetta" class="img-responsive">
+                <div class="e-bulten">
+                    <h3>
+                        E-Bülten
+                    </h3>
+                    <p>
+                        Zetta bültenine kayıt olun!
+                    </p>
+                    <div class="inputFields floatLabel">
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        <input type="email" name="Email" placeholder=" " required>
+                        <label class="float">E-mail</label>
+                    </div>
+                    <button>
+                        GÖNDER
+                    </button>
                 </div>
                 <div class="social-block">
                     <h2>

@@ -4,8 +4,12 @@ body {
   font-family: $font-primary;
 }
 
+*:focus {
+  outline: none;
+}
+
 input:focus {
-  outline-color: $outline-color;
+  outline: none;
 }
 
 .overlay {

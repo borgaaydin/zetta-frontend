@@ -42,14 +42,16 @@
 <body>
 <!-- HEADER / _header.scss -->
 <header class="header">
-    <div class="container-fluid fixed-head-menu">
-        <div class="container ">
+    <div class="container-fluid fixed-head-menu menu-shadow">
+        <div class="container">
             <div class="auth-bar ">
                 <div class="auth-public">
                     <button type="submit" class="login-button">
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>
                         GİRİŞ YAP
                     </button>
                     <button type="submit" class="sign-up-button">
+                        <i class="fa fa-user-plus" aria-hidden="true"></i>
                         ÜYE OL
                     </button>
                 </div>
@@ -62,17 +64,89 @@
             </div>
             <div class="search-bar">
                 <div class="col-xs-12 col-sm-2">
-                    <img class="head-logo" src="img/zetta_logo.png" srcset="img/zetta_logo.png 1x, img/zetta_logo@2x.png 2x" alt="ZETTA" class="img-responsive">
+                    <img src="img/zetta_logo.png" srcset="img/zetta_logo.png 1x, img/zetta_logo@2x.png 2x" alt="ZETTA" class="head-logo img-responsive">
                 </div>
-                <div class="col-xs-12 col-sm-2">
-                    <div class="category-button">
+                <div class="col-xs-2 col-sm-2">
+                    <div class="category-button hover">
                         <i class="fa fa-bars" aria-hidden="true"></i>
                         <span>
                                 KATEGORİLER
                             </span>
+
+                        <div class="nav">
+                            <div >
+                                <div >
+                                    <ul class="nav-list-lv1">
+                                        <li>
+                                            <a href="#">BİLGİSAYAR</a>
+
+                                            <div class="menu-lv2">
+                                                <ul class="nav-list-lv2">
+                                                    <li><a href="">Notebook</a></li>
+                                                    <li><a href="">Tabletler</a></li>
+                                                    <li><a href="">Mönitörler</a></li>
+                                                    <li><a href="">Ekran Kartları</a></li>
+                                                    <li><a href="">Masaüstü Bilgisayarlar</a></li>
+                                                    <li><a href="">Bilgisayar Bileşenleri</a></li>
+
+                                                </ul>
+                                                <ul class="nav-list-lv2">
+                                                    <li><a href="">Notebook</a></li>
+                                                    <li><a href="">Tabletler</a></li>
+                                                    <li><a href="">Mönitörler</a></li>
+                                                    <li><a href="">Ekran Kartları</a></li>
+                                                    <li><a href="">Masaüstü Bilgisayarlar</a></li>
+                                                    <li><a href="">Bilgisayar Bileşenleri</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">BİLGİSAYAR PARÇALARI</a>
+
+                                            <div class="menu-lv2">
+                                                <ul class="nav-list-lv2">
+                                                    <li><a href="">Notebook</a></li>
+                                                    <li><a href="">Tabletler</a></li>
+                                                    <li><a href="">Mönitörler</a></li>
+                                                    <li><a href="">Ekran Kartları</a></li>
+                                                    <li><a href="">Masaüstü Bilgisayarlar</a></li>
+                                                    <li><a href="">Bilgisayar Bileşenleri</a></li>
+
+                                                </ul>
+                                                <ul class="nav-list-lv2">
+                                                    <li><a href="">Notebook</a></li>
+                                                    <li><a href="">Tabletler</a></li>
+                                                    <li><a href="">Mönitörler</a></li>
+                                                    <li><a href="">Ekran Kartları</a></li>
+                                                    <li><a href="">Masaüstü Bilgisayarlar</a></li>
+                                                    <li><a href="">Bilgisayar Bileşenleri</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">FOTO & KAMERA</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">TV ve EV ELEKTRONİĞİ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">OFİS MALZEMELERİ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">AKSESUARLAR</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">OYUN ve HOBİ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-8">
+                <div class="col-xs-10 col-sm-8">
                     <div class="search-input">
                         <input type="search" name="Search" id="search" placeholder="Ürün ara...">
                         <button type="submit">
@@ -82,7 +156,7 @@
                     </div>
                     <div class="basket-button">
                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        SEPETİM
+                        <span>SEPETİM</span>
                     </div>
                 </div>
             </div>
@@ -122,11 +196,105 @@
             </div>
         </div>
         <div class="basket-product-list">
+            <ul>
+                <li>
+                    <div class="col-sm-6">
+                        <div class="col-xs-3">
+                            <img src="img/MACBOOKPRO.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-xs-9">
+                            <span>
+                                Apple Macbook MJLQ2TU/A Intel Core i7 2.2GHz 16GB 256GB SSD 15.4" OS X Notebookook Pro 15”
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="product-count">
 
+                            <div>
+                                <input id="qty" value="1" />
+                                <label for="qty">ADET</label>
+                            </div>
+
+                            <div>
+                                <button class="product-count-minus" onclick="modify_qty(-1)">
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                </button>
+                                <button class="product-count-plus" onclick="modify_qty(1)">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="actual-price">
+                            <span>9078,00</span>
+                            <i class="fa fa-try" aria-hidden="true"></i>
+                        </div>
+                        <div class="remove-item">
+                            <a href="#">
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-    <div class="col-xs-12 col-sm-3">
-
+    <div class="summary col-xs-12 col-sm-3">
+        <div class="summary-inner col-xs-12">
+            <div class="title">
+                <h4>
+                    ÖZET
+                </h4>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <div class="col-xs-6">
+                            Ara Toplam
+                        </div>
+                        <div class="col-xs-6">
+                            <span>9078,00</span>
+                            <i class="fa fa-try" aria-hidden="true"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-xs-6">
+                            İndirim
+                        </div>
+                        <div class="col-xs-6">
+                            <span>0,00</span>
+                            <i class="fa fa-try" aria-hidden="true"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-xs-6">
+                            Kargo Ücreti
+                        </div>
+                        <div class="col-xs-6">
+                            <span>0,00</span>
+                            <i class="fa fa-try" aria-hidden="true"></i>
+                        </div>
+                    </li>
+                </ul>
+                <div class="total">
+                    <p>
+                        TOPLAM
+                    </p>
+                    <div class="actual-price">
+                        <span>9078,00</span>
+                        <i class="fa fa-try" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 buy-button">
+            <button>
+                SATIN AL
+            </button>
+        </div>
     </div>
 </div>
 

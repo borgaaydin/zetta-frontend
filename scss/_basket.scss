@@ -1,5 +1,5 @@
 .basket-container {
-
+  margin-bottom: 30px;
 }
 
 .basket-info {
@@ -19,7 +19,7 @@
 }
 
 .basket-products {
-  margin-top: 16px;
+  margin: 16px 0;
   background-color: #ffffff;
   border-radius: 4px;
 
@@ -40,4 +40,107 @@
     }
   }
 
+}
+
+.basket-product-list {
+  @include clearfix;
+
+  ul {
+    padding: 0;
+    list-style: none;
+    @include clearfix;
+
+    li {
+      @include clearfix;
+      border-bottom: 1px solid $text-color-soft;
+      padding: 12px 0;
+
+      &:last-child  {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .product-count {
+    flex-direction: column;
+  }
+
+  .remove-item {
+    float: right;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .actual-price {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    float: left;
+  }
+}
+
+.summary {
+  padding-right: 0;
+
+  .summary-inner {
+    background-color: white;
+    border-radius: 4px;
+    min-height: 200px;
+    margin: 16px 0;
+  }
+
+  .title {
+    @include clearfix;
+    border-bottom: 1px solid $text-color-soft;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+    @include clearfix;
+
+    li {
+      @include clearfix;
+      padding: 8px;
+      border-bottom: 1px solid $text-color-soft;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      >div:first-child {
+        text-align: right;
+      }
+    }
+  }
+
+  .total {
+    @include clearfix;
+    text-align: center;
+    margin-bottom: 20px;
+
+    >p:first-child {
+      font-weight: 400;
+      font-size: 20px;
+    }
+
+    .actual-price {
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+  .buy-button {
+    @include clearfix;
+    button {
+      @include box-shadow();
+      width: 100%;
+      border: 1px solid $color-primary;
+      background-color: $color-primary;
+      color: #ffffff;
+      font-size: 24px;
+      padding: 10px 36px;
+    }
+  }
 }

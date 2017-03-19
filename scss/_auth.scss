@@ -15,22 +15,6 @@
     margin-bottom: 30px;
   }
 
-  .inputFields {
-    margin-bottom: 30px;
-    position: relative;
-
-    input {
-      padding: 12px 32px;
-      width: 100%;
-    }
-
-    span {
-      position: absolute;
-      left: 28px;
-      top: 16px;
-    }
-  }
-
   .button-row {
     button {
       padding: 12px;
@@ -43,6 +27,23 @@
   }
 }
 
+.inputFields {
+  margin-bottom: 30px;
+  position: relative;
+  padding: 0 15px;
+
+  input {
+    padding: 12px 32px;
+    width: 100%;
+  }
+
+  span {
+    position: absolute;
+    left: 28px;
+    top: 16px;
+  }
+}
+
 .floatLabel {
   input,
   textarea{
@@ -50,6 +51,7 @@
     &.not-empty ~ label.float{
       top:-18px;
       font-size:13px;
+      font-weight: 700;
       color: $text-color-dark;
     }
   }
