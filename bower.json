@@ -19,7 +19,8 @@
     "bootstrap-sass": "^3.3.7",
     "slick-carousel": "^1.6.0",
     "animate.css": "^3.5.2",
-    "components-font-awesome": "^4.7.0"
+    "components-font-awesome": "^4.7.0",
+    "jquery-mask-plugin": "^1.14.10"
   },
   "devDependencies": {
     "slick": "*"

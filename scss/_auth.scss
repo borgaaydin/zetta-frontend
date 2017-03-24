@@ -1,6 +1,7 @@
 .auth-container {
   max-width: 400px;
   text-align: center;
+  padding: 20px 0 40px 0;
 
   .facebookSignIn {
     border: none;
@@ -45,16 +46,6 @@
 }
 
 .floatLabel {
-  input,
-  textarea{
-    &:focus ~ label.float,
-    &.not-empty ~ label.float{
-      top:-18px;
-      font-size:13px;
-      font-weight: 700;
-      color: $text-color-dark;
-    }
-  }
 
   label.float{
     color: $text-color-dark;
@@ -63,10 +54,29 @@
     position:absolute;
     pointer-events:none;
     left:50px;
-    top:12px;
+    top:10px;
     transition:0.2s ease all;
     -moz-transition:0.2s ease all;
     -webkit-transition:0.2s ease all;
+  }
+
+  input,
+  textarea{
+    &:focus ~ label.float,
+    &.not-empty ~ label.float,
+    label.floating{
+      top:-18px;
+      font-size:13px;
+      font-weight: 700;
+      color: $text-color-dark;
+    }
+  }
+
+  label.floating{
+    top:-18px;
+    font-size:13px;
+    font-weight: 700;
+    color: $text-color-dark;
   }
 
   &.social {
@@ -78,4 +88,20 @@
 
 .authContainer .floatLabel label {
   left: 48px;
+}
+
+.coupon-login-required {
+  padding: 0 15px;
+  font-size: 18px;
+}
+
+
+.auth-container {
+  .button-row {
+    .sign-in-extra-button {
+      background-color: transparent;
+      border: 2px solid $color-primary;
+      color: $color-primary;
+    }
+  }
 }

@@ -68,7 +68,11 @@ gulp.task('default', function () {
             ],
             ignore: ["modal",
                 /.*listed.*/,
-                /.*slick.*/]
+                /.*slick.*/,
+                /.*floating.*/,
+                /.*not-empty.*/,
+                /.*category-button.*/,
+                /.*stuck.*/]
         }))
         .pipe(stripCssComments({preserve: false}))
         .pipe(nano())

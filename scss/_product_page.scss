@@ -2,7 +2,6 @@
   margin-top: 20px;
 
   .product-popper {
-    margin: 32px 0;
     >div {
       flex-direction: column;
       border-width: 2px;
@@ -65,7 +64,7 @@
 
 .product-details {
   >div:first-child {
-    padding-left: 0;
+    padding: 0;
   }
 
   >div:last-child {
@@ -170,4 +169,29 @@
   border-radius: 8px;
 
   @include clearfix;
+}
+
+
+.installmentSelect {
+  .good-choice {
+    border: 3px solid $color-primary;
+    color: $color-primary;
+  }
+}
+
+.product-options {
+  select {
+    margin: 0 10px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+
+  }
+
+  .option-outer {
+    border: 1px solid $color-primary;
+    width: 120px;
+    padding: 8px 0;
+    text-align: center;
+  }
 }

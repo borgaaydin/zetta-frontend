@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <title>Zetta Basket Page</title>
+    <title>ZETTA Sign IN Page</title>
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
@@ -169,164 +169,79 @@
     </div>
 </header>
 
-<div class="container basket-container">
-    <h1>
-        SEPETİM
-    </h1>
-
-    <div class="basket-info">
-        <i class="fa fa-info-circle" aria-hidden="true"></i>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque vulputate nisl nec laoreet. Suspendisse tristique egestas dolor, in consequat purus congue ut.
-        </p>
-    </div>
-
-    <div class="basket-left col-xs-12 col-sm-9">
-        <div class="basket-products">
-            <div class="basket-titles">
-                <div class="col-sm-6">
-                    <h4>
-                        ÜRÜN
-                    </h4>
-                </div>
-                <div class="col-sm-3">
-                    <h4>
-                        ADET
-                    </h4>
-                </div>
-                <div class="col-sm-3">
-                    <h4>
-                        FİYAT
-                    </h4>
-                </div>
-            </div>
-            <div class="basket-product-list">
-                <ul>
-                    <li>
-                        <div class="col-sm-6">
-                            <div class="col-xs-3">
-                                <img src="img/MACBOOKPRO.png" alt="" class="img-responsive">
-                            </div>
-                            <div class="col-xs-9">
-                            <span>
-                                Apple Macbook MJLQ2TU/A Intel Core i7 2.2GHz 16GB 256GB SSD 15.4" OS X Notebookook Pro 15”
-                            </span>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-3">
-                            <div class="product-count">
-
-                                <div>
-                                    <input id="qty" value="1" />
-                                    <label for="qty">ADET</label>
-                                </div>
-
-                                <div>
-                                    <button class="product-count-minus" onclick="modify_qty(-1)">
-                                        <i class="fa fa-minus" aria-hidden="true"></i>
-                                    </button>
-                                    <button class="product-count-plus" onclick="modify_qty(1)">
-                                        <i class="fa fa-plus" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="basket-product-price">
-                                <del class="old-price">
-                                    10078,00
-                                    <i class="fa fa-try" aria-hidden="true"></i>
-                                </del>
-                                <div class="actual-price">
-                                    <span>9078,00</span>
-                                    <i class="fa fa-try" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                            <div class="remove-item">
-                                <a href="#">
-                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="coupon">
-            <div class="inputFields floatLabel">
-                <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
-                <input type="text" name="Coupon Code" placeholder=" " required>
-                <label class="float">Kupon Kodu</label>
-                <button>
-                    KULLAN
+<div class="container-fluid">
+    <div class="container auth-container">
+        <div class="row">
+            <div class="col-xs-12">
+                <button class="facebookSignIn">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    FACEBOOK İLE GİRİŞ YAP
                 </button>
             </div>
-            <div class="coupon-login-required">
-                Kupon kodu kullanabilmek için <a href="#">üye girişi</a> yapmanız gerekmektedir.
-            </div>
         </div>
-    </div>
-    <div class="summary col-xs-12 col-sm-3">
-        <div class="summary-inner col-xs-12">
-            <div class="title">
-                <h4>
-                    ÖZET
-                </h4>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <div class="col-xs-6">
-                            Ara Toplam
-                        </div>
-                        <div class="col-xs-6">
-                            <span>9078,00</span>
-                            <i class="fa fa-try" aria-hidden="true"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="col-xs-6">
-                            İndirim
-                        </div>
-                        <div class="col-xs-6">
-                            <span>0,00</span>
-                            <i class="fa fa-try" aria-hidden="true"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="col-xs-6">
-                            Kargo Ücreti
-                        </div>
-                        <div class="col-xs-6">
-                            <span>0,00</span>
-                            <i class="fa fa-try" aria-hidden="true"></i>
-                        </div>
-                    </li>
-                </ul>
-                <div class="total">
-                    <p>
-                        TOPLAM
-                    </p>
-                    <div class="actual-price">
-                        <span>
-                            <span>9078,00</span>
-                        <i class="fa fa-try" aria-hidden="true"></i>
-                        </span>
-
-
-                        <span>KDV DAHİL</span>
-                    </div>
+        <div class="row separator-row">
+            <div class="col-xs-12">
+                <div class="col-xs-5 line">
+                </div>
+                <div class="col-xs-2 text-center">
+                    <span>veya</span>
+                </div>
+                <div class="col-xs-5 line">
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 buy-button">
-            <button>
-                SATIN AL
-            </button>
-        </div>
+        <form>
+            <div class="row">
+                <div class="col-xs-12 inputFields floatLabel">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    <input type="email" name="E-mail Address" placeholder=" " required>
+                    <label class="float">E-mail</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 inputFields floatLabel">
+                    <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+                    <input type="password" name="Password" placeholder=" " required>
+                    <label class="float">Şifre</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-xs-offset-6 text-right">
+                    <a href="#">
+                        Şifremi Unuttum
+                    </a>
+                </div>
+            </div>
+            <div class="row button-row">
+                <div class="col-xs-12">
+                    <button>
+                        GİRİŞ YAP
+                    </button>
+                </div>
+            </div>
+
+            <div class="row button-row">
+                <div class="col-xs-12">
+                    <button class="sign-in-extra-button">
+                        ÜYE OL
+                    </button>
+                </div>
+            </div>
+
+            <div class="row button-row">
+                <div class="col-xs-12">
+                    <button class="sign-in-extra-button">
+                        ÜYE OLMADAN DEVAM ET
+                    </button>
+                </div>
+            </div>
+        </form>
     </div>
 </div>
+
+
+
+
 
 <!-- FOOTER / _footer.scss -->
 <footer class="footer">
@@ -428,6 +343,8 @@
     </div>
 </footer>
 
+<div class="overlay" style="display: none;"></div>
+
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -458,6 +375,7 @@
 </div><!-- /.modal -->
 
 <script src="js/jquery.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 

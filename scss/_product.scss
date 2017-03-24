@@ -39,6 +39,10 @@
       }
     }
 
+    .old-price {
+      min-height: 18px;
+    }
+
     &:hover {
       cursor: pointer;
       @include box-shadow-hover;
@@ -136,4 +140,8 @@
 
 .featured-products {
   margin: 30px auto;
+}
+
+.product-spot {
+  color: $text-color;
 }

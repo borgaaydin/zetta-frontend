@@ -4,6 +4,7 @@
 
 
 $(function() {
+    'use strict';
     $(".main_slider").slick({
         centerMode: true,
         centerPadding: '20px',
@@ -14,6 +15,26 @@ $(function() {
         responsive: [
             {
                 breakpoint: 932,
+                settings: {
+                    centerMode:false,
+                    variableWidth: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                    arrows: false
+                }
+            }
+        ]
+    });
+
+    $(".recent-products-slider").slick({
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 640,
                 settings: {
                     centerMode:false,
                     variableWidth: false,
@@ -99,18 +120,17 @@ $(function() {
         vertical: true
     });
 
-    $('.category-button.hover').mouseenter(function(){
-        $('.overlay').toggle();
-    }).mouseleave(function() {
-        $('.overlay').toggle();
-    });
+    var mobileMenuButton = $('.category-button');
+    var mobileClose = $('.category-close');
 
     $('.inputFields input').blur(function()
     {
         if( $(this).val() ) {
-            $(this).addClass("not-empty")
+            $(this).addClass("not-empty");
+            $(this).siblings().addClass("floating");
         } else {
             $(this).removeClass("not-empty");
+            $(this).siblings().removeClass("floating");
         }
     });
 
@@ -132,4 +152,84 @@ $(function() {
             $('.product').removeClass("listed");
         }
     });
+
+
+    // mobileMenuButton.on("touchstart", function (e) {
+    //     var link = $(this); //preselect the link
+    //     if (link.hasClass('hover')) {
+    //         return true;
+    //     }
+    //     else {
+    //         link.addClass('hover');
+    //         $('ul > li').not(this).removeClass('hover');
+    //         e.preventDefault();
+    //         return false; //extra, and to make sure the function has consistent return points
+    //     }
+    // });
+
+    mobileClose.on("click", function (e) {
+        mobileMenuButton.removeClass("hover");
+        $('.overlay').hide();
+        $('html').removeClass("stuck");
+    });
+
+    var mobileBack = $(".category-back");
+
+    mobileBack.on("click", function (e) {
+        $(".nav-list-lv1>li").removeClass("hover");
+        e.stopPropagation();
+    });
+
+    $(".nav-list-lv1>li").on("click", function (e) {
+        // $(".menu-lv2").show();
+        $(this).addClass("hover");
+        $(this).children(".menu-lv2").show();
+    });
+
+    mobileClose.on("touchstart", function (e) {
+        mobileMenuButton.removeClass("hover");
+        $('.overlay').hide();
+        $('html').removeClass("stuck");
+        e.stopPropagation();
+    });
+
+    mobileMenuButton.on("touchstart", function (e) {
+        mobileMenuButton.addClass("hover");
+        $('.overlay').show();
+        $('html').addClass("stuck");
+        e.stopPropagation();
+    });
+
+    // mobileMenuButton.mouseenter(function(){
+    //     $('.category-button').addClass("hover");
+    //     $('.overlay').show();
+    //     $('html').addClass("stuck");
+    // }).mouseleave(function() {
+    //     $('.category-button').removeClass("hover");
+    //     $('.overlay').hide();
+    //     $('html').removeClass("stuck");
+    // });
+
+    if($(window).width()>768){
+        mobileMenuButton.mouseenter(function(){
+            $('.category-button').addClass("hover");
+            $('.overlay').show();
+        }).mouseleave(function() {
+            $('.category-button').removeClass("hover");
+            $('.overlay').hide();
+        });
+
+        $(".nav-list-lv1>li").mouseenter(function(){
+            $(this).children(".menu-lv2").addClass("hover");
+            $('.overlay').show();
+        }).mouseleave(function() {
+            $(this).children(".menu-lv2").removeClass("hover");
+            $('.overlay').hide();
+        });
+    }
+
+    $('.close-banner').click(function(){
+        $('.promotion-container').slideToggle();
+    });
+
 });

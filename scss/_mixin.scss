@@ -4,6 +4,18 @@
   box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.4);
 }
 
+@mixin box-shadow-color($color) {
+  -webkit-box-shadow: 0px 0px 30px -10px $color;
+  -moz-box-shadow: 0px 0px 30px -10px $color;
+  box-shadow: 0px 0px 30px -10px $color;
+}
+
+@mixin box-shadow-color-hover($color) {
+  -webkit-box-shadow: 0px 0px 30px -5px $color;
+  -moz-box-shadow: 0px 0px 30px -5px $color;
+  box-shadow: 0px 0px 30px -5px $color;
+}
+
 @mixin box-shadow-hover {
   -webkit-box-shadow: 0px 0px 30px -6px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 0px 30px -6px rgba(0,0,0,0.5);
@@ -27,7 +39,15 @@
 @mixin button(){
   border: 1px solid $color-primary;
   background-color: $color-primary;
+  padding: 10px 36px;
+
   color: #ffffff;
+}
+
+@mixin rotate($deg) {
+  -ms-transform: rotate($deg); /* IE 9 */
+  -webkit-transform: rotate($deg); /* Chrome, Safari, Opera */
+  transform: rotate($deg);
 }
 
 @mixin placeholder {

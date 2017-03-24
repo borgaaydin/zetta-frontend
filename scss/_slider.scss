@@ -49,3 +49,27 @@ $slider-arrow-distance: calc(50% - 480px);
     opacity: 1;
   }
 }
+
+$recent-slider-arrow-distance: calc(50% - 588px);
+
+.recent-products-slider {
+  .slick-prev {
+    left: $recent-slider-arrow-distance;
+  }
+
+  .slick-next {
+    right: $recent-slider-arrow-distance;
+  }
+
+  .product .product-inner {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    &:hover {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+}
