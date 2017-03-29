@@ -73,3 +73,11 @@ $recent-slider-arrow-distance: calc(50% - 588px);
     }
   }
 }
+
+.slick-dots li.slick-active button:before {
+  color: $color-primary;
+}
+
+.slick-dots li:hover button:before {
+  color: $color-primary-soft;
+}

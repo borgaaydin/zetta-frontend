@@ -112,12 +112,13 @@ $(function() {
         ]
     });
     $('.slider-nav').slick({
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
         asNavFor: '.slider-for',
-        dots: true,
+        dots: false,
         focusOnSelect: true,
-        vertical: true
+        vertical: true,
+        arrows: false
     });
 
     var mobileMenuButton = $('.category-button');
@@ -231,5 +232,7 @@ $(function() {
     $('.close-banner').click(function(){
         $('.promotion-container').slideToggle();
     });
+
+    $(":input").inputmask();
 
 });

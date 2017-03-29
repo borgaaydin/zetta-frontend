@@ -229,21 +229,24 @@
             <div class="row">
                 <div class="col-xs-12 inputFields floatLabel">
                     <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-                    <input class="birthdate-input" type="text" name="Date" placeholder=" " data-mask="00/00/0000" required>
+                    <input class="birthdate-input" type="text" name="Date" placeholder=" " data-inputmask="'alias': 'dd/mm/yyyy','placeholder': '__/__/____'" required>
                     <label class="float">Doğum Tarihi</label>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 inputFields floatLabel">
                     <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                    <input type="text" name="Cinsiyet" placeholder=" " required>
+                    <select type="text" name="Cinsiyet" placeholder=" " required>
+                        <option>Kadın</option>
+                        <option>Erkek</option>
+                    </select>
                     <label class="float">Cinsiyet</label>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 inputFields floatLabel error">
                     <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
-                    <input type="text" name="Cep Telefonu" placeholder=" " data-mask="(000) 000 00 00" required>
+                    <input type="text" name="Cep Telefonu" placeholder=" " data-inputmask="'mask': '(999) 999 99 99'" required>
                     <label class="float">Cep Telefonu</label>
                 </div>
             </div>
@@ -399,7 +402,7 @@
 </div><!-- /.modal -->
 
 <script src="js/jquery.min.js"></script>
-<script src="js/jquery.mask.min.js"></script>
+<script src="js/jquery.inputmask.bundle.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 

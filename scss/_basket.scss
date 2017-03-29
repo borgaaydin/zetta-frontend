@@ -3,7 +3,6 @@
 }
 
 .basket-info {
-  @include box-shadow();
   width: 100%;
   padding: 10px;
   border-radius: 4px;
@@ -11,6 +10,7 @@
 
   .fa {
     color: $color-primary;
+    padding: 0 10px;
   }
   
   p {
@@ -21,6 +21,17 @@
 
 .basket-left {
   padding-left: 0;
+  margin-top: 20px;
+
+  >div {
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
 }
 
 .basket-products {
@@ -94,6 +105,11 @@
 
 .summary {
   padding-right: 0;
+
+  .current-address p {
+    font-size: 12px;
+    margin: 0;
+  }
 
   .summary-inner {
     @include box-shadow();
@@ -197,3 +213,201 @@
     @include button();
   }
 }
+
+.basket-info-header {
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    li {
+      @include skew-button();
+      padding: 8px;
+
+      * {
+        @include skew(10deg); //un skew all inner elements.
+      }
+      i {
+        font-size: 20px;
+      }
+
+      &.active {
+        background-color: white;
+        border: 2px solid $color-primary;
+        @include box-shadow-color($color-primary);
+
+        i {
+          font-size: 20px;
+          color: $color-primary;
+        }
+      }
+
+      &.done {
+        background-color: $color-primary;
+
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .line {
+    width: 100%;
+    border-bottom: 2px solid rgba(32, 118, 187, 0.8);
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 200px);
+    z-index: -10;
+  }
+}
+
+.payment-container,
+.summary-container,
+.delivery-container{
+  padding: 0 0 40px 0;
+}
+
+.inputFields {
+  textarea {
+    padding: 12px 34px;
+    width: 100%;
+    max-height: 120px;
+    resize: none;
+  }
+}
+
+.summary-product-list {
+  list-style: none;
+  max-height: 80px;
+  overflow-y: scroll;
+  border: 1px solid lightgray;
+
+  li {
+    >div {
+      &:first-child {
+        padding: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    p {
+      margin:0;
+    }
+
+    .price {
+      font-weight: 600;
+    }
+  }
+}
+
+.shipment-chooser {
+  list-style: none;
+  padding: 0;
+
+  li {
+    @include clearfix;
+    padding: 8px 0;
+    margin: 4px 0;
+    background-color: white;
+
+    >div {
+      display: flex;
+      flex-direction: row;
+
+      input {
+        margin: 12px;
+      }
+    }
+  }
+
+  .shipment-price {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+  }
+}
+
+.address-details {
+  @include clearfix;
+  margin: 15px 0;
+  border-bottom: 1px solid lightgray;
+
+  label {
+    position: absolute;
+    top: -20px;
+    left: 0;
+  }
+
+  select {
+    margin: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+  }
+
+  .option-outer {
+    border: 2px solid $color-primary;
+    width: 120px;
+    padding: 4px 0;
+    margin: 16px 4px 16px 0;
+    text-align: center;
+    position: relative;
+  }
+}
+
+.summary-container {
+  padding: 60px 0 40px 0;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  i {
+    font-size: 60px;
+    color: $color-primary;
+  }
+
+  button {
+    margin: 20px 0;
+    @include button();
+  }
+}
+
+.current-address {
+  margin: 8px 0;
+  p {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .address-title {
+    margin: 4px 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  button {
+    @include button();
+    margin: 4px 0;
+    padding: 4px 8px;
+  }
+}
+
+.new-address-button {
+  @include button();
+
+}
+

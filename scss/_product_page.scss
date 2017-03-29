@@ -1,25 +1,26 @@
-.product_page_container {
-  margin-top: 20px;
-
-  .product-popper {
-    >div {
-      flex-direction: column;
-      border-width: 2px;
-
-      span {
-        text-align: center;
-        padding: 0 0 6px 0;
-      }
-
-      i {
-        margin: 4px;
-      }
-    }
-  }
-}
+//.product_page_container {
+//  margin-top: 20px;
+//
+//  .product-popper {
+//    >div {
+//      flex-direction: column;
+//      border-width: 2px;
+//
+//      span {
+//        text-align: center;
+//        padding: 0 0 6px 0;
+//      }
+//
+//      i {
+//        margin: 4px;
+//      }
+//    }
+//  }
+//}
 
 .product-tabs-container {
   margin: 20px auto;
+  border-bottom: 1px solid #ddd;
 }
 
 .nav-tabs {
@@ -63,12 +64,21 @@
 }
 
 .product-details {
+  @include clearfix;
+  margin: 10px 0;
+
   >div:first-child {
     padding: 0;
   }
 
   >div:last-child {
     padding-right: 0;
+  }
+
+  h1{
+    color: #000;
+    font-size: 20px;
+    margin: 0;
   }
 }
 
@@ -159,7 +169,7 @@
 }
 
 .product-share {
-  margin: 36px 0;
+  margin: 20px 0;
 }
 
 .comment-container {
@@ -179,19 +189,82 @@
   }
 }
 
-.product-options {
+.product-options{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  label {
+    position: absolute;
+    top: -20px;
+    left: 0;
+  }
+
   select {
     margin: 0 10px;
     background: transparent;
     border: none;
     border-radius: 0;
-
   }
 
   .option-outer {
-    border: 1px solid $color-primary;
+    border: 2px solid $color-primary;
     width: 120px;
-    padding: 8px 0;
+    padding: 4px 0;
+    margin: 16px 4px 16px 0;
     text-align: center;
+    position: relative;
+  }
+
+  .multiple-choice {
+    width: 100%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+
+    .option-outer {
+      margin: 4px 4px 4px 0;
+      text-align: center;
+      padding: 0;
+      cursor: pointer;
+
+
+      &.active,
+      &:hover {
+        border-color: $color-primary-soft;
+        background-color: $color-primary;
+        color: white;
+
+        >div:first-child {
+          color: white;
+        }
+      }
+
+      >div:first-child {
+        color: $text-color;
+      }
+
+      .actual-price {
+        font-size: 14px;
+        font-weight: 600;
+
+        i {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.product-head-info {
+  @include clearfix;
+  margin: 10px 0;
+}
+
+.product-shipment-info {
+  p {
+    span {
+      color: $color-primary;
+    }
   }
 }

@@ -33,9 +33,12 @@
   position: relative;
   padding: 0 15px;
 
-  input {
+  input,
+  textarea,
+  select{
     padding: 12px 32px;
     width: 100%;
+    border: 1px solid $text-color-soft;
   }
 
   span {
@@ -61,7 +64,8 @@
   }
 
   input,
-  textarea{
+  textarea,
+  select{
     &:focus ~ label.float,
     &.not-empty ~ label.float,
     label.floating{
@@ -104,4 +108,8 @@
       color: $color-primary;
     }
   }
+}
+
+.auth-private {
+  color: $color-primary;
 }

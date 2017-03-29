@@ -4,4 +4,24 @@
 
 .modal-button {
   @include button();
+  padding: 10px 30px;
+
+  &:hover {
+    background-color: transparent;
+    border:2px solid $color-primary;
+    color: $color-primary;
+  }
+
+  &.button-cls {
+    float: left;
+    background-color: transparent;
+    border:2px solid $color-primary;
+    color: $color-primary;
+
+    &:hover{
+      background-color: $color-primary;
+      border:2px solid $color-primary;
+      color: white;
+    }
+  }
 }

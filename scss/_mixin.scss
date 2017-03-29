@@ -50,6 +50,19 @@
   transform: rotate($deg);
 }
 
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+// scale
+@mixin scale($scale) {
+  @include transform(scale($scale));
+}
+
 @mixin placeholder {
   ::-webkit-input-placeholder {@content}
   :-moz-placeholder           {@content}
