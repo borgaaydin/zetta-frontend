@@ -64,6 +64,10 @@ gulp.task('default', function () {
                 'http://localhost:8888/category.html',
                 'http://localhost:8888/signin.html',
                 'http://localhost:8888/signup.html',
+                'http://localhost:8888/delivery.html',
+                'http://localhost:8888/payment.html',
+                'http://localhost:8888/signin-afterBasket.html',
+                'http://localhost:8888/summary.html',
                 'http://localhost:8888/basket.html'
             ],
             ignore: ["modal",

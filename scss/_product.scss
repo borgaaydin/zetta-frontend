@@ -105,7 +105,7 @@
     font-stretch: expanded;
     color: $text-color-soft;
     font-size: 36px;
-    margin-bottom: 70px;
+    margin-bottom: 0;
   }
 
   h3 {
@@ -126,16 +126,12 @@
   }
 
   .slick-prev {
-    left: calc(50% - 450px);
+    left: calc(50% - 548px);
   }
 
   .slick-next {
-    right: calc(50% - 450px);
+    right: calc(50% - 548px);
   }
-}
-
-.product-banner-container {
-
 }
 
 .featured-products {

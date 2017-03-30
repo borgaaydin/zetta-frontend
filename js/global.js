@@ -71,8 +71,8 @@ $(function() {
     });
 
     $(".sale_slider").slick({
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 4,
+        slidesToScroll: 1,
         arrows: true,
         responsive: [
             {
@@ -233,6 +233,8 @@ $(function() {
         $('.promotion-container').slideToggle();
     });
 
-    $(":input").inputmask();
+    $(".inputFields input").inputmask({
+        showMaskOnHover: false
+    });
 
 });

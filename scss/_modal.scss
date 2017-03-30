@@ -1,5 +1,6 @@
 .modal-content {
   border: none;
+  border-radius: 0;
 }
 
 .modal-button {
@@ -24,4 +25,8 @@
       color: white;
     }
   }
+}
+
+.modal-body {
+  padding: 25px 15px;
 }

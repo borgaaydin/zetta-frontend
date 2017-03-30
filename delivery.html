@@ -111,20 +111,22 @@
                     <div class="option-outer">
                         <label>Adreslerim</label>
                         <select title="">
-                            <option>Adres Başlığı 1</option>
+                            <option>İş Adresi</option>
                             <option>Adres Başlığı 2</option>
                             <option>Adres Başlığı 3</option>
                         </select>
                     </div>
                     <div class="current-address">
                         <p class="address-title">
-                            Adres Başlığı 1
+                            İş Adresi
                         </p>
                         <p>
-                            Adres Detayı
+                            Ali Veli
+                            Deluxia Palace Residence, Barbaros Mah. Mor Sümbül Sk. No:5 Daire: 314
+                            Ataşehir/İstanbul
                         </p>
                         <p>
-                            Telefon Numarası
+                            533 333 33 33
                         </p>
 
                         <button>
@@ -309,7 +311,7 @@
 
 <div class="modal fade" id="AddressModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="modal-content newAddressModal">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h3 class="modal-title">Yeni Adres Ekle</h3>
@@ -319,25 +321,23 @@
                     <form id="frmAddress" novalidate="novalidate">
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <label>Adres Tanımı</label>
-                                    <input type="text" name="Name" id="Name" class="form-control">
+                                <div class="col-xs-12 col-sm-6 inputFields floatLabel">
+                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                    <input type="text" name="Name" id="Name"  placeholder=" " required>
+                                    <label class="float">Adres Tanımı</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <div class="form-group">
-                                    <label>Adınız</label>
-                                    <input type="text" name="FirstName" id="FirstName" class="form-control">
-                                </div>
+                            <div class="col-xs-12 col-sm-6 inputFields floatLabel">
+                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                <input type="text" name="FirstName" id="FirstName"  placeholder=" " required>
+                                <label class="float">Ad</label>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <div class="form-group">
-                                    <label>Soyadınız</label>
-                                    <input type="text" name="LastName" id="LastName" class="form-control">
-                                    <input type="hidden" name="CountryId" value="1">
-                                </div>
+                            <div class="col-xs-12 col-sm-6 inputFields floatLabel">
+                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                <input type="text" name="LastName" id="LastName"  placeholder=" " required>
+                                <label class="float">Soyad</label>
                             </div>
                         </div>
                         <div class="row">
@@ -433,36 +433,36 @@
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                 <div class="form-group" id="dvDistrict">
                                     <label>İlçe</label>
-                                    <select name="DistrictId" id="DistrictId" class="form-control selectBoxStyle">
+                                    <select name="DistrictId" id="DistrictId" class="form-control">
                                         <option>Seçiniz</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label>Detaylı Adres</label>
-                            <textarea name="Address1" id="Address1" class="form-control" rows="5"></textarea>
+                        <div class="row">
+                            <div class="col-xs-12 inputFields floatLabel">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <textarea name="Address1" id="Address1" rows="5"></textarea>
+                                <label class="float">Detaylı Adres</label>
+                            </div>
+
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <div class="form-group">
-                                    <label>Posta Kodu</label>
-                                    <input name="ZipPostalCode" id="ZipPostalCode" type="text" class="form-control" data-inputmask="'mask': '99999'">
-                                </div>
+                            <div class="col-xs-12 col-sm-6 inputFields floatLabel">
+                                <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+                                <input name="ZipPostalCode" id="ZipPostalCode" type="text" data-inputmask="'mask': '99999'" required>
+                                <label class="float">Posta Kodu</label>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <div class="form-group">
-                                    <div class="clearfix">
-                                        <label>Cep Telefonu</label>
-                                        <input name="PhoneNumber" id="PhoneNumber" type="text" class="form-control" data-inputmask="'mask': '(599) 999 99 99'">
-                                    </div>
-                                    <span class="formText">
-                                        *Lütfen cep telefonunuzu doğru giriniz.
-                                        Yapacağınız alışveriş ile ilgili bilgiler
-                                        cep telefonunuz ve e-posta adresiniz
-                                        aracılığıyla size ulaştırlacaktır.
-                                    </span>
-                                </div>
+                            <div class="col-xs-12 col-sm-6 inputFields floatLabel">
+                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                                <input name="PhoneNumber" id="PhoneNumber" type="text" placeholder=" " data-inputmask="'mask': '(599) 999 99 99'" required>
+                                <label class="float">Cep Telefonu</label>
+                                <p class="formText">
+                                    *Lütfen cep telefonunuzu doğru giriniz.
+                                    Yapacağınız alışveriş ile ilgili bilgiler
+                                    cep telefonunuz ve e-posta adresiniz
+                                    aracılığıyla size ulaştırlacaktır.
+                                </p>
                             </div>
                         </div>
                         <div class="form-group">
@@ -489,31 +489,29 @@
                             <div class="tab-content">
                                 <div class="tab-pane active" id="customer">
                                     <div class="row">
-                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                            <div class="form-group">
-                                                <label>TC Numaranız</label>
-                                                <input type="text" name="Snn" id="Snn" class="form-control" data-inputmask="'mask': '99999999999'">
-                                            </div>
+                                        <div class="col-xs-12 col-sm-6 inputFields floatLabel">
+                                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                            <input type="text" name="Snn" id="Snn" data-inputmask="'mask': '99999999999'">
+                                            <label class="float">TC Numaranız</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="tab-pane" id="company">
-                                    <div class="form-group">
-                                        <label>Firma Adı</label>
-                                        <input id="Company" name="Company" type="text" class="form-control">
-                                    </div>
                                     <div class="row">
-                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                            <div class="form-group">
-                                                <label>Vergi Dairesi</label>
-                                                <input type="text" id="VatOffice" name="VatOffice" class="form-control">
-                                            </div>
+                                        <div class="col-xs-12 inputFields floatLabel">
+                                            <i class="fa fa-building-o" aria-hidden="true"></i>
+                                            <input id="CompanyName" name="CompanyName" type="text">
+                                            <label class="float">Firma Adı</label>
                                         </div>
-                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                            <div class="form-group">
-                                                <label>Vergi Numarası</label>
-                                                <input type="text" id="VatNumber" name="VatNumber" class="form-control" data-inputmask="'mask': '9999999999'">
-                                            </div>
+                                        <div class="col-xs-12 col-sm-6 inputFields floatLabel">
+                                            <i class="fa fa-building-o" aria-hidden="true"></i>
+                                            <input type="text" id="VatOffice" name="VatOffice">
+                                            <label class="float">Vergi Dairesi</label>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 inputFields floatLabel">
+                                            <i class="fa fa-building-o" aria-hidden="true"></i>
+                                            <input type="text" id="VatNumber" name="VatNumber" data-inputmask="'mask': '9999999999'">
+                                            <label class="float">Vergi Numarası</label>
                                         </div>
                                     </div>
                                 </div>
@@ -524,8 +522,8 @@
             </div>
             <div class="modal-footer">
                 <div class="formButton">
-                    <button type="button" onclick="" class="remodalConfirm">ADRES EKLE</button>
                     <button data-remodal-action="cancel" class="remodalCancel" data-dismiss="modal">KAPAT</button>
+                    <button type="button" onclick="" class="remodalConfirm">ADRES EKLE</button>
                 </div>
             </div>
         </div><!-- /.modal-content -->
@@ -538,5 +536,6 @@
 <script src="js/bootstrap.min.js"></script>
 
 <script src="js/global.js"></script>
+
 </body>
 </html>
