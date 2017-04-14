@@ -17,7 +17,8 @@
   }
 
   .button-row {
-    button {
+    button,
+    a.button {
       padding: 12px;
       border: none;
       color: #ffffff;
@@ -49,7 +50,6 @@
 }
 
 .floatLabel {
-
   label.float{
     color: $text-color-dark;
     font-size:16px;

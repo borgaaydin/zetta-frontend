@@ -30,3 +30,17 @@ input:focus {
 
   @include transition(all 0.3s ease);
 }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    outline: 0;
+    color: inherit;
+
+  }
+}

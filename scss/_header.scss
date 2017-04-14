@@ -25,7 +25,8 @@ header {
   text-align: right;
   margin-bottom: 15px;
 
-  button {
+  button,
+  a.button{
     background-color: transparent;
     color: $color-primary;
     padding: 0 10px;
@@ -34,13 +35,10 @@ header {
     margin-top: -1px;
   }
 
-  .sign-up-button {
+  a.sign-up-button {
     background-color: $color-primary;
     color: #ffffff;
   }
-}
-.auth-private {
-
 }
 
 .search-input {
@@ -76,7 +74,8 @@ header {
     }
   }
 
-  button {
+  button,
+  a.button {
     float: left;
     padding: 14px;
     border: none;
@@ -104,6 +103,7 @@ header {
 
   &:hover {
     cursor: pointer;
+    color: $text-color-bright;
   }
 
   .basket-counter {

@@ -44,19 +44,22 @@
             <div class="container">
                 <div class="auth-bar ">
                     <div class="auth-public">
-                        <button type="submit" class="login-button">
+                        <a type="submit" class="login-button button">
                             <i class="fa fa-sign-in" aria-hidden="true"></i>
                             GİRİŞ YAP
-                        </button>
-                        <button type="submit" class="sign-up-button">
+                        </a>
+                        <a type="submit" class="sign-up-button button">
                             <i class="fa fa-user-plus" aria-hidden="true"></i>
                             ÜYE OL
-                        </button>
+                        </a>
                     </div>
                     <div class="auth-private hidden">
                         <i class="fa fa-user-circle" aria-hidden="true"></i>
                         <span>
                         ALİ KEMAL
+                        <a type="submit" class="sign-up-button button">
+                            ÇIKIŞ YAP
+                        </a>
                     </span>
                     </div>
                 </div>
@@ -172,20 +175,20 @@
                                 <input type="search" name="Search" id="search" placeholder=" ">
                                 <label class="float">Ürün ara...</label>
                             </div>
-                            <button type="submit">
+                            <a type="submit" class="button">
                                 <i class="fa fa-search" aria-hidden="true"></i>
                                 <span>
                                     ARA
                                 </span>
-                            </button>
+                            </a>
                         </div>
-                        <div class="basket-button">
+                        <a href="#" class="basket-button">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                             <span>SEPETİM</span>
                             <span class="basket-counter">
                                 0
                             </span>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
@@ -196,7 +199,10 @@
     <div class="container-fluid slider">
         <div class="main_slider">
             <div>
-                <img src="img/zetta_slider_sample_1.png" alt="Zetta Sample" class="img-responsive">
+                <a href="#"> <!-- a tag bu sekilde kullanilmali-->
+                    <img src="img/zetta_slider_sample_1.png" alt="Zetta Sample" class="img-responsive">
+
+                </a>
             </div>
 
             <div>
@@ -229,41 +235,45 @@
             <div class="col-xs-12">
                 <div class="sale_slider">
                     <div>
-                        <div class="product">
-                            <div class="product-inner">
-                                <img src="img/sample-product.png" alt="Sample" class="img-responsive">
-                                <div class="product-description">
-                                    <p>
-                                        Apple Macbook MJLQ2TU/A Intel Core i7 2.2GHz 16GB 256GB SSD 15.4" OS X Notebookook Pro 15”
-                                    </p>
-                                    <div class="price">
-                                        <del class="old-price">
-                                            10078,00
-                                            <i class="fa fa-try" aria-hidden="true"></i>
-                                        </del>
-                                        <div class="actual-price">
-                                            <span>9078,00</span>
-                                            <i class="fa fa-try" aria-hidden="true"></i>
+                        <a href="#"> <!-- product etrafina gelecek a tag -->
+                            <div class="product">
+                                <div class="product-inner">
+                                    <img src="img/sample-product.png" alt="Sample" class="img-responsive">
+                                    <div class="product-description">
+                                        <p>
+                                            Apple Macbook MJLQ2TU/A Intel Core i7 2.2GHz 16GB 256GB SSD 15.4" OS X Notebookook Pro 15”
+                                        </p>
+                                        <div class="price">
+                                            <del class="old-price">
+                                                10078,00
+                                                <i class="fa fa-try" aria-hidden="true"></i>
+                                            </del>
+                                            <div class="actual-price">
+                                                <span>9078,00</span>
+                                                <i class="fa fa-try" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-popper">
+                                        <div class="free-shipping-pop">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <span>
+                                        KARGO BEDAVA
+                                    </span>
+                                        </div>
+                                        <div class="fast-shipping-pop">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>
+                                        HIZLI GÖNDERİ
+                                    </span>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="product-popper">
-                                    <div class="free-shipping-pop">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <span>
-                                        KARGO BEDAVA
-                                    </span>
-                                    </div>
-                                    <div class="fast-shipping-pop">
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        <span>
-                                        HIZLI GÖNDERİ
-                                    </span>
-                                    </div>
-                                </div>
                             </div>
-                        </div>
+
+                        </a>
+
                     </div>
 
                     <div>
@@ -352,14 +362,14 @@
                                     <div class="free-shipping-pop">
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <span>
-                        KARGO BEDAVA
-                    </span>
+                                        KARGO BEDAVA
+                                    </span>
                                     </div>
                                     <div class="fast-shipping-pop">
                                         <i class="fa fa-clock-o" aria-hidden="true"></i>
                                         <span>
-                        HIZLI GÖNDERİ
-                    </span>
+                                        HIZLI GÖNDERİ
+                                    </span>
                                     </div>
                                 </div>
                             </div>
@@ -449,7 +459,10 @@
     <div class="container product-banner-container">
         <div class="row">
             <div class="col-xs-12 col-sm-4">
-                <img src="img/Logitech.png" alt="Logitech" class="img-responsive">
+                <a href="#">
+                    <img src="img/Logitech.png" alt="Logitech" class="img-responsive">
+
+                </a>
             </div>
             <div class="col-xs-12 col-sm-4">
                 <img src="img/XBOX.png" alt="XBOX" class="img-responsive">
@@ -460,7 +473,10 @@
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <img src="img/zetta-big-banner.png" alt="AOC" class="img-responsive">
+                <a href="">
+                    <img src="img/zetta-big-banner.png" alt="AOC" class="img-responsive">
+
+                </a>
             </div>
         </div>
     </div>
@@ -1051,9 +1067,9 @@
                             <input type="email" name="Email" placeholder=" " required>
                             <label class="float">E-mail</label>
                         </div>
-                        <button>
+                        <a href="#" class="button">
                             KAYIT OL
-                        </button>
+                        </a>
                     </div>
 
 
@@ -1062,15 +1078,15 @@
                     <h2>
                         Bizi Takip Edin!
                     </h2>
-                    <span class="social-link facebook-link">
+                    <a href="#" class="social-link facebook-link">
                         <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </span>
-                    <span class="social-link twitter-link">
+                    </a>
+                    <a href="#" class="social-link twitter-link">
                         <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </span>
-                    <span class="social-link instagram-link">
+                    </a>
+                    <a href="#" class="social-link instagram-link">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </span>
+                    </a>
                 </div>
             </div>
         </div>

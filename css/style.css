@@ -8806,6 +8806,15 @@ input:focus {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit; }
+  a:hover, a:focus {
+    text-decoration: none;
+    outline: 0;
+    color: inherit; }
+
 header {
   height: 100px;
   position: relative;
@@ -8829,14 +8838,15 @@ header {
 .auth-bar {
   text-align: right;
   margin-bottom: 15px; }
-  .auth-bar button {
+  .auth-bar button,
+  .auth-bar a.button {
     background-color: transparent;
     color: #2076bb;
     padding: 0 10px;
     border: 2px solid #2076bb;
     border-top: 0;
     margin-top: -1px; }
-  .auth-bar .sign-up-button {
+  .auth-bar a.sign-up-button {
     background-color: #2076bb;
     color: #ffffff; }
 
@@ -8876,7 +8886,8 @@ header {
       color: black;
       font-weight: 300;
       font-size: 16px; }
-  .search-input button {
+  .search-input button,
+  .search-input a.button {
     float: left;
     padding: 14px;
     border: none;
@@ -8896,7 +8907,8 @@ header {
   background-color: #2076bb;
   color: #ffffff; }
   .basket-button:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    color: #ffffff; }
   .basket-button .basket-counter {
     height: 28px;
     width: auto;
@@ -9157,7 +9169,8 @@ footer .footer-banner {
   .e-bulten span,
   .e-bulten .floatLabel label {
     color: #2076bb; }
-  .e-bulten button {
+  .e-bulten button,
+  .e-bulten a.button {
     border: 1px solid #2076bb;
     background-color: #2076bb;
     padding: 10px 36px;
@@ -9185,7 +9198,8 @@ footer .footer-banner {
     width: 100%; }
   .auth-container .separator-row {
     margin-bottom: 30px; }
-  .auth-container .button-row button {
+  .auth-container .button-row button,
+  .auth-container .button-row a.button {
     padding: 12px;
     border: none;
     color: #ffffff;

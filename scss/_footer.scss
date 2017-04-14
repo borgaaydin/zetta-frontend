@@ -118,7 +118,8 @@ footer{
     color: $color-primary;
   }
 
-  button {
+  button,
+  a.button{
     @include button();
     font-size: 14px;
     position: relative;
