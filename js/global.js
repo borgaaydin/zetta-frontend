@@ -237,4 +237,6 @@ $(function() {
         showMaskOnHover: false
     });
 
+    $('select').niceSelect();
+
 });

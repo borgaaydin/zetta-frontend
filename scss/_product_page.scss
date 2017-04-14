@@ -119,6 +119,13 @@
   flex-direction: row;
   align-items: center;
 
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   input {
     background: transparent;
     border: none;
@@ -128,11 +135,15 @@
     margin: 0 2px;
   }
 
-  button {
+  button,a.button {
     @include skew-button();
     @include box-shadow();
     margin: 0 6px;
     border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
     i {
       font-size: 16px;

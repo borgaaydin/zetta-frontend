@@ -173,10 +173,10 @@
     <div class="container auth-container">
         <div class="row">
             <div class="col-xs-12">
-                <button class="facebookSignIn">
+                <a class="facebookSignIn button">
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                     FACEBOOK İLE KAYIT OL
-                </button>
+                </a>
             </div>
         </div>
         <div class="row separator-row">
@@ -236,11 +236,12 @@
             <div class="row">
                 <div class="col-xs-12 inputFields floatLabel">
                     <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                    <select type="text" name="Cinsiyet" placeholder=" " required>
+                    <select type="text" name="Cinsiyet" class="nice-select wide" placeholder="Cinsiyet" required>
+                        <option  data-display="Seçiniz"></option>
                         <option>Kadın</option>
                         <option>Erkek</option>
                     </select>
-                    <label class="float">Cinsiyet</label>
+                    <!--<label class="floating">Cinsiyet</label>-->
                 </div>
             </div>
             <div class="row">
@@ -252,9 +253,9 @@
             </div>
             <div class="row button-row">
                 <div class="col-xs-12">
-                    <button>
+                    <a class="button">
                         ÜYE OL
-                    </button>
+                    </a>
                 </div>
             </div>
         </form>
@@ -287,9 +288,9 @@
                         <input type="email" name="Email" placeholder=" " required>
                         <label class="float">E-mail</label>
                     </div>
-                    <button>
+                    <a class="button">
                         KAYIT OL
-                    </button>
+                    </a>
                 </div>
 
 
@@ -403,6 +404,7 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.inputmask.bundle.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
