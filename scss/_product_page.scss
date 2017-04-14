@@ -170,12 +170,14 @@
   min-height: 60px;
   margin: 16px 0;
 
-  >button {
+  >button, a.button {
     border: 1px solid $color-primary;
     background-color: $color-primary;
     color: #ffffff;
     font-size: 24px;
     padding: 10px 36px;
+    display: inline-block;
+    text-align: center;
   }
 }
 

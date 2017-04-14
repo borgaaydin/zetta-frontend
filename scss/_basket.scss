@@ -404,11 +404,14 @@
     @include button();
     margin: 4px 0;
     padding: 4px 8px;
+    display: inline-block;
   }
 }
 
-.new-address-button {
+a.new-address-button {
   @include button();
+  display: inline-block;
+  color: #ffffff;
 
 }
 
@@ -449,6 +452,7 @@
   .modal-footer {
     button, a.button {
       @include button();
+      display: inline-block;
     }
 
     .remodalCancel {

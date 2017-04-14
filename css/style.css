@@ -9731,12 +9731,14 @@ footer .footer-banner {
 .product-button {
   min-height: 60px;
   margin: 16px 0; }
-  .product-button > button {
+  .product-button > button, .product-button a.button {
     border: 1px solid #2076bb;
     background-color: #2076bb;
     color: #ffffff;
     font-size: 24px;
-    padding: 10px 36px; }
+    padding: 10px 36px;
+    display: inline-block;
+    text-align: center; }
 
 .product-share {
   margin: 20px 0; }
@@ -10374,12 +10376,15 @@ label {
     padding: 10px 36px;
     color: #ffffff;
     margin: 4px 0;
-    padding: 4px 8px; }
+    padding: 4px 8px;
+    display: inline-block; }
 
-.new-address-button {
+a.new-address-button {
   border: 1px solid #2076bb;
   background-color: #2076bb;
   padding: 10px 36px;
+  color: #ffffff;
+  display: inline-block;
   color: #ffffff; }
 
 .payment-details {
@@ -10413,7 +10418,8 @@ label {
   border: 1px solid #2076bb;
   background-color: #2076bb;
   padding: 10px 36px;
-  color: #ffffff; }
+  color: #ffffff;
+  display: inline-block; }
 
 .newAddressModal .modal-footer .remodalCancel {
   float: left; }
