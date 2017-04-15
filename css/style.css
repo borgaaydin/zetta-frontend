@@ -8963,7 +8963,7 @@ input:focus {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #2076bb; }
+  color: inherit; }
   a:hover, a:focus {
     text-decoration: none;
     outline: 0;
