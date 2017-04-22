@@ -10264,7 +10264,9 @@ label {
 
 .empty-basket {
   margin: 120px 0; }
-  .empty-basket button {
+  .empty-basket button,
+  .empty-basket a.button {
+    display: inline-block;
     border: 1px solid #2076bb;
     background-color: #2076bb;
     padding: 10px 36px;

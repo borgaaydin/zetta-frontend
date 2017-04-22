@@ -210,7 +210,9 @@
 
 .empty-basket {
   margin: 120px 0;
-  button {
+  button,
+  a.button{
+    display: inline-block;
     @include button();
   }
 }
