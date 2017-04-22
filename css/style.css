@@ -9381,6 +9381,11 @@ footer .footer-banner {
     left: 28px;
     top: 16px;
     z-index: 3; }
+  .inputFields span.help-block {
+    position: inherit;
+    left: 0;
+    top: 0;
+    color: inherit; }
 
 .floatLabel label.float {
   color: #454545;
@@ -9628,6 +9633,9 @@ footer .footer-banner {
   margin: 0 20px;
   color: #2076bb; }
 
+.tab-content > .tab-pane {
+  padding: 10px 0; }
+
 .product-price {
   text-align: left; }
   .product-price .old-price {
@@ -9814,6 +9822,20 @@ footer .footer-banner {
 
 .product-shipment-info p span {
   color: #2076bb; }
+
+.comment-login {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin: 10px 0; }
+  .comment-login p {
+    font-size: 16px;
+    margin-right: 10px; }
+  .comment-login a {
+    padding: 4px 10px;
+    margin-right: 10px;
+    background-color: #2076bb;
+    color: white; }
 
 .category-page-container {
   padding: 20px 0; }
@@ -10055,7 +10077,7 @@ label {
     .filter-list-container .filter-list li {
       border: 2px solid #2076bb;
       margin-right: 8px;
-      background-color: white; }
+      background-color: transparent; }
       .filter-list-container .filter-list li a {
         display: flex;
         flex-direction: row;

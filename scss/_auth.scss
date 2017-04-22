@@ -49,6 +49,13 @@
     top: 16px;
     z-index: 3;
   }
+
+  span.help-block {
+    position: inherit;
+    left: 0;
+    top: 0;
+    color: inherit;
+  }
 }
 
 .floatLabel {

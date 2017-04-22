@@ -47,6 +47,10 @@
   }
 }
 
+.tab-content > .tab-pane {
+  padding: 10px 0;
+}
+
 .product-price {
   text-align: left;
 
@@ -284,4 +288,25 @@
       color: $color-primary;
     }
   }
+}
+
+.comment-login {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin: 10px 0;
+
+  p {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+
+  a {
+    padding: 4px 10px;
+    margin-right: 10px;
+    background-color: $color-primary;
+    color: white;
+  }
+  
 }

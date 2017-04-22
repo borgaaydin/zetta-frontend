@@ -5,6 +5,18 @@
 
 $(function() {
     'use strict';
+
+    var inputField = $('.inputFields input');
+    inputField.each(function () {
+        if( $(this).val() ) {
+            $(this).addClass("not-empty");
+            $(this).siblings().addClass("floating");
+        } else {
+            $(this).removeClass("not-empty");
+            $(this).siblings().removeClass("floating");
+        }
+    });
+
     $(".main_slider").slick({
         centerMode: true,
         centerPadding: '20px',
