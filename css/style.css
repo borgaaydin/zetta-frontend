@@ -10500,6 +10500,25 @@ a.new-address-button {
 .newAddressModal .modal-footer .remodalCancel {
   float: left; }
 
+.havale-chooser {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  padding-left: 10px; }
+  .havale-chooser li {
+    width: 100%; }
+  .havale-chooser label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; }
+    .havale-chooser label img {
+      margin: 0 20px; }
+
+.picker-label a {
+  color: #2076bb; }
+
 .modal-content {
   border: none;
   border-radius: 0; }
