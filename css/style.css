@@ -9664,6 +9664,8 @@ footer .footer-banner {
     content: "\e250";
     font-size: 10px;
     color: #2076bb; }
+  .breadcrumbs a {
+    color: #2076bb; }
 
 .product-code {
   float: right; }
@@ -9881,6 +9883,22 @@ footer .footer-banner {
     padding: 8px 0; }
     .category-filter-menu li input {
       margin-right: 6px; }
+    .category-filter-menu li a {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end; }
+      .category-filter-menu li a i {
+        width: 20px;
+        font-size: 18px; }
+      .category-filter-menu li a .fa-check-square-o {
+        display: none; }
+      .category-filter-menu li a:hover .fa-check-square-o {
+        display: inline-block;
+        color: #2076bb; }
+      .category-filter-menu li a:hover .fa-square-o {
+        display: none; }
+      .category-filter-menu li a span {
+        font-weight: 500; }
 
 .category-contoller {
   display: flex;
@@ -10022,6 +10040,40 @@ label {
       display: inline-block;
       padding: 0 8px;
       font-size: 16px; }
+
+.filter-list-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; }
+  .filter-list-container .filter-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; }
+    .filter-list-container .filter-list li {
+      border: 2px solid #2076bb;
+      margin-right: 8px;
+      background-color: white; }
+      .filter-list-container .filter-list li a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 8px; }
+        .filter-list-container .filter-list li a .filter-text {
+          display: flex;
+          flex-direction: column;
+          padding: 0 10px; }
+          .filter-list-container .filter-list li a .filter-text .filter-title-1 {
+            font-weight: 600; }
+        .filter-list-container .filter-list li a:hover i {
+          color: #2076bb; }
+  .filter-list-container a.delete-all-filter {
+    color: white;
+    background-color: #2076bb;
+    padding: 4px 10px;
+    margin: 0 10px; }
 
 .basket-container {
   margin-bottom: 30px; }

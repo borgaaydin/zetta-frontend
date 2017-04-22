@@ -82,6 +82,40 @@ $cat-slider-arrow-distance: calc(50% - 440px);
     input {
       margin-right: 6px;
     }
+
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+
+      i {
+        width: 20px;
+        font-size: 18px;
+      }
+
+      .fa-check-square-o {
+        display: none;
+      }
+
+      .fa-square-o {
+
+      }
+
+      &:hover {
+        .fa-check-square-o {
+          display: inline-block;
+          color: $color-primary;
+        }
+
+        .fa-square-o {
+          display: none;
+        }
+      }
+
+      span {
+        font-weight: 500;
+      }
+    }
   }
 }
 
@@ -296,3 +330,55 @@ label {
     }
   }
 }
+
+.filter-list-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  .filter-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    li {
+      border: 2px solid $color-primary;
+      margin-right: 8px;
+      background-color: white;
+
+      a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 8px;
+
+        .filter-text {
+          display: flex;
+          flex-direction: column;
+          padding: 0 10px;
+
+          .filter-title-1 {
+            font-weight: 600;
+          }
+        }
+        
+        &:hover {
+          i {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+
+  a.delete-all-filter {
+    color: white;
+    background-color: $color-primary;
+    padding: 4px 10px;
+    margin: 0 10px;
+  }
+}
+
