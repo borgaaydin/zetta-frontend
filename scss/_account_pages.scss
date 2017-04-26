@@ -1,0 +1,126 @@
+.account-pages-container {
+  .category-sub-list {
+    a {
+      font-size: 16px;
+      margin-left: 10px;
+
+      &:hover,
+      &.active{
+        color: $color-primary;
+      }
+    }
+  }
+
+  .siparis-list {
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        border: 2px solid rgba(51, 51, 95, 0.2);
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+
+        .siparis-first-row {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          >div {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+
+          }
+        }
+
+        .siparis-second-row {
+          padding: 10px 0 5px 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          a {
+            @include button();
+          }
+        }
+
+        span {
+          font-size: 16px;
+        }
+
+        .siparis-no {
+          display: flex;
+          flex-direction: column;
+          margin-right: 40px;
+          span:first-child {
+            font-weight: 600;
+          }
+
+          span:nth-child(2) {
+            font-size: 20px;
+          }
+        }
+
+        .siparis-tarih {
+          display: flex;
+          flex-direction: column;
+          margin-right: 40px;
+
+          span:first-child {
+            font-weight: 600;
+          }
+
+          span:nth-child(2) {
+            font-size: 20px;
+          }
+        }
+
+        div.siparis-toplam {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+
+          span:first-child {
+            font-weight: 600;
+          }
+
+          span:nth-child(2) {
+            font-size: 20px;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.account-uyelik-container {
+  .account-right{
+    padding-bottom: 60px ;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    a.button {
+      @include button();
+      display: inline-block;
+    }
+
+  }
+
+}
+
+.nice-select {
+  border-radius: 0 !important;
+  border: 1px solid #c7c7c7;
+  height: 45px;
+}
+
+.nice-select-float {
+  position: absolute;
+  left: 52px;
+  top: -20px;
+}
