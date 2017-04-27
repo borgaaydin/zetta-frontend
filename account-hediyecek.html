@@ -212,8 +212,8 @@
                     <ul class="category-sub-list">
                         <li><a href="">Siparişlerim</a></li>
                         <li><a href="">Üyelik Bilgileirm</a></li>
-                        <li><a href="" class="active">Adres Bilgilerim</a></li>
-                        <li><a href="">Hediye Çeklerim</a></li>
+                        <li><a href="">Adres Bilgilerim</a></li>
+                        <li><a href="" class="active">Hediye Çeklerim</a></li>
                         <li><a href="">Mesajlarım</a></li>
                         <li><a href="">Hesabım</a></li>
                     </ul>
@@ -233,63 +233,31 @@
             </div>
             <div class="account-right col-xs-12 col-sm-9">
                 <h2>
-                    Adres Bilgilerim
+                    Hediye Çeklerim
                 </h2>
 
-                <div class="yeni-adres">
-                    <a href="#" data-toggle="modal" data-target="#AddressModal">
-                        Yeni Adres Ekle
-                    </a>
+                <div class="empty-account-box">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    Kayıtlı hediye çeki bilgisi bulunmuyor.
                 </div>
 
-                <div class="adres-list">
+                <div class="hediye-cek-list">
                     <ul>
                         <li>
                             <div class="adres-first-row">
                                 <h3>
-                                    Adres Başlığım
+                                    Hediye Kuponum
                                 </h3>
                             </div>
                             <div class="adres-second-row">
                                 <p>
-                                    Adres detayı<br>
-                                    Kadıköy / İstanbul
+                                    Hediye Detayı
                                 </p>
-                                <div>
-                                    <a href="#" class="delete-button">
-                                        SİL
-                                    </a>
-                                    <a href="#">
-                                        GÜNCELLE
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="adres-first-row">
-                                <h3>
-                                    Adres Başlığım
-                                </h3>
-                            </div>
-                            <div class="adres-second-row">
-                                <p>
-                                    Adres detayı<br>
-                                    Kadıköy / İstanbul
-                                </p>
-                                <div>
-                                    <a href="#" class="delete-button">
-                                        SİL
-                                    </a>
-                                    <a href="#">
-                                        GÜNCELLE
-                                    </a>
-                                </div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
@@ -396,226 +364,6 @@
 </footer>
 
 <div class="overlay" style="display: none;"></div>
-
-<div class="modal fade" id="AddressModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content newAddressModal">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h3 class="modal-title" >Yeni Adres Ekle</h3>
-            </div>
-            <div class="container-fluid modal-body">
-                <div class="formContainer">
-                    <form id="frmAddress" novalidate="novalidate">
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6 inputFields floatLabel">
-                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                                    <input type="text" name="Name" id="Name"  placeholder=" " required>
-                                    <label class="float">Adres Tanımı</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6 inputFields floatLabel">
-                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                                <input type="text" name="FirstName" id="FirstName"  placeholder=" " required>
-                                <label class="float">Ad</label>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 inputFields floatLabel">
-                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                                <input type="text" name="LastName" id="LastName"  placeholder=" " required>
-                                <label class="float">Soyad</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <div class="form-group">
-                                    <label>Şehir</label>
-                                    <select class="form-control selectBoxStyle" id="CityId" name="CityId">
-                                        <option value="">Seçiniz</option>
-                                        <option value="34">İstanbul</option>
-                                        <option value="6">Ankara</option>
-                                        <option value="35">İzmir</option>
-                                        <option value="16">Bursa</option>
-                                        <option value="1">Adana</option>
-                                        <option value="7">Antalya</option>
-                                        <option value="2">Adıyaman</option>
-                                        <option value="3">Afyonkarahisar</option>
-                                        <option value="4">Ağrı</option>
-                                        <option value="5">Amasya</option>
-                                        <option value="8">Artvin</option>
-                                        <option value="9">Aydın</option>
-                                        <option value="10">Balıkesir</option>
-                                        <option value="11">Bilecik</option>
-                                        <option value="12">Bingöl</option>
-                                        <option value="13">Bitlis</option>
-                                        <option value="14">Bolu</option>
-                                        <option value="15">Burdur</option>
-                                        <option value="17">Çanakkale</option>
-                                        <option value="18">Çankırı</option>
-                                        <option value="19">Çorum</option>
-                                        <option value="20">Denizli</option>
-                                        <option value="21">Diyarbakır</option>
-                                        <option value="22">Edirne</option>
-                                        <option value="23">Elazığ</option>
-                                        <option value="24">Erzincan</option>
-                                        <option value="25">Erzurum</option>
-                                        <option value="26">Eskişehir</option>
-                                        <option value="27">Gaziantep</option>
-                                        <option value="28">Giresun</option>
-                                        <option value="29">Gümüşhane</option>
-                                        <option value="30">Hakkari</option>
-                                        <option value="31">Hatay</option>
-                                        <option value="32">Isparta</option>
-                                        <option value="33">Mersin</option>
-                                        <option value="36">Kars</option>
-                                        <option value="37">Kastamonu</option>
-                                        <option value="38">Kayseri</option>
-                                        <option value="39">Kırklareli</option>
-                                        <option value="40">Kırşehir</option>
-                                        <option value="41">Kocaeli</option>
-                                        <option value="42">Konya</option>
-                                        <option value="43">Kütahya</option>
-                                        <option value="44">Malatya</option>
-                                        <option value="45">Manisa</option>
-                                        <option value="46">Kahramanmaraş</option>
-                                        <option value="47">Mardin</option>
-                                        <option value="48">Muğla</option>
-                                        <option value="49">Muş</option>
-                                        <option value="50">Nevşehir</option>
-                                        <option value="51">Niğde</option>
-                                        <option value="52">Ordu</option>
-                                        <option value="53">Rize</option>
-                                        <option value="54">Sakarya</option>
-                                        <option value="55">Samsun</option>
-                                        <option value="56">Siirt</option>
-                                        <option value="57">Sinop</option>
-                                        <option value="58">Sivas</option>
-                                        <option value="59">Tekirdağ</option>
-                                        <option value="60">Tokat</option>
-                                        <option value="61">Trabzon</option>
-                                        <option value="62">Tunceli</option>
-                                        <option value="63">Şanlıurfa</option>
-                                        <option value="64">Uşak</option>
-                                        <option value="65">Van</option>
-                                        <option value="66">Yozgat</option>
-                                        <option value="67">Zonguldak</option>
-                                        <option value="68">Aksaray</option>
-                                        <option value="69">Bayburt</option>
-                                        <option value="70">Karaman</option>
-                                        <option value="71">Kırıkkale</option>
-                                        <option value="72">Batman</option>
-                                        <option value="73">Şırnak</option>
-                                        <option value="74">Bartın</option>
-                                        <option value="75">Ardahan</option>
-                                        <option value="76">Iğdır</option>
-                                        <option value="77">Yalova</option>
-                                        <option value="78">Karabük</option>
-                                        <option value="79">Kilis</option>
-                                        <option value="80">Osmaniye</option>
-                                        <option value="81">Düzce</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <div class="form-group" id="dvDistrict">
-                                    <label>İlçe</label>
-                                    <select name="DistrictId" id="DistrictId" class="form-control">
-                                        <option>Seçiniz</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 inputFields floatLabel">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <textarea name="Address1" id="Address1" rows="5"></textarea>
-                                <label class="float">Detaylı Adres</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6 inputFields floatLabel">
-                                <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
-                                <input name="ZipPostalCode" id="ZipPostalCode" type="text" data-inputmask="'mask': '99999'" required>
-                                <label class="float">Posta Kodu</label>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 inputFields floatLabel">
-                                <i class="fa fa-mobile" aria-hidden="true"></i>
-                                <input name="PhoneNumber" id="PhoneNumber" type="text" placeholder=" " data-inputmask="'mask': '(599) 999 99 99'" required>
-                                <label class="float">Cep Telefonu</label>
-                                <p class="formText">
-                                    *Lütfen cep telefonunuzu doğru giriniz.
-                                    Yapacağınız alışveriş ile ilgili bilgiler
-                                    cep telefonunuz ve e-posta adresiniz
-                                    aracılığıyla size ulaştırlacaktır.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="hidden" name="companyCustomer" value="false">
-                            <input type="hidden" name="Id" value="0">
-                            <div class="loginPage">
-                                <div class="loginContent">
-                                    <ul class="nav nav-tabs" id="myTab">
-                                        <li class="active">
-                                            <a data-target="#customer" onclick="$('input[name=companyCustomer]').val(false)" data-toggle="tab" aria-expanded="true">
-                                                <span>Bireysel</span>
-                                            </a>
-                                        </li>
-                                        <li class="">
-                                            <a data-target="#company" onclick="$('input[name=companyCustomer]').val(true)" data-toggle="tab" aria-expanded="false">
-                                                <span>Kurumsal</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clearfix">
-                            <div class="tab-content">
-                                <div class="tab-pane active" id="customer">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-6 inputFields floatLabel">
-                                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                                            <input type="text" name="Snn" id="Snn" data-inputmask="'mask': '99999999999'">
-                                            <label class="float">TC Numaranız</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane" id="company">
-                                    <div class="row">
-                                        <div class="col-xs-12 inputFields floatLabel">
-                                            <i class="fa fa-building-o" aria-hidden="true"></i>
-                                            <input id="CompanyName" name="CompanyName" type="text">
-                                            <label class="float">Firma Adı</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6 inputFields floatLabel">
-                                            <i class="fa fa-building-o" aria-hidden="true"></i>
-                                            <input type="text" id="VatOffice" name="VatOffice">
-                                            <label class="float">Vergi Dairesi</label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6 inputFields floatLabel">
-                                            <i class="fa fa-building-o" aria-hidden="true"></i>
-                                            <input type="text" id="VatNumber" name="VatNumber" data-inputmask="'mask': '9999999999'">
-                                            <label class="float">Vergi Numarası</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <div class="formButton">
-                    <a data-remodal-action="cancel" class="remodalCancel button" data-dismiss="modal">KAPAT</a>
-                    <a type="button" onclick="" class="remodalConfirm button">ADRES EKLE</a>
-                </div>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 
 
 <script src="js/jquery.min.js"></script>

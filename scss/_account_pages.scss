@@ -21,6 +21,10 @@
         padding: 10px;
         width: 100%;
         margin-bottom: 10px;
+        
+        &:hover {
+          border-color: $color-primary;
+        }
 
         .siparis-first-row {
           display: flex;
@@ -123,4 +127,208 @@
   position: absolute;
   left: 52px;
   top: -20px;
+}
+
+.adres-list {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 60px;
+
+    li {
+      border: 2px solid rgba(51, 51, 95, 0.2);
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+
+      &:hover {
+        border-color: $color-primary;
+      }
+
+      .adres-first-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        > div {
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: row;
+
+        }
+      }
+
+      .adres-second-row {
+        padding: 10px 0 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        a {
+          @include button();
+          display: inline-block;
+          max-height: 40px;
+          border:2px solid $color-primary;
+
+          &.delete-button {
+            background-color: transparent;
+            color: $color-primary;
+            border:2px solid $color-primary;
+            font-weight: 600;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.yeni-adres {
+  a {
+    @include button();
+    display: inline-block;
+    color: white;
+  }
+  margin-bottom: 20px;
+}
+
+.empty-account-box {
+  i {
+    color: $color-primary;
+    margin-right: 6px;
+  }
+  
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.hediye-cek-list {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 60px;
+
+    li {
+      border: 2px solid rgba(51, 51, 95, 0.2);
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+
+      &:hover {
+        border-color: $color-primary;
+      }
+
+      .first-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        > div {
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: row;
+
+        }
+      }
+
+      .second-row {
+        padding: 10px 0 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        a {
+          @include button();
+          display: inline-block;
+          max-height: 40px;
+          border:2px solid $color-primary;
+
+          &.delete-button {
+            background-color: transparent;
+            color: $color-primary;
+            border:2px solid $color-primary;
+            font-weight: 600;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.mesaj-list {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 60px;
+
+    li {
+      border: 2px solid rgba(51, 51, 95, 0.2);
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+
+      &:hover {
+        border-color: $color-primary;
+      }
+
+      .first-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        > div {
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: row;
+
+        }
+      }
+
+      .second-row {
+        padding: 10px 0 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        a {
+          @include button();
+          display: inline-block;
+          max-height: 40px;
+          border:2px solid $color-primary;
+
+          &.delete-button {
+            background-color: transparent;
+            color: $color-primary;
+            border:2px solid $color-primary;
+            font-weight: 600;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+label.nice-float {
+  position: absolute;
+  left: 48px;
+  top: -20px;
+}
+
+.modal-footer {
+  .formButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    a {
+      @include button();
+      display: inline-block;
+    }
+  }
 }

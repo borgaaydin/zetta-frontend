@@ -10727,6 +10727,8 @@ a.new-address-button {
     padding: 10px;
     width: 100%;
     margin-bottom: 10px; }
+    .account-pages-container .siparis-list ul li:hover {
+      border-color: #2076bb; }
     .account-pages-container .siparis-list ul li .siparis-first-row {
       display: flex;
       flex-direction: row;
@@ -10792,6 +10794,158 @@ a.new-address-button {
   position: absolute;
   left: 52px;
   top: -20px; }
+
+.adres-list ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 60px; }
+  .adres-list ul li {
+    border: 2px solid rgba(51, 51, 95, 0.2);
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px; }
+    .adres-list ul li:hover {
+      border-color: #2076bb; }
+    .adres-list ul li .adres-first-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .adres-list ul li .adres-first-row > div {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row; }
+    .adres-list ul li .adres-second-row {
+      padding: 10px 0 0 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end; }
+      .adres-list ul li .adres-second-row a {
+        border: 1px solid #2076bb;
+        background-color: #2076bb;
+        padding: 10px 36px;
+        color: #ffffff;
+        display: inline-block;
+        max-height: 40px;
+        border: 2px solid #2076bb; }
+        .adres-list ul li .adres-second-row a.delete-button {
+          background-color: transparent;
+          color: #2076bb;
+          border: 2px solid #2076bb;
+          font-weight: 600; }
+
+.yeni-adres {
+  margin-bottom: 20px; }
+  .yeni-adres a {
+    border: 1px solid #2076bb;
+    background-color: #2076bb;
+    padding: 10px 36px;
+    color: #ffffff;
+    display: inline-block;
+    color: white; }
+
+.empty-account-box {
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 4px;
+  padding: 16px; }
+  .empty-account-box i {
+    color: #2076bb;
+    margin-right: 6px; }
+
+.hediye-cek-list ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 60px; }
+  .hediye-cek-list ul li {
+    border: 2px solid rgba(51, 51, 95, 0.2);
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px; }
+    .hediye-cek-list ul li:hover {
+      border-color: #2076bb; }
+    .hediye-cek-list ul li .first-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .hediye-cek-list ul li .first-row > div {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row; }
+    .hediye-cek-list ul li .second-row {
+      padding: 10px 0 0 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end; }
+      .hediye-cek-list ul li .second-row a {
+        border: 1px solid #2076bb;
+        background-color: #2076bb;
+        padding: 10px 36px;
+        color: #ffffff;
+        display: inline-block;
+        max-height: 40px;
+        border: 2px solid #2076bb; }
+        .hediye-cek-list ul li .second-row a.delete-button {
+          background-color: transparent;
+          color: #2076bb;
+          border: 2px solid #2076bb;
+          font-weight: 600; }
+
+.mesaj-list ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 60px; }
+  .mesaj-list ul li {
+    border: 2px solid rgba(51, 51, 95, 0.2);
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px; }
+    .mesaj-list ul li:hover {
+      border-color: #2076bb; }
+    .mesaj-list ul li .first-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .mesaj-list ul li .first-row > div {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row; }
+    .mesaj-list ul li .second-row {
+      padding: 10px 0 0 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end; }
+      .mesaj-list ul li .second-row a {
+        border: 1px solid #2076bb;
+        background-color: #2076bb;
+        padding: 10px 36px;
+        color: #ffffff;
+        display: inline-block;
+        max-height: 40px;
+        border: 2px solid #2076bb; }
+        .mesaj-list ul li .second-row a.delete-button {
+          background-color: transparent;
+          color: #2076bb;
+          border: 2px solid #2076bb;
+          font-weight: 600; }
+
+label.nice-float {
+  position: absolute;
+  left: 48px;
+  top: -20px; }
+
+.modal-footer .formButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .modal-footer .formButton a {
+    border: 1px solid #2076bb;
+    background-color: #2076bb;
+    padding: 10px 36px;
+    color: #ffffff;
+    display: inline-block; }
 
 /* PRINT VERSION */
 @media (max-width: 1200px) {
