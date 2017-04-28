@@ -9092,7 +9092,12 @@ html,
 body {
   background-color: #f7f7f9;
   font-family: "Source Sans Pro", sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  /* Removes buzz during css transition ! */
+  -webkit-backface-visibility: hidden;
+  /* Removes buzz during css transition ! */
+  -moz-osx-font-smoothing: grayscale; }
 
 html.stuck,
 body.stuck {
@@ -9773,7 +9778,13 @@ footer .footer-banner {
     right: calc(50% - 548px); }
 
 .featured-products {
-  margin: 30px auto; }
+  margin: 30px auto;
+  background-color: white;
+  border-radius: 8px;
+  padding: 12x;
+  -webkit-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4); }
 
 .product-spot {
   color: rgba(69, 69, 69, 0.8); }
@@ -9848,7 +9859,7 @@ footer .footer-banner {
 
 .breadcrumbs {
   float: left;
-  margin: 8px 0; }
+  margin: 8px 12px; }
   .breadcrumbs i {
     color: #2076bb;
     margin-right: 8px; }
@@ -10297,7 +10308,10 @@ label {
   width: 100%;
   padding: 10px;
   border-radius: 4px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4); }
   .basket-info .fa {
     color: #2076bb;
     padding: 0 10px; }
@@ -10307,7 +10321,13 @@ label {
 
 .basket-left {
   padding-left: 0;
-  margin-top: 20px; }
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);
+  padding: 20px; }
   .basket-left > div:first-child {
     padding-left: 0; }
   .basket-left > div:last-child {
@@ -10711,6 +10731,14 @@ a.new-address-button {
 
 .picker-label a {
   color: #2076bb; }
+
+.transferPaymentBottom {
+  font-size: 16px; }
+
+.modal .modal-dialog {
+  width: 720px; }
+  .modal .modal-dialog .modal-content {
+    border-radius: 8px; }
 
 .modal-content {
   border: none;

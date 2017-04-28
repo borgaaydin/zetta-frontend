@@ -3,6 +3,10 @@ body {
   background-color: $background-color;
   font-family: $font-primary;
   overflow-x: hidden;
+
+  -webkit-font-smoothing:antialiased; /* Removes buzz during css transition ! */
+  -webkit-backface-visibility:hidden; /* Removes buzz during css transition ! */
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html.stuck,
