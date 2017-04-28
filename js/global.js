@@ -245,10 +245,5 @@ $(function() {
         $('.promotion-container').slideToggle();
     });
 
-    $(".inputFields input").inputmask({
-        showMaskOnHover: false
-    });
-
-    $('select').niceSelect();
 
 });

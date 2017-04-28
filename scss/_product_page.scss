@@ -19,8 +19,15 @@
 //}
 
 .product-tabs-container {
-  margin: 20px auto;
+  margin: 10px auto 20px;
   border-bottom: 1px solid #ddd;
+
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+
+
+  @include box-shadow();
 }
 
 .nav-tabs {
@@ -69,7 +76,14 @@
 
 .product-details {
   @include clearfix;
-  margin: 10px 0;
+  margin: 20px 0 -20px 0;
+  background-color: #fbfbfb;
+  border-radius: 8px;
+  padding: 20px;
+  z-index: 9;
+  position: relative;
+
+  @include box-shadow();
 
   >div:first-child {
     padding: 0;
@@ -92,6 +106,12 @@
 
 .breadcrumbs {
   float: left;
+  margin: 8px 0;
+
+  i {
+    color: $color-primary;
+    margin-right: 8px;
+  }
   >span:before {
     font-family: "Glyphicons Halflings";
     content: "\e250";
@@ -101,11 +121,13 @@
 
   a {
     color: $color-primary;
+    margin: 0 12px;
   }
 }
 
 .product-code {
   float: right;
+  margin: 8px 0;
 }
 
 .product-discount {
@@ -146,7 +168,7 @@
   button,a.button {
     @include skew-button();
     @include box-shadow();
-    margin: 0 6px;
+    margin: 0;
     border: none;
     display: flex;
     flex-direction: row;
@@ -176,7 +198,7 @@
 
 .product-button {
   min-height: 60px;
-  margin: 16px 0;
+  margin: 16px 8px;
 
   >button, a.button {
     border: 1px solid $color-primary;
@@ -309,4 +331,11 @@
     color: white;
   }
   
+}
+
+.count-plus-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
