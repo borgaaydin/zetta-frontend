@@ -7,7 +7,7 @@
   padding: 10px;
   border-radius: 4px;
   background-color: #ffffff;
-  @include box-shadow();
+  border:1px solid #e2e2e2;
 
   .fa {
     color: $color-primary;
@@ -21,7 +21,6 @@
 }
 
 .basket-left {
-  padding-left: 0;
   margin-top: 20px;
   background-color: white;
   border-radius: 8px;
@@ -121,7 +120,7 @@
     background-color: white;
     border-radius: 4px;
     min-height: 200px;
-    margin: 16px 0;
+    margin: 20px 0;
   }
 
   .title {
@@ -374,6 +373,10 @@
     text-align: center;
     position: relative;
   }
+
+  h3 {
+    margin-bottom: 40px;
+  }
 }
 
 .summary-container {
@@ -505,5 +508,18 @@ a.new-address-button {
   width: 720px;
   .modal-content {
     border-radius: 8px;
+  }
+}
+
+.nice-select-cont {
+  @include clearfix;
+  position: relative;
+}
+
+.nice-select {
+  padding: 0 12px;
+
+  &.wide {
+    margin-bottom: 20px;
   }
 }

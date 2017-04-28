@@ -100,6 +100,36 @@
   }
 }
 
+.indirim-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.indirim-box {
+  background-color: $color-primary;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 2px 12px;
+  border-radius: 4px;
+  margin: 0 16px;
+
+  span {
+    font-weight: 600;
+
+    &:first-child {
+      font-size: 20px;
+      margin-right: 6px;
+    }
+
+    &:last-child {
+      font-size: 12px;
+    }
+  }
+}
+
 .slider-for {
   margin-bottom: 8px;
 }

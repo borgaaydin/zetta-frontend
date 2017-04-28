@@ -1,4 +1,6 @@
 .account-pages-container {
+  padding-bottom: 60px;
+
   .category-sub-list {
     a {
       font-size: 16px;
@@ -9,6 +11,15 @@
         color: $color-primary;
       }
     }
+  }
+
+  .category-sub-menu {
+    background-color: white;
+    padding: 0 20px 20px 20px;
+    border-radius: 8px;
+    @include box-shadow();
+    position: relative;
+    z-index: 11;
   }
 
   .siparis-list {
@@ -99,6 +110,15 @@
     }
   }
 }
+.account-right {
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  background-color: white;
+  padding: 10px 10px 10px 30px;
+  margin-left: -5px;
+  @include box-shadow();
+
+}
 
 .account-uyelik-container {
   .account-right{
@@ -125,7 +145,7 @@
 
 .nice-select-float {
   position: absolute;
-  left: 52px;
+  left: 20px;
   top: -20px;
 }
 

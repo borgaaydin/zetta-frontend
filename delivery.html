@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="flex">
 <!-- HEADER / _header.scss -->
 <header class="header after-basket">
     <div class="container-fluid fixed-head-menu menu-shadow">
@@ -110,14 +110,16 @@
                     <div class="col-xs-12 col-sm-6">
                         <h3>Teslimat Adresi</h3>
 
-                        <div class="option-outer">
-                            <label>Adreslerim</label>
-                            <select title="">
+
+                        <div class="nice-select-cont">
+                            <label class="nice-select-float">Adreslerim</label>
+                            <select title="" class="nice-select wide">
                                 <option>İş Adresi</option>
                                 <option>Adres Başlığı 2</option>
                                 <option>Adres Başlığı 3</option>
                             </select>
                         </div>
+
                         <div class="current-address">
                             <p class="address-title">
                                 İş Adresi
@@ -140,14 +142,15 @@
                     <div class="col-xs-12 col-sm-6">
                         <h3>Fatura Adresi</h3>
 
-                        <div class="option-outer">
-                            <label>Adreslerim</label>
-                            <select title="">
+                        <div class="nice-select-cont">
+                            <label class="nice-select-float">Adreslerim</label>
+                            <select title="" class="nice-select wide">
                                 <option>Adres Başlığı 1</option>
                                 <option>Adres Başlığı 2</option>
                                 <option>Adres Başlığı 3</option>
                             </select>
                         </div>
+
                         <div class="current-address">
                             <p class="address-title">
                                 Adres Başlığı 1
@@ -171,7 +174,7 @@
                         YENİ ADRES EKLE
                     </a>
                 </div>
-                <div class="col-xs-12 basket-left">
+                <div class="col-xs-12">
                     <h3>Kargo Firması</h3>
                     <ul class="shipment-chooser">
                         <li>
@@ -346,8 +349,8 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                 <div class="form-group">
-                                    <label>Şehir</label>
-                                    <select class="form-control selectBoxStyle" id="CityId" name="CityId">
+                                    <label class="nice-select-float">Şehir</label>
+                                    <select class="nice-select wide" id="CityId" name="CityId">
                                         <option value="">Seçiniz</option>
                                         <option value="34">İstanbul</option>
                                         <option value="6">Ankara</option>
@@ -435,8 +438,8 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                 <div class="form-group" id="dvDistrict">
-                                    <label>İlçe</label>
-                                    <select name="DistrictId" id="DistrictId" class="form-control">
+                                    <label class="nice-select-float">İlçe</label>
+                                    <select name="DistrictId" id="DistrictId" class="nice-select wide">
                                         <option>Seçiniz</option>
                                     </select>
                                 </div>
@@ -536,8 +539,15 @@
 <script src="js/jquery.inputmask.bundle.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
 
 <script src="js/global.js"></script>
+<script>
+    $(document).ready(function() {
+        $('select').niceSelect();
+    });
+
+</script>
 
 </body>
 </html>
