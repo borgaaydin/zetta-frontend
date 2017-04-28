@@ -9705,6 +9705,27 @@ footer .footer-banner {
   flex-direction: row;
   align-items: baseline; }
 
+.starsBox {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin: 12px 0 20px 0; }
+  .starsBox i {
+    color: #2076bb; }
+  .starsBox > div {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row; }
+    .starsBox > div.stars {
+      color: #2076bb; }
+    .starsBox > div a {
+      font-weight: 600;
+      font-size: 14px;
+      padding-bottom: 1px; }
+      .starsBox > div a:hover {
+        color: #2076bb; }
+
 .indirim-box {
   background-color: #2076bb;
   color: white;
