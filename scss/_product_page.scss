@@ -167,7 +167,6 @@
 }
 
 .breadcrumbs {
-  float: left;
   margin: 8px 12px;
 
   i {
@@ -188,7 +187,6 @@
 }
 
 .product-code {
-  float: right;
   margin: 8px 0;
 }
 
@@ -362,7 +360,10 @@
 }
 
 .product-head-info {
-  @include clearfix;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   margin: 10px 0;
 }
 

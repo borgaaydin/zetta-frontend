@@ -14,6 +14,11 @@
   }
 
   .category-sub-menu {
+
+  }
+
+  .category-sub-inner {
+    @include clearfix();
     background-color: white;
     padding: 0 20px 20px 20px;
     border-radius: 8px;
@@ -112,9 +117,8 @@
 }
 .account-right {
   border-radius: 8px;
-  border-top-left-radius: 0;
   background-color: white;
-  padding: 10px 10px 10px 30px;
+  padding: 10px 20px;
   margin-left: -5px;
   @include box-shadow();
 
@@ -132,7 +136,14 @@
       @include button();
       display: inline-block;
     }
+  }
 
+  .inputFields  {
+    .nice-select span{
+      top: inherit;
+      left: 36px;
+      font-size: 16px;
+    }
   }
 
 }
@@ -352,3 +363,4 @@ label.nice-float {
     }
   }
 }
+

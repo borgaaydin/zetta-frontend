@@ -9747,7 +9747,6 @@ footer .footer-banner {
   margin-bottom: 8px; }
 
 .breadcrumbs {
-  float: left;
   margin: 8px 12px; }
   .breadcrumbs i {
     color: #2076bb;
@@ -9762,7 +9761,6 @@ footer .footer-banner {
     margin: 0 12px; }
 
 .product-code {
-  float: right;
   margin: 8px 0; }
 
 .product-discount {
@@ -9900,12 +9898,11 @@ footer .footer-banner {
           font-size: 12px; }
 
 .product-head-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   margin: 10px 0; }
-  .product-head-info:before, .product-head-info:after {
-    content: " ";
-    display: table; }
-  .product-head-info:after {
-    clear: both; }
 
 .product-shipment-info p span {
   color: #2076bb; }
@@ -10160,7 +10157,14 @@ label {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  padding: 10px 10px 2px;
+  background-color: white;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4); }
   .filter-list-container .filter-list {
     padding: 0;
     list-style: none;
@@ -10168,9 +10172,11 @@ label {
     flex-direction: row;
     align-items: flex-start; }
     .filter-list-container .filter-list li {
-      border: 2px solid #2076bb;
+      border: 2px solid rgba(51, 51, 95, 0.2);
       margin-right: 8px;
       background-color: transparent; }
+      .filter-list-container .filter-list li:hover {
+        border-color: #2076bb; }
       .filter-list-container .filter-list li a {
         display: flex;
         flex-direction: row;
@@ -10675,7 +10681,7 @@ a.new-address-button {
     margin-left: 10px; }
     .account-pages-container .category-sub-list a:hover, .account-pages-container .category-sub-list a.active {
       color: #2076bb; }
-  .account-pages-container .category-sub-menu {
+  .account-pages-container .category-sub-inner {
     background-color: white;
     padding: 0 20px 20px 20px;
     border-radius: 8px;
@@ -10684,6 +10690,11 @@ a.new-address-button {
     box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);
     position: relative;
     z-index: 11; }
+    .account-pages-container .category-sub-inner:before, .account-pages-container .category-sub-inner:after {
+      content: " ";
+      display: table; }
+    .account-pages-container .category-sub-inner:after {
+      clear: both; }
   .account-pages-container .siparis-list ul {
     list-style: none;
     padding: 0; }
@@ -10741,9 +10752,8 @@ a.new-address-button {
 
 .account-right {
   border-radius: 8px;
-  border-top-left-radius: 0;
   background-color: white;
-  padding: 10px 10px 10px 30px;
+  padding: 10px 20px;
   margin-left: -5px;
   -webkit-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);
@@ -10759,6 +10769,11 @@ a.new-address-button {
     padding: 10px 36px;
     color: #ffffff;
     display: inline-block; }
+
+.account-uyelik-container .inputFields .nice-select span {
+  top: inherit;
+  left: 36px;
+  font-size: 16px; }
 
 .nice-select {
   border-radius: 0 !important;

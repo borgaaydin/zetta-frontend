@@ -336,6 +336,11 @@ label {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  padding: 10px 10px 2px;
+  background-color: white;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  @include box-shadow();
 
   .filter-list {
     padding: 0;
@@ -345,9 +350,13 @@ label {
     align-items: flex-start;
 
     li {
-      border: 2px solid $color-primary;
+      border: 2px solid rgba(51, 51, 95, 0.2);
       margin-right: 8px;
       background-color: transparent;
+
+      &:hover {
+        border-color: $color-primary;
+      }
 
       a {
         display: flex;

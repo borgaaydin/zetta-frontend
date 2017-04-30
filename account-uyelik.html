@@ -196,136 +196,140 @@
     </div>
 </header>
 
-<div class="container-fluid account-uyelik-container">
+<div class="container-fluid account-uyelik-container account-pages-container">
     <div class="container">
         <h1>
             HESABIM
         </h1>
+        <div class="row">
+            <div class="category-sub-menu col-xs-12 col-sm-3">
+                <div class="category-sub-inner accordion">
+                    <h3>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        Kullanıcı Bilgileri
+                    </h3>
+                    <div>
+                        <ul class="category-sub-list">
+                            <li><a href="">Siparişlerim</a></li>
+                            <li><a href="" class="active">Üyelik Bilgileirm</a></li>
+                            <li><a href="">Adres Bilgilerim</a></li>
+                            <li><a href="">Hediye Çeklerim</a></li>
+                            <li><a href="">Mesajlarım</a></li>
+                            <li><a href="">Hesabım</a></li>
+                        </ul>
 
-        <div class="category-sub-menu accordion col-xs-12 col-sm-3">
-            <h3>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                Kullanıcı Bilgileri
-            </h3>
-            <div>
-                <ul class="category-sub-list">
-                    <li><a href="">Siparişlerim</a></li>
-                    <li><a href="" class="active">Üyelik Bilgileirm</a></li>
-                    <li><a href="">Adres Bilgilerim</a></li>
-                    <li><a href="">Hediye Çeklerim</a></li>
-                    <li><a href="">Mesajlarım</a></li>
-                    <li><a href="">Hesabım</a></li>
-                </ul>
-
+                    </div>
+                    <h3>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        Diğer
+                    </h3>
+                    <div>
+                        <ul class="category-sub-list">
+                            <li><a href="">Siparişlerim</a></li>
+                            <li><a href="">Üyelik Bilgileirm</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <h3>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                Diğer
-            </h3>
-            <div>
-                <ul class="category-sub-list">
-                    <li><a href="">Siparişlerim</a></li>
-                    <li><a href="">Üyelik Bilgileirm</a></li>
-                </ul>
-            </div>
+            <div class="account-right col-xs-12 col-sm-9">
+                <h2>
+                    Üyelik Bilgilerim
+                </h2>
+                <div>
+                    <form>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 inputFields floatLabel">
+                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                <input type="email" name="E-mail Address" placeholder=" " required>
+                                <label class="float">Ad</label>
+                            </div>
 
+                            <div class="col-xs-12 col-sm-6 inputFields floatLabel">
+                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                <input type="email" name="E-mail Address" placeholder=" " required>
+                                <label class="float">Soyad</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 inputFields floatLabel">
+                                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                                <input type="email" name="E-mail Address" placeholder=" " required>
+                                <label class="float">E-mail</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12 inputFields floatLabel">
+                                <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                                <input class="birthdate-input" type="text" name="Date" placeholder=" " data-inputmask="'alias': 'dd/mm/yyyy','placeholder': '__/__/____'" required>
+                                <label class="float">Doğum Tarihi</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 inputFields floatLabel">
+                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                <select type="text" name="Cinsiyet" class="nice-select wide" placeholder="Cinsiyet" required>
+                                    <option  data-display="Seçiniz"></option>
+                                    <option>Kadın</option>
+                                    <option>Erkek</option>
+                                </select>
+                                <label class="floatLabel nice-select-float">Cinsiyet</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 inputFields floatLabel error">
+                                <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                                <input type="text" name="Cep Telefonu" placeholder=" " data-inputmask="'mask': '(999) 999 99 99'" required>
+                                <label class="float">Cep Telefonu</label>
+                            </div>
+                        </div>
+                        <div class="row button-row">
+                            <div class="col-xs-12">
+                                <a class="button">
+                                    Güncelle
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </form>
+                    <form>
+                        <h2>
+                            Şifre Değiştir
+                        </h2>
+                        <div class="row">
+                            <div class="col-xs-6 inputFields floatLabel">
+                                <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+                                <input type="password" name="Password" placeholder=" " required>
+                                <label class="float">Mevcut Şifre</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 inputFields floatLabel">
+                                <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+                                <input type="password" name="Password" placeholder=" " required>
+                                <label class="float">Yeni Şifre</label>
+                            </div>
+                            <div class="col-xs-6 inputFields floatLabel">
+                                <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+                                <input type="password" name="Password" placeholder=" " required>
+                                <label class="float">Yeni Şifre Tekrarı</label>
+                            </div>
+                        </div>
+
+                        <div class="row button-row">
+                            <div class="col-xs-12">
+                                <a class="button">
+                                    Şifremi Değiştir
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="account-right col-xs-12 col-sm-9">
-            <h2>
-                Üyelik Bilgilerim
-            </h2>
-            <div>
-                <form>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 inputFields floatLabel">
-                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                            <input type="email" name="E-mail Address" placeholder=" " required>
-                            <label class="float">Ad</label>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 inputFields floatLabel">
-                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                            <input type="email" name="E-mail Address" placeholder=" " required>
-                            <label class="float">Soyad</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 inputFields floatLabel">
-                            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                            <input type="email" name="E-mail Address" placeholder=" " required>
-                            <label class="float">E-mail</label>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-xs-12 inputFields floatLabel">
-                            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-                            <input class="birthdate-input" type="text" name="Date" placeholder=" " data-inputmask="'alias': 'dd/mm/yyyy','placeholder': '__/__/____'" required>
-                            <label class="float">Doğum Tarihi</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 inputFields floatLabel">
-                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                            <select type="text" name="Cinsiyet" class="nice-select wide" placeholder="Cinsiyet" required>
-                                <option  data-display="Seçiniz"></option>
-                                <option>Kadın</option>
-                                <option>Erkek</option>
-                            </select>
-                            <label class="floatLabel nice-select-float">Cinsiyet</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 inputFields floatLabel error">
-                            <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
-                            <input type="text" name="Cep Telefonu" placeholder=" " data-inputmask="'mask': '(999) 999 99 99'" required>
-                            <label class="float">Cep Telefonu</label>
-                        </div>
-                    </div>
-                    <div class="row button-row">
-                        <div class="col-xs-12">
-                            <a class="button">
-                                Güncelle
-                            </a>
-                        </div>
-                    </div>
 
 
-                </form>
-                <form>
-                    <h2>
-                        Şifre Değiştir
-                    </h2>
-                    <div class="row">
-                        <div class="col-xs-6 inputFields floatLabel">
-                            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
-                            <input type="password" name="Password" placeholder=" " required>
-                            <label class="float">Mevcut Şifre</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-6 inputFields floatLabel">
-                            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
-                            <input type="password" name="Password" placeholder=" " required>
-                            <label class="float">Yeni Şifre</label>
-                        </div>
-                        <div class="col-xs-6 inputFields floatLabel">
-                            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
-                            <input type="password" name="Password" placeholder=" " required>
-                            <label class="float">Yeni Şifre Tekrarı</label>
-                        </div>
-                    </div>
-
-                    <div class="row button-row">
-                        <div class="col-xs-12">
-                            <a class="button">
-                                Şifremi Değiştir
-                            </a>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
 
     </div>
 </div>
