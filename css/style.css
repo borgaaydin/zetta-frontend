@@ -9929,13 +9929,6 @@ footer .footer-banner {
 
 .category-page-container {
   padding: 20px 0; }
-  .category-page-container .category-left {
-    padding-left: 0; }
-  .category-page-container .category-right {
-    padding-right: 0; }
-
-.category-head {
-  padding-left: 0; }
 
 .category-product-list {
   display: flex;
