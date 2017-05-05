@@ -8990,6 +8990,32 @@ body.flex {
 .page-content {
   flex: 1; }
 
+.four-o-four-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .four-o-four-container h1 {
+    font-size: 90px;
+    font-weight: 600;
+    color: #2076bb;
+    margin: 40px 0 20px 0; }
+  .four-o-four-container p {
+    font-size: 20px;
+    margin: 20px 0; }
+  .four-o-four-container a {
+    border: 1px solid #2076bb;
+    background-color: #2076bb;
+    padding: 10px 36px;
+    color: #ffffff;
+    font-size: 16px;
+    position: relative;
+    text-align: center; }
+    .four-o-four-container a i {
+      position: absolute;
+      left: 6px;
+      top: 14px;
+      margin: 0 8px; }
+
 header {
   height: 100px;
   position: relative;
