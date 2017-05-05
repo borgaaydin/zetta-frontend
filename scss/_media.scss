@@ -40,6 +40,10 @@
 }
 
 @media (max-width: 768px) {
+  .fixed-head-menu {
+    padding-top: 33px;
+  }
+
   .featured-products {
     display: flex;
     flex-direction: column;
