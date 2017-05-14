@@ -105,3 +105,22 @@ body.flex {
     text-align: left;
   }
 }
+
+.product-banner-container {
+  position: relative;
+
+  .out-of-bound-banner {
+    position: absolute;
+    top: 100%;
+    max-width: 220px;
+
+
+    &.right {
+      right: -240px;
+    }
+
+    &.left {
+      left: -240px;
+    }
+  }
+}

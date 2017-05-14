@@ -9021,6 +9021,17 @@ body.flex {
   padding: 0;
   text-align: left; }
 
+.product-banner-container {
+  position: relative; }
+  .product-banner-container .out-of-bound-banner {
+    position: absolute;
+    top: 100%;
+    max-width: 220px; }
+    .product-banner-container .out-of-bound-banner.right {
+      right: -240px; }
+    .product-banner-container .out-of-bound-banner.left {
+      left: -240px; }
+
 header {
   height: 100px;
   position: relative;
@@ -11001,6 +11012,10 @@ label.nice-float {
     display: inline-block; }
 
 /* PRINT VERSION */
+@media (max-width: 1600px) {
+  .out-of-bound-banner {
+    display: none; } }
+
 @media (max-width: 1200px) {
   .category-button {
     padding: 10px;

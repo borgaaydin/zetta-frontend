@@ -3,6 +3,12 @@
 
 }
 
+@media (max-width: 1600px) {
+  .out-of-bound-banner {
+    display: none;
+  }
+}
+
 @media (max-width: 1200px) {
   .category-button {
     padding: 10px;
