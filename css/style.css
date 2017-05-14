@@ -9032,6 +9032,40 @@ body.flex {
     .product-banner-container .out-of-bound-banner.left {
       left: -240px; }
 
+.main_slider {
+  margin-top: 64px; }
+  .main_slider .slick-slide {
+    width: 900px; }
+  .main_slider .slick-track .slick-slide {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+  .main_slider .slick-track .slick-active {
+    display: flex;
+    justify-content: flex-end; }
+  .main_slider .slick-track .slick-center {
+    display: flex;
+    justify-content: flex-start; }
+  .main_slider .slick-track .slick-center + .slick-slide {
+    display: flex;
+    justify-content: flex-start; }
+
+.container-fluid.slider {
+  position: relative; }
+  .container-fluid.slider .daily-product {
+    position: absolute;
+    top: 0;
+    right: calc(50% - 450px);
+    width: 228px;
+    text-align: center; }
+    .container-fluid.slider .daily-product h3 {
+      font-weight: 600; }
+    .container-fluid.slider .daily-product .product {
+      margin: 0;
+      padding: 0; }
+
 header {
   height: 100px;
   position: relative;
