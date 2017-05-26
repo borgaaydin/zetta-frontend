@@ -20,7 +20,7 @@ $(function() {
     $(".main_slider").slick({
         centerMode: true,
         centerPadding: '20px',
-        slidesToShow: 3,
+        slidesToShow: 1,
         arrows: true,
         variableWidth: true,
         dots: true,
@@ -39,6 +39,17 @@ $(function() {
             }
         ]
     });
+
+    $(".daily-product-slider").slick({
+        centerMode: true,
+        slidesToShow: 1,
+        arrows: true,
+        variableWidth: true
+
+
+    });
+
+
 
     $(".recent-products-slider").slick({
         slidesToShow: 5,
