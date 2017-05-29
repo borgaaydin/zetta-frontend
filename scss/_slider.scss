@@ -16,6 +16,7 @@
 
 $slider-arrow-distance: calc(50% - 480px);
 
+
 .slick-prev {
   left: $slider-arrow-distance;
 }
@@ -38,6 +39,7 @@ $slider-arrow-distance: calc(50% - 480px);
 }
 
 .main_slider {
+
   .slick-slide img{
     transform: scale(.95);
     opacity: 0.7;
@@ -52,7 +54,8 @@ $slider-arrow-distance: calc(50% - 480px);
 
 $recent-slider-arrow-distance: calc(50% - 588px);
 
-.recent-products-slider {
+.recent-products-slider,
+.suggest-products-slider{
   .slick-prev {
     left: $recent-slider-arrow-distance;
   }
@@ -80,4 +83,12 @@ $recent-slider-arrow-distance: calc(50% - 588px);
 
 .slick-dots li:hover button:before {
   color: $color-primary-soft;
+}
+
+.slider {
+  min-height: 460px;
+}
+
+.mainSlider {
+  max-width: 900px;
 }

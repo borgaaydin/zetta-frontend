@@ -39,6 +39,20 @@ $(function() {
             }
         ]
     });
+    $("#mainSlider").lightSlider({
+        item: 1,
+        autoWidth: false,
+        slideMove: 1,
+        thumbItem:10,
+        thumbMargin:4,
+        easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+        pager: true,
+        gallery: true,
+        pauseOnHover: true,
+        speed: 800,
+        auto: true,
+        mode: "fade"
+    });
 
     $(".daily-product-slider").slick({
         centerMode: true,
@@ -46,12 +60,31 @@ $(function() {
         arrows: true,
         variableWidth: true
 
-
     });
 
 
 
     $(".recent-products-slider").slick({
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 640,
+                settings: {
+                    centerMode:false,
+                    variableWidth: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                    arrows: false
+                }
+            }
+        ]
+    });
+
+    $(".suggest-products-slider").slick({
         slidesToShow: 5,
         slidesToScroll: 5,
         arrows: true,
