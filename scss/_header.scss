@@ -24,6 +24,25 @@ header {
 .auth-bar {
   text-align: right;
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  .phone-number {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    color: $color-primary;
+    font-size: 16px;
+    margin-right: 10px;
+
+    i {
+      color: $color-primary;
+      margin-right: 6px;
+      margin-top: 2px;
+    }
+  }
 
   button,
   a.button{

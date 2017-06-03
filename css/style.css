@@ -9474,7 +9474,22 @@ header {
 
 .auth-bar {
   text-align: right;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end; }
+  .auth-bar .phone-number {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    color: #2076bb;
+    font-size: 16px;
+    margin-right: 10px; }
+    .auth-bar .phone-number i {
+      color: #2076bb;
+      margin-right: 6px;
+      margin-top: 2px; }
   .auth-bar button,
   .auth-bar a.button {
     background-color: transparent;
@@ -10067,11 +10082,13 @@ footer .footer-banner {
         align-items: center; }
     .product .product-inner .actual-price {
       font-size: 20px;
-      font-weight: 600; }
+      font-weight: 600;
+      color: #2076bb; }
       .product .product-inner .actual-price span {
-        font-size: 24px; }
+        font-size: 28px; }
     .product .product-inner .old-price {
-      min-height: 18px; }
+      min-height: 20px;
+      font-size: 16px; }
     .product .product-inner:hover {
       cursor: pointer;
       -webkit-box-shadow: 0px 0px 30px -6px rgba(0, 0, 0, 0.5);
@@ -10080,7 +10097,7 @@ footer .footer-banner {
 
 .product-popper {
   min-height: 34px;
-  display: flex;
+  display: none;
   align-items: center;
   flex-direction: row;
   justify-content: space-around;

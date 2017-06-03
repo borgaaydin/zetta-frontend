@@ -12,7 +12,6 @@
     text-align: center;
 
     @include transition(all 0.3s ease);
-
     @include box-shadow;
 
     .product-description {
@@ -33,14 +32,16 @@
     .actual-price {
       font-size: 20px;
       font-weight: 600;
+      color: $color-primary;
 
       span {
-        font-size: 24px;
+        font-size: 28px;
       }
     }
 
     .old-price {
-      min-height: 18px;
+      min-height: 20px;
+      font-size: 16px;;
     }
 
     &:hover {
@@ -51,8 +52,9 @@
 }
 
 .product-popper {
+
   min-height: 34px;
-  display: flex;
+  display: none;
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
