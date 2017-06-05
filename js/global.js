@@ -49,16 +49,19 @@ $(function() {
         pager: true,
         gallery: true,
         pauseOnHover: true,
-        speed: 800,
+        speed: 1200,
         auto: true,
-        mode: "fade"
+        mode: "fade",
+        loop: true
     });
 
     $(".daily-product-slider").slick({
         centerMode: true,
         slidesToShow: 1,
         arrows: true,
-        variableWidth: true
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 2000
 
     });
 
