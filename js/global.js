@@ -39,7 +39,7 @@ $(function() {
             }
         ]
     });
-    $("#mainSlider").lightSlider({
+    var mainslider = $("#mainSlider").lightSlider({
         item: 1,
         autoWidth: false,
         slideMove: 1,
@@ -48,7 +48,6 @@ $(function() {
         easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
         pager: true,
         gallery: true,
-        pauseOnHover: true,
         speed: 1200,
         auto: true,
         mode: "fade",
@@ -291,6 +290,14 @@ $(function() {
     $('.close-banner').click(function(){
         $('.promotion-container').slideToggle();
     });
+
+    $(".main_slider_container .lSSlideOuter").hover(
+        function() {
+            mainslider.pause();
+        }, function() {
+            mainslider.play();
+        }
+    );
 
 
 });

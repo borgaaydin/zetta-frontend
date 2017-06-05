@@ -10447,7 +10447,8 @@ footer .footer-banner {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  flex-wrap: wrap; }
 
 .category-page-container {
   padding: 20px 0; }
