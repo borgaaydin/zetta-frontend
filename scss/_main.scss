@@ -196,15 +196,36 @@ body.flex {
     margin: 15px 0;
     border-radius: 4px;
     @include box-shadow();
+    color: #820303;
   }
 
   .slick-prev {
-    top: -44px;
-    left: 150px;
+    top: 170px;
+    left: 0px;
   }
   .slick-next {
-    top: -44px;
-    right: -6px;
+    top: 170px;
+    right: 0px;
+  }
+
+  .slick-prev,
+  .slick-next{
+    background-color: transparent;
+    @include transform(none);
+    @include box-shadow-args(none);
+    width: 20px;
+    height: 20px;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+
+      &:before {
+        color: #333333;
+      }
+
+    }
+
   }
 }
 
