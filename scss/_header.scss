@@ -2,6 +2,7 @@ header {
   height: 100px;
   position: relative;
   z-index: 15;
+  padding-left: 0;
 
   .head-logo {
     max-height: 43px;
@@ -117,6 +118,8 @@ header {
 
   .inputFields {
     margin-bottom: 0;
+    padding-right: 18px;
+    padding-left: 0;
     input {
       padding: 12px 32px;
       width: calc(100% - 64px);
@@ -129,7 +132,7 @@ header {
     display: block;
     margin: 0;
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     box-shadow: none;
     border-radius: 0;
     border: none;
@@ -151,7 +154,8 @@ header {
     border: none;
     color: $text-color-bright;
     background-color: $color-primary;
-    line-height: 16px;
+    line-height: 14px;
+    display: inline-flex;
   }
 }
 

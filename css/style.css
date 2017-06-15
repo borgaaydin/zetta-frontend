@@ -9414,7 +9414,8 @@ body.flex {
 
 .daily-product-slider-container {
   width: 20%;
-  float: left; }
+  float: left;
+  min-width: 220px; }
   .daily-product-slider-container h3 {
     font-weight: 400;
     font-style: italic;
@@ -9477,7 +9478,8 @@ body.flex {
 header {
   height: 100px;
   position: relative;
-  z-index: 15; }
+  z-index: 15;
+  padding-left: 0; }
   header .head-logo {
     max-height: 43px; }
 
@@ -9568,7 +9570,9 @@ header {
   float: left;
   width: calc(100% - 164px); }
   .search-input .inputFields {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-right: 18px;
+    padding-left: 0; }
     .search-input .inputFields input {
       padding: 12px 32px;
       width: calc(100% - 64px);
@@ -9577,7 +9581,7 @@ header {
     display: block;
     margin: 0;
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     box-shadow: none;
     border-radius: 0;
     border: none;
@@ -9607,7 +9611,8 @@ header {
     border: none;
     color: #ffffff;
     background-color: #2076bb;
-    line-height: 16px; }
+    line-height: 14px;
+    display: inline-flex; }
 
 .search-bar > div {
   padding: 0; }
@@ -11500,8 +11505,17 @@ label.nice-float {
     left: calc(50% - 294px); } }
 
 @media (max-width: 768px) {
+  .main_slider_container {
+    width: 100%; }
+  .daily-product-slider-container {
+    width: 100%;
+    max-width: 220px; }
+  .auth-bar {
+    align-items: flex-start; }
+    .auth-bar .phone-number {
+      min-width: 180px; }
   .fixed-head-menu {
-    padding-top: 33px; }
+    padding-top: 0; }
   .featured-products {
     display: flex;
     flex-direction: column;
@@ -11525,17 +11539,24 @@ label.nice-float {
     margin-bottom: 10px;
     max-height: 24px; }
   .search-input {
-    width: calc(100% - 60px); }
-    .search-input .inputFields input {
-      width: calc(100% - 30px);
-      font-size: 14px;
-      padding: 12px; }
-    .search-input .inputFields label {
-      left: 28px; }
+    width: calc(100% - 66px);
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center; }
+    .search-input .inputFields {
+      margin-right: -52px;
+      min-width: 100px;
+      width: 100%; }
+      .search-input .inputFields input {
+        width: calc(100% - 30px);
+        font-size: 14px;
+        padding: 12px; }
+      .search-input .inputFields label {
+        left: 28px; }
     .search-input button span {
       display: none; }
   .basket-button {
-    padding: 12px 13px;
+    padding: 12px 13px 11px;
     width: 60px; }
     .basket-button > span {
       display: none; }

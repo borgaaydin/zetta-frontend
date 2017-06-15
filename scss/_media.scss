@@ -46,8 +46,25 @@
 }
 
 @media (max-width: 768px) {
+  .main_slider_container {
+    width: 100%;
+  }
+
+  .daily-product-slider-container {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .auth-bar {
+    align-items: flex-start;
+    .phone-number {
+      min-width: 180px;
+
+    }
+  }
+
   .fixed-head-menu {
-    padding-top: 33px;
+    padding-top: 0;
   }
 
   .featured-products {
@@ -95,10 +112,15 @@
   }
 
   .search-input {
-    width: calc(100% - 60px);
+    width: calc(100% - 66px);
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
 
     .inputFields {
-
+      margin-right: -52px;
+      min-width: 100px;
+      width: 100%;
       input {
         width: calc(100% - 30px);
         font-size: 14px;
@@ -118,7 +140,7 @@
   }
 
   .basket-button {
-    padding: 12px 13px;
+    padding: 12px 13px 11px;
     width: 60px;
     >span {
       display: none;
