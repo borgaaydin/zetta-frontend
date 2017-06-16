@@ -9397,19 +9397,22 @@ body.flex {
     display: flex;
     justify-content: flex-start; }
 
-.container-fluid.slider {
+.slider {
   position: relative; }
-  .container-fluid.slider .daily-product-slider .product .product-inner {
+  .slider > div.container {
+    display: flex;
+    flex-direction: row; }
+  .slider .daily-product-slider .product .product-inner {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none; }
-  .container-fluid.slider .daily-product-slider .product {
+  .slider .daily-product-slider .product {
     width: 228px;
     margin: 0;
     padding: 0; }
-    .container-fluid.slider .daily-product-slider .product .product-popper {
+    .slider .daily-product-slider .product .product-popper {
       display: none; }
-    .container-fluid.slider .daily-product-slider .product .product-inner {
+    .slider .daily-product-slider .product .product-inner {
       min-height: 364px; }
 
 .daily-product-slider-container {
@@ -9478,8 +9481,7 @@ body.flex {
 header {
   height: 100px;
   position: relative;
-  z-index: 15;
-  padding-left: 0; }
+  z-index: 15; }
   header .head-logo {
     max-height: 43px; }
 
@@ -10324,6 +10326,7 @@ footer .footer-banner {
 
 .product-count {
   margin: 16px 0;
+  margin-right: 20px;
   display: flex;
   flex-direction: row;
   align-items: center; }
@@ -11505,15 +11508,30 @@ label.nice-float {
     left: calc(50% - 294px); } }
 
 @media (max-width: 768px) {
+  .slider,
+  .product-banner-container {
+    padding: 0; }
+  .slider > div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .featured-products > a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; }
   .main_slider_container {
-    width: 100%; }
+    width: 100%;
+    margin: 10px 0; }
   .daily-product-slider-container {
     width: 100%;
-    max-width: 220px; }
+    max-width: 228px; }
   .auth-bar {
     align-items: flex-start; }
     .auth-bar .phone-number {
-      min-width: 180px; }
+      min-width: 180px;
+      display: inline-flex;
+      justify-content: flex-end; }
   .fixed-head-menu {
     padding-top: 0; }
   .featured-products {

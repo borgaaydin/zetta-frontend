@@ -72,7 +72,43 @@ $(function() {
         arrows: true,
         responsive: [
             {
+                breakpoint: 1200,
+                settings: {
+                    centerMode:false,
+                    variableWidth: false,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    infinite: true,
+                    dots: true,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 990,
+                settings: {
+                    centerMode:false,
+                    variableWidth: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true,
+                    arrows: false
+                }
+            },
+            {
                 breakpoint: 640,
+                settings: {
+                    centerMode:false,
+                    variableWidth: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 500,
                 settings: {
                     centerMode:false,
                     variableWidth: false,

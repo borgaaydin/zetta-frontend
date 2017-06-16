@@ -46,19 +46,44 @@
 }
 
 @media (max-width: 768px) {
+
+  .slider,
+  .product-banner-container{
+    padding: 0;
+  }
+
+  .slider {
+    >div.container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .featured-products {
+    >a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
   .main_slider_container {
     width: 100%;
+    margin: 10px 0;
   }
 
   .daily-product-slider-container {
     width: 100%;
-    max-width: 220px;
+    max-width: 228px;
   }
 
   .auth-bar {
     align-items: flex-start;
     .phone-number {
       min-width: 180px;
+      display: inline-flex;
+      justify-content: flex-end;
 
     }
   }
