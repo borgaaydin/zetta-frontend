@@ -48,7 +48,7 @@ $(function() {
         easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
         pager: true,
         gallery: true,
-        speed: 1200,
+        speed: 5000,
         auto: true,
         mode: "fade",
         loop: true
@@ -60,7 +60,7 @@ $(function() {
         arrows: true,
         variableWidth: true,
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 4000
 
     });
 

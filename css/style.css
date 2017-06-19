@@ -10092,6 +10092,7 @@ footer .footer-banner {
     border-radius: 4px;
     padding: 10px;
     text-align: center;
+    height: 350px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
@@ -10108,7 +10109,8 @@ footer .footer-banner {
         display: flex;
         flex-direction: column;
         min-height: 53px;
-        align-items: center; }
+        align-items: center;
+        justify-content: flex-end; }
     .product .product-inner .actual-price {
       font-size: 20px;
       font-weight: 600;
@@ -10116,7 +10118,7 @@ footer .footer-banner {
       .product .product-inner .actual-price span {
         font-size: 28px; }
     .product .product-inner .old-price {
-      min-height: 20px;
+      min-height: 24px;
       font-size: 16px; }
     .product .product-inner:hover {
       cursor: pointer;

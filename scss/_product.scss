@@ -10,6 +10,7 @@
     border-radius: 4px;
     padding: 10px;
     text-align: center;
+    height: 350px;
 
     @include transition(all 0.3s ease);
     @include box-shadow;
@@ -26,6 +27,7 @@
         flex-direction: column;
         min-height: 53px;
         align-items: center;
+        justify-content: flex-end;
       }
     }
 
@@ -40,8 +42,8 @@
     }
 
     .old-price {
-      min-height: 20px;
-      font-size: 16px;;
+      min-height: 24px;
+      font-size: 16px;
     }
 
     &:hover {
