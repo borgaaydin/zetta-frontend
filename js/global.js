@@ -17,55 +17,6 @@ $(function() {
         }
     });
 
-    $(".main_slider").slick({
-        centerMode: true,
-        centerPadding: '20px',
-        slidesToShow: 1,
-        arrows: true,
-        variableWidth: true,
-        dots: true,
-        responsive: [
-            {
-                breakpoint: 932,
-                settings: {
-                    centerMode:false,
-                    variableWidth: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true,
-                    arrows: false
-                }
-            }
-        ]
-    });
-    var mainslider = $("#mainSlider").lightSlider({
-        item: 1,
-        autoWidth: false,
-        slideMove: 1,
-        thumbItem:10,
-        thumbMargin:4,
-        easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-        pager: true,
-        gallery: true,
-        speed: 5000,
-        auto: true,
-        mode: "fade",
-        loop: true
-    });
-
-    $(".daily-product-slider").slick({
-        centerMode: true,
-        slidesToShow: 1,
-        arrows: true,
-        variableWidth: true,
-        autoplay: true,
-        autoplaySpeed: 4000
-
-    });
-
-
-
     $(".recent-products-slider").slick({
         slidesToShow: 5,
         slidesToScroll: 5,
@@ -326,14 +277,5 @@ $(function() {
     $('.close-banner').click(function(){
         $('.promotion-container').slideToggle();
     });
-
-    $(".main_slider_container .lSSlideOuter").hover(
-        function() {
-            mainslider.pause();
-        }, function() {
-            mainslider.play();
-        }
-    );
-
 
 });

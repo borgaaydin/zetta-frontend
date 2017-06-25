@@ -142,6 +142,10 @@
     flex-direction: row;
     align-items: center;
 
+    form {
+      width: 100%;
+    }
+
     .inputFields {
       margin-right: -52px;
       min-width: 100px;
@@ -281,7 +285,7 @@
   }
 
   .floatLabel input:focus ~ label.float, .floatLabel input.not-empty ~ label.float, .floatLabel input label.floating, .floatLabel textarea:focus ~ label.float, .floatLabel textarea.not-empty ~ label.float, .floatLabel textarea label.floating {
-    left: 52px;
+    left: 72px;
   }
 
 

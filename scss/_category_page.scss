@@ -163,6 +163,10 @@ $cat-slider-arrow-distance: calc(50% - 440px);
     flex-direction: row;
     align-items: center;
 
+    img {
+      max-height: 200px;
+    }
+
     .product-description {
       padding: 8px;
       .price {
