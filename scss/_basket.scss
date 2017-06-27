@@ -473,13 +473,28 @@ a.new-address-button {
 
 .havale-chooser {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   list-style: none;
   padding-left: 10px;
 
   li {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(127, 140, 141, 0.33);
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
   }
 
   label {
@@ -521,5 +536,19 @@ a.new-address-button {
 
   &.wide {
     margin-bottom: 20px;
+  }
+}
+
+.pretty.sozlesmeler {
+  i {
+    position: relative;
+    z-index: 98;
+  }
+
+  a {
+    position: relative;
+    z-index: 102;
+    color: $color-primary;
+    font-weight: bold;
   }
 }

@@ -22,7 +22,8 @@
     "components-font-awesome": "^4.7.0",
     "jquery-mask-plugin": "^1.14.10",
     "jquery-nice-select": "^1.1.0",
-    "lightslider": "^1.1.6"
+    "lightslider": "^1.1.6",
+    "pretty-checkbox": "^2.2.1"
   },
   "devDependencies": {
     "slick": "*"

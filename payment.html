@@ -188,10 +188,43 @@
                                 <h3>Havale Bilgileri</h3>
                                 <ul class="havale-chooser">
                                     <li>
-                                        <label class="col-xs-6 col-sm-4">
+                                        <div class="pretty circle primary">
                                             <input type="radio" name="havale" id="havale1" class="picker-element">
-                                            <img src="img/garanti.jpg" alt="" class="img-responsive">
-                                        </label>
+                                            <label>
+                                                <i class="default"></i>
+                                                <img src="img/garanti.jpg" alt="" class="img-responsive">
+                                            </label>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p class="havale-info">
+                                                <span>Garanti Bankası</span><br>
+                                                <strong>TR94 0006 2000 1190 0006 2962 56</strong>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pretty circle primary">
+                                            <input type="radio" name="havale" id="havale2" class="picker-element">
+                                            <label>
+                                                <i class="default"></i>
+                                                <img src="img/garanti.jpg" alt="" class="img-responsive">
+                                            </label>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p class="havale-info">
+                                                <span>Garanti Bankası</span><br>
+                                                <strong>TR94 0006 2000 1190 0006 2962 56</strong>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pretty circle primary">
+                                            <input type="radio" name="havale" id="havale3" class="picker-element">
+                                            <label>
+                                                <i class="default"></i>
+                                                <img src="img/garanti.jpg" alt="" class="img-responsive">
+                                            </label>
+                                        </div>
                                         <div class="col-xs-6">
                                             <p class="havale-info">
                                                 <span>Garanti Bankası</span><br>
@@ -202,11 +235,14 @@
                                 </ul>
                             </div>
                             <div class="row">
-                                <label for="check-contract" class="picker-label">
-                                    <input type="checkbox" name="checkbox" id="check-contract" value="value">
-                                    <a href="#">Ön bilgilendirme formu</a>nu ve
-                                    <a href="#">Mesafeli satış sözleşmesi</a>ni kabul ediyorum
-                                </label>
+                                <div class="pretty sozlesmeler">
+                                    <input type="checkbox" name="checkbox" id="check-contract" value="value"/>
+                                    <label>
+                                        <i class="fa fa-check"></i>
+                                        <a href="#">Ön bilgilendirme formu</a>nu ve
+                                        <a href="#">Mesafeli satış sözleşmesi</a>ni kabul ediyorum
+                                    </label>
+                                </div>
                             </div>
 
 
@@ -407,10 +443,12 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.inputmask.bundle.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
 <script src="js/global.js"></script>
+<script src="js/payment.js"></script>
 
 </body>
 </html>

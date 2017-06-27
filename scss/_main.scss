@@ -260,5 +260,14 @@ body.flex {
 
 .suggest-products {
   clear: both;
+}
 
+.pretty {
+  .fa-check {
+    color: $color-primary;
+  }
+}
+
+.pretty > input[type='checkbox'], .pretty > input[type='radio'] {
+  z-index: 99;
 }
