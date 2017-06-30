@@ -10281,7 +10281,9 @@ header {
         cursor: pointer; }
   .category-button .menu-lv1-controls {
     text-align: right;
-    color: #0066b1; }
+    color: #0066b1;
+    line-height: 16px !important;
+    margin-bottom: -20px; }
     .category-button .menu-lv1-controls:before, .category-button .menu-lv1-controls:after {
       content: " ";
       display: table; }
@@ -10336,14 +10338,20 @@ header {
     border-bottom: 1px solid #c7c7c7; }
     .category-button .nav-list-lv2 li:last-child {
       border-bottom: 0; }
-  .category-button .menu-lv2-controls button {
-    color: #0066b1;
-    display: flex;
-    align-items: baseline;
+  .category-button .menu-lv2-controls {
+    display: flex !important;
     justify-content: flex-end;
-    float: right;
-    border: none;
-    background-color: transparent; }
+    line-height: 20px;
+    margin-bottom: -20px; }
+    .category-button .menu-lv2-controls button {
+      color: #0066b1;
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-end;
+      border: none;
+      background-color: transparent;
+      font-weight: bold;
+      margin-right: 20px; }
 
 .promotion-container {
   background-color: white;
@@ -12108,9 +12116,21 @@ label.nice-float {
   .category_slider .slick-next {
     right: calc(50% - 294px); }
   .category_slider .slick-prev {
-    left: calc(50% - 294px); } }
+    left: calc(50% - 294px); }
+  .container-fluid.slider > div.container {
+    align-items: center; } }
 
 @media (max-width: 768px) {
+  .category-button .nav-list-lv2 > li {
+    line-height: 16px;
+    height: 50px;
+    margin: 0 8px;
+    padding: 0 10px;
+    display: flex;
+    width: 100%;
+    align-items: center; }
+  .container-fluid.slider > div.container {
+    flex-direction: column; }
   .slider,
   .product-banner-container {
     padding: 0; }
@@ -12236,3 +12256,17 @@ label.nice-float {
       font-size: 15px; }
   .floatLabel input:focus ~ label.float, .floatLabel input.not-empty ~ label.float, .floatLabel input label.floating, .floatLabel textarea:focus ~ label.float, .floatLabel textarea.not-empty ~ label.float, .floatLabel textarea label.floating {
     left: 72px; } }
+
+@media (max-width: 480px) {
+  .auth-bar {
+    margin-bottom: 28px; }
+    .auth-bar .phone-number {
+      min-width: 130px; }
+  .fixed-head-menu {
+    padding-bottom: 6px; } }
+
+@media (max-width: 352px) {
+  .auth-bar {
+    margin-bottom: 10px; }
+  .lSSlideOuter {
+    min-width: 294px; } }

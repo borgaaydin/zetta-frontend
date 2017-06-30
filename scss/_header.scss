@@ -285,6 +285,10 @@ header {
   .menu-lv1-controls {
     text-align: right;
     color: $color-primary;
+
+    line-height: 16px !important;
+    margin-bottom: -20px;
+
     @include clearfix;
 
     button i {
@@ -364,14 +368,20 @@ header {
   }
 
   .menu-lv2-controls {
+    display: flex !important;
+    justify-content: flex-end;
+    line-height: 20px;
+    margin-bottom: -20px;
+
     button {
       color: $color-primary;
       display: flex;
       align-items: baseline;
       justify-content: flex-end;
-      float: right;
       border: none;
       background-color: transparent;
+      font-weight: bold;
+      margin-right: 20px;
     }
   }
 }
