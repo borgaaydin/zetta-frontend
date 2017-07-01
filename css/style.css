@@ -10056,6 +10056,15 @@ body.flex {
 .pretty > input[type='checkbox'], .pretty > input[type='radio'] {
   z-index: 99; }
 
+input {
+  border-radius: 0; }
+
+span#lgnName {
+  max-width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
 header {
   height: 100px;
   position: relative;
@@ -12121,6 +12130,23 @@ label.nice-float {
     align-items: center; } }
 
 @media (max-width: 768px) {
+  .coupon .inputFields input {
+    border-radius: 0;
+    width: 160px; }
+  .coupon .inputFields button,
+  .coupon .inputFields .button {
+    padding: 10px 6px; }
+  .e-bulten .button,
+  .e-bulten button {
+    padding: 12px 4px; }
+  .basket-product-list .product-count {
+    flex-direction: row;
+    justify-content: space-between; }
+  div.modal-dialog {
+    width: 100%;
+    margin: 80px 0; }
+  .basket-info-header .line {
+    width: initial; }
   .category-button .nav-list-lv2 > li {
     line-height: 16px;
     height: 50px;
@@ -12176,9 +12202,20 @@ label.nice-float {
     .category-button > span {
       display: none; }
   header .head-logo {
-    margin-top: -30px;
+    margin-top: -10px;
     margin-bottom: 10px;
     max-height: 24px; }
+  .summary {
+    padding-left: 0; }
+  .product_page_container {
+    margin-top: 0; }
+  div.product-head-info {
+    flex-direction: column; }
+  div.breadcrumbs {
+    margin-bottom: 0; }
+  div.product-code {
+    margin: 0 15px;
+    align-self: flex-end; }
   .search-input {
     width: calc(100% - 66px);
     display: inline-flex;

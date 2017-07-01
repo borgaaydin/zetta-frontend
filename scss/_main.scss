@@ -271,3 +271,14 @@ body.flex {
 .pretty > input[type='checkbox'], .pretty > input[type='radio'] {
   z-index: 99;
 }
+
+input {
+  border-radius: 0;
+}
+
+span#lgnName {
+  max-width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
