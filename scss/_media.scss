@@ -197,6 +197,26 @@
     margin-top: 0;
   }
 
+  div.category-product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.category-contoller {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+
+    .pagination {
+      >ul {
+        display: inline-flex ;
+        flex-direction: row ;
+        align-items: baseline ;
+        margin: 10px 0;
+      }
+    }
+  }
+
   div.product-head-info {
     flex-direction: column;
   }
