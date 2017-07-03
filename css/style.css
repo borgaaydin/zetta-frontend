@@ -11757,30 +11757,37 @@ a.new-address-button {
 .newAddressModal .modal-footer .remodalCancel {
   float: left; }
 
-.havale-chooser {
+.havale-chooser,
+.shipment-chooser {
   display: flex;
   flex-direction: column;
   align-items: center;
   list-style: none;
   padding-left: 10px; }
-  .havale-chooser li {
+  .havale-chooser li,
+  .shipment-chooser li {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     border-bottom: 1px solid rgba(127, 140, 141, 0.33);
     padding-bottom: 10px;
     padding-top: 10px; }
-    .havale-chooser li:first-child {
+    .havale-chooser li:first-child,
+    .shipment-chooser li:first-child {
       padding-top: 0; }
-    .havale-chooser li:last-child {
+    .havale-chooser li:last-child,
+    .shipment-chooser li:last-child {
       border-bottom: 0; }
-  .havale-chooser label {
+  .havale-chooser label,
+  .shipment-chooser label {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start; }
-    .havale-chooser label img {
+    .havale-chooser label img,
+    .shipment-chooser label img {
       margin: 0 20px; }
 
 .picker-label a {

@@ -471,7 +471,8 @@ a.new-address-button {
   }
 }
 
-.havale-chooser {
+.havale-chooser,
+.shipment-chooser{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -483,6 +484,7 @@ a.new-address-button {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
 
     border-bottom: 1px solid rgba(127, 140, 141, 0.33);
     padding-bottom: 10px;
