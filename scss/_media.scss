@@ -51,6 +51,19 @@
 
 @media (max-width: 768px) {
 
+  .account-pages-container .siparis-list ul li .siparis-second-row a {
+    padding: 10px 8px;
+  }
+
+  .account-right {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .category-sub-menu {
+    padding: 0;
+  }
+
   .coupon .inputFields {
     input {
       border-radius: 0;
@@ -77,7 +90,7 @@
     }
   }
 
-  div.modal-dialog {
+  .modal div.modal-dialog {
     width: 100%;
     margin: 80px 0;
   }
@@ -184,9 +197,13 @@
   }
 
   header .head-logo {
-    margin-top: -10px;
+    margin-top: -28px;
     margin-bottom: 10px;
-    max-height: 24px;
+    max-height: 28px;
+  }
+
+  .product-title {
+    padding: 0 10px;
   }
 
   .summary {

@@ -10268,7 +10268,11 @@ header {
     text-align: left; }
     .category-button .nav-list-lv1 > li {
       line-height: 50px;
-      padding: 0 15px; }
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%; }
       .category-button .nav-list-lv1 > li:hover {
         background-color: #0066b1;
         color: white;
@@ -11822,7 +11826,7 @@ a.new-address-button {
   background-color: #0066b1;
   padding: 10px 36px;
   color: #ffffff;
-  padding: 10px 30px; }
+  padding: 10px 24px; }
   .modal-button:hover {
     background-color: transparent;
     border: 2px solid #0066b1;
@@ -11874,7 +11878,8 @@ a.new-address-button {
       .account-pages-container .siparis-list ul li .siparis-first-row {
         display: flex;
         flex-direction: row;
-        justify-content: space-between; }
+        justify-content: space-between;
+        flex-wrap: wrap; }
         .account-pages-container .siparis-list ul li .siparis-first-row > div {
           display: flex;
           justify-content: flex-start;
@@ -12130,6 +12135,13 @@ label.nice-float {
     align-items: center; } }
 
 @media (max-width: 768px) {
+  .account-pages-container .siparis-list ul li .siparis-second-row a {
+    padding: 10px 8px; }
+  .account-right {
+    margin-left: 0;
+    margin-top: 20px; }
+  .category-sub-menu {
+    padding: 0; }
   .coupon .inputFields input {
     border-radius: 0;
     width: 160px; }
@@ -12142,7 +12154,7 @@ label.nice-float {
   .basket-product-list .product-count {
     flex-direction: row;
     justify-content: space-between; }
-  div.modal-dialog {
+  .modal div.modal-dialog {
     width: 100%;
     margin: 80px 0; }
   .basket-info-header .line {
@@ -12202,9 +12214,11 @@ label.nice-float {
     .category-button > span {
       display: none; }
   header .head-logo {
-    margin-top: -10px;
+    margin-top: -28px;
     margin-bottom: 10px;
-    max-height: 24px; }
+    max-height: 28px; }
+  .product-title {
+    padding: 0 10px; }
   .summary {
     padding-left: 0; }
   .product_page_container {
