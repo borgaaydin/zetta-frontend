@@ -10060,7 +10060,7 @@ input {
   border-radius: 0; }
 
 span#lgnName {
-  max-width: 50px;
+  max-width: 120px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis; }
@@ -12212,7 +12212,8 @@ label.nice-float {
       display: inline-flex;
       justify-content: flex-end; }
   .fixed-head-menu {
-    padding-top: 0; }
+    padding-top: 0;
+    padding-bottom: 10px; }
   .sale-products h2 {
     margin-bottom: 0; }
   .auth-container {
@@ -12228,7 +12229,7 @@ label.nice-float {
     .category-button > span {
       display: none; }
   header .head-logo {
-    margin-top: -28px;
+    margin-top: -18px;
     margin-bottom: 10px;
     max-height: 28px; }
   .product-title {
@@ -12333,6 +12334,17 @@ label.nice-float {
       font-size: 15px; }
   .floatLabel input:focus ~ label.float, .floatLabel input.not-empty ~ label.float, .floatLabel input label.floating, .floatLabel textarea:focus ~ label.float, .floatLabel textarea.not-empty ~ label.float, .floatLabel textarea label.floating {
     left: 72px; } }
+
+@media (max-width: 530px) {
+  header .head-logo {
+    margin-top: -38px; }
+  span#lgnName {
+    display: inline-block;
+    line-height: 12px; }
+  .auth-private .fa-user-circle {
+    display: none; }
+  .auth-bar div.head-menu-button {
+    margin: 0 2px; } }
 
 @media (max-width: 480px) {
   .auth-bar {
