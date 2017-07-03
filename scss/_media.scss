@@ -129,9 +129,10 @@
 
   .featured-products {
     >a {
-      display: inline-flex;
+      display: inline-block;
       align-items: center;
       justify-content: center;
+      width: 200px;
     }
   }
   .main_slider_container {
@@ -160,8 +161,14 @@
 
   .featured-products {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    h2 {
+      width: 100%;
+    }
   }
 
   .sale-products {
