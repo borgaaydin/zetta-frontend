@@ -419,7 +419,7 @@
 }
 
 
-@media (max-width: 530px) {
+@media (max-width: 550px) {
   header .head-logo {
     margin-top: -28px;
   }
@@ -437,6 +437,10 @@
 
   .auth-bar div.head-menu-button {
     margin: 0 2px;
+  }
+
+  .auth-private {
+    max-height: 36px;
   }
 }
 

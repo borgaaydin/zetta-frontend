@@ -10087,7 +10087,7 @@ header {
 
 .auth-bar {
   text-align: right;
-  margin-bottom: 15px;
+  margin-bottom: 24px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -12338,7 +12338,7 @@ label.nice-float {
   .floatLabel input:focus ~ label.float, .floatLabel input.not-empty ~ label.float, .floatLabel input label.floating, .floatLabel textarea:focus ~ label.float, .floatLabel textarea.not-empty ~ label.float, .floatLabel textarea label.floating {
     left: 72px; } }
 
-@media (max-width: 530px) {
+@media (max-width: 550px) {
   header .head-logo {
     margin-top: -28px; }
   span#lgnName {
@@ -12347,7 +12347,9 @@ label.nice-float {
   .auth-private .fa-user-circle {
     display: none; }
   .auth-bar div.head-menu-button {
-    margin: 0 2px; } }
+    margin: 0 2px; }
+  .auth-private {
+    max-height: 36px; } }
 
 @media (max-width: 480px) {
   .auth-bar {
