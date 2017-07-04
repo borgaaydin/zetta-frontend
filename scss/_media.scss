@@ -127,6 +127,12 @@
     }
   }
 
+  .recent-products {
+    h2 {
+      text-align: center;
+    }
+  }
+
   .featured-products {
     display: flex;
     flex-direction: row;
@@ -138,6 +144,7 @@
 
     h2 {
       width: 100%;
+      text-align: center;
     }
     >a {
       display: inline-block;
@@ -414,7 +421,7 @@
 
 @media (max-width: 530px) {
   header .head-logo {
-    margin-top: -38px;
+    margin-top: -28px;
   }
 
   span#lgnName {

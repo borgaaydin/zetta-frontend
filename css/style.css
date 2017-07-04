@@ -12184,6 +12184,8 @@ label.nice-float {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+  .recent-products h2 {
+    text-align: center; }
   .featured-products {
     display: flex;
     flex-direction: row;
@@ -12193,7 +12195,8 @@ label.nice-float {
     padding-left: 5px;
     padding-right: 5px; }
     .featured-products h2 {
-      width: 100%; }
+      width: 100%;
+      text-align: center; }
     .featured-products > a {
       display: inline-block;
       align-items: center;
@@ -12337,7 +12340,7 @@ label.nice-float {
 
 @media (max-width: 530px) {
   header .head-logo {
-    margin-top: -38px; }
+    margin-top: -28px; }
   span#lgnName {
     display: inline-block;
     line-height: 12px; }
