@@ -12349,7 +12349,7 @@ label.nice-float {
   .auth-bar div.head-menu-button {
     margin: 0 2px; }
   .auth-private {
-    max-height: 36px; } }
+    max-height: 24px; } }
 
 @media (max-width: 480px) {
   .auth-bar {
