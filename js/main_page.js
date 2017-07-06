@@ -26,8 +26,37 @@ $(function() {
         slidesToShow: 1,
         arrows: true,
         variableWidth: true,
-        autoplay: true,
-        autoplaySpeed: 4000
+        autoplay: false,
+        autoplaySpeed: 4000,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    variableWidth:true,
+                    centerMode: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 374,
+                settings: {
+                    variableWidth:true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
 
     });
 

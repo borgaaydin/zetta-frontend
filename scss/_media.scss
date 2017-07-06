@@ -51,6 +51,13 @@
 
 @media (max-width: 768px) {
 
+  .social-bar {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   .account-pages-container .siparis-list ul li .siparis-second-row a {
     padding: 10px 8px;
   }
@@ -111,11 +118,21 @@
 
   .container-fluid.slider > div.container {
     flex-direction: column;
+    padding: 0 5px;
   }
 
   .slider,
   .product-banner-container{
     padding: 0;
+  }
+
+  .product-banner-container {
+    div.row {
+      >div {
+        display: flex;
+        justify-content: center;
+      }
+    }
   }
 
   .slider {
@@ -160,8 +177,21 @@
 
   .daily-product-slider-container {
     width: 100%;
-    max-width: 228px;
+
+    h3 {
+      text-align: center;
+    }
   }
+
+  .container-fluid.slider {
+    .daily-product-slider {
+      .product {
+        width: 180px;
+        margin: 0 4px 0 0;
+      }
+    }
+  }
+
 
   .auth-bar {
     align-items: flex-start;
