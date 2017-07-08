@@ -26,7 +26,7 @@ $(function() {
         slidesToShow: 1,
         arrows: true,
         variableWidth: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 4000,
         responsive: [
             {
@@ -40,9 +40,8 @@ $(function() {
                 breakpoint: 600,
                 settings: {
                     variableWidth:true,
-                    centerMode: false,
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 1
                 }
             },
             {
