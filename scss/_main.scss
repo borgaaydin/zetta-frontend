@@ -266,6 +266,11 @@ body.flex {
   .fa-check {
     color: $color-primary;
   }
+
+  &.circle label i {
+    position: relative;
+    z-index: 98;
+  }
 }
 
 .pretty > input[type='checkbox'], .pretty > input[type='radio'] {
