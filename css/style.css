@@ -9987,19 +9987,26 @@ body.flex {
 .daily-product-slider-container {
   width: 20%;
   float: left;
-  min-width: 220px; }
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
   .daily-product-slider-container h3 {
     font-weight: 400;
     font-style: italic;
-    font-size: 20px;
+    font-size: 22px;
     background-color: white;
     padding: 10px;
-    margin: 15px 0;
+    height: 60px;
+    margin: 12px 0 10px 0;
     border-radius: 4px;
     -webkit-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);
-    color: #820303; }
+    color: #820303;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   .daily-product-slider-container .slick-prev {
     top: 170px;
     left: 0px; }
@@ -10082,7 +10089,7 @@ header {
   z-index: 12;
   background-color: #f7f7f9;
   width: 100%;
-  padding: 0 0 19px 0; }
+  padding: 0 0 10px 0; }
 
 .menu-shadow {
   -webkit-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);
@@ -10513,7 +10520,7 @@ footer .footer-banner {
 .auth-container {
   max-width: 400px;
   text-align: center;
-  padding: 20px 0 40px 0; }
+  padding: 60px 0 40px 0; }
   .auth-container .facebookSignIn {
     border: none;
     background-color: #3b5998;
@@ -12288,8 +12295,6 @@ label.nice-float {
     padding-bottom: 10px; }
   .sale-products h2 {
     margin-bottom: 0; }
-  .auth-container {
-    margin-top: 70px; }
   .basket-container {
     margin-top: 20px; }
     .basket-container .summary {

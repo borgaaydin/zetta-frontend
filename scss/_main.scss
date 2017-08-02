@@ -192,17 +192,24 @@ body.flex {
   width: 20%;
   float: left;
   min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   h3 {
     font-weight: 400;
     font-style: italic;
-    font-size: 20px;
+    font-size: 22px;
     background-color: white;
     padding: 10px;
-    margin: 15px 0;
+    height: 60px;
+    margin: 12px 0 10px 0;
     border-radius: 4px;
     @include box-shadow();
     color: #820303;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .slick-prev {
