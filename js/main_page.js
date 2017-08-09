@@ -26,7 +26,7 @@ $(function() {
         slidesToShow: 1,
         arrows: true,
         variableWidth: true,
-        autoplay: false, //true on production
+        autoplay: true,
         autoplaySpeed: 4000,
         responsive: [
             {
