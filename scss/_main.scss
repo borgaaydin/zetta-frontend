@@ -294,3 +294,16 @@ span#lgnName {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+.recent-products {
+  margin-bottom: 30px;
+}
+
+.newAddressModal {
+  .nice-select {
+    ul.list {
+      max-height: 240px;
+      overflow-y: scroll;
+    }
+  }
+}

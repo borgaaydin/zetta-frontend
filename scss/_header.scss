@@ -29,6 +29,15 @@ header {
   align-items: flex-end;
   justify-content: flex-end;
 
+  .siparis-takip {
+    margin: 0 12px;
+
+    a {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+  }
+
   .phone-number {
     display: inline-flex;
     flex-direction: row;

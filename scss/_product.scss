@@ -20,6 +20,8 @@
 
       >p {
         min-height: 57px;
+        max-height: 57px;
+        overflow: hidden;
       }
 
       .price {

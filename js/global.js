@@ -47,29 +47,29 @@ $(function() {
                 }
             },
             {
-                breakpoint: 640,
+                breakpoint: 768,
                 settings: {
-                    centerMode:false,
-                    variableWidth: false,
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    infinite: true,
-                    dots: true,
-                    arrows: false
+                    slidesToShow: 3,
+                    slidesToScroll: 3
                 }
             },
             {
-                breakpoint: 500,
+                breakpoint: 600,
                 settings: {
-                    centerMode:false,
-                    variableWidth: false,
+                    variableWidth:true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 374,
+                settings: {
+                    variableWidth:true,
                     slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true,
-                    arrows: false
+                    slidesToScroll: 1
                 }
             }
+
         ]
     });
 
