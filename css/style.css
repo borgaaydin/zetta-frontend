@@ -11377,6 +11377,14 @@ label {
     padding: 4px 10px;
     margin: 0 10px; }
 
+.category-filter-button {
+  background-color: #0066b1;
+  padding: 6px 20px;
+  border: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: bold; }
+
 .basket-container {
   margin-bottom: 30px; }
 
@@ -12230,6 +12238,12 @@ label.nice-float {
     align-items: center; } }
 
 @media (max-width: 768px) {
+  .filter-list-container {
+    margin-left: 6px; }
+  h1 {
+    margin-left: 8px; }
+  .list-styler {
+    display: none; }
   .social-bar .container {
     display: flex;
     flex-direction: column; }
@@ -12414,7 +12428,23 @@ label.nice-float {
       padding-right: 5px;
       padding-left: 5px; }
     .category-page-container .category-left {
-      display: none; }
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 10px;
+      height: 440px;
+      width: 80%;
+      min-width: 240px;
+      background-color: white;
+      z-index: 22;
+      overflow: scroll; }
+      .category-page-container .category-left .mobile-filter-close {
+        position: absolute;
+        right: 16px;
+        top: 18px; }
+        .category-page-container .category-left .mobile-filter-close i {
+          font-size: 28px;
+          color: #0066b1; }
   .category-head {
     padding-left: 15px; }
   .category_slider .slick-next {

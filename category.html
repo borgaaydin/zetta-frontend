@@ -168,12 +168,6 @@
         </div>
     </div>
 </header>
-
-<div class="container-fluid slider">
-
-</div>
-
-
 <div class="container category-page-container">
     <div class="row">
         <div class="col-xs-12 category-head">
@@ -207,6 +201,9 @@
     </div>
     <div class="row">
         <div class="col-xs-12 col-sm-3 category-left">
+            <div class="visible-xs mobile-filter-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
             <div>
                 <h3>
                     ALT KATEGORİLER
@@ -333,7 +330,6 @@
             </div>
 
             <div class="category-product-list">
-
                 <div class="category-contoller">
                     <div>
                         <label>
@@ -398,6 +394,13 @@
                         <button class="list hidden-xs">
                             <i class="fa fa-list" aria-hidden="true"></i>
                         </button>
+                    </div>
+
+                    <div class="visible-xs">
+                         <button class="category-filter-button">
+                             <i class="fa fa-filter" aria-hidden="true"></i>
+                             Filtreler
+                         </button>
                     </div>
                 </div>
 
@@ -1035,6 +1038,7 @@
 
 <script src="js/global.js"></script>
 <script src="js/input.js"></script>
+<script src="js/category.js"></script>
 
 <script>
     $( function() {

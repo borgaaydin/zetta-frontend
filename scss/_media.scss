@@ -55,6 +55,18 @@
 
 @media (max-width: 768px) {
 
+  .filter-list-container {
+    margin-left: 6px;
+  }
+
+  h1 {
+    margin-left: 8px;
+  }
+
+  .list-styler {
+    display: none;
+  }
+
   .social-bar {
     .container {
       display: flex;
@@ -398,6 +410,26 @@
 
       .category-left {
         display: none;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        height: 440px;
+        width: 80%;
+        min-width: 240px;
+        background-color: white;
+        z-index: 22;
+        overflow: scroll;
+
+        .mobile-filter-close {
+          position: absolute;
+          right: 16px;
+          top: 18px;
+          i {
+            font-size: 28px;
+            color: $color-primary;
+          }
+        }
+
       }
     }
     .category-head {
