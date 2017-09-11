@@ -13,7 +13,7 @@
   justify-content: center;
 
   .product {
-    min-width: 214px;
+    min-width: 210px;
   }
 }
 
@@ -162,6 +162,7 @@ $cat-slider-arrow-distance: calc(50% - 440px);
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 210px;
 
     img {
       max-height: 200px;
@@ -394,4 +395,10 @@ label {
   color: white;
   font-size: 16px;
   font-weight: bold;
+}
+
+.emptyAccordionHeader {
+  i {
+    @include transform(rotate(0deg));
+  }
 }

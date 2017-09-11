@@ -10883,6 +10883,8 @@ footer .footer-banner {
     color: #000;
     font-size: 20px;
     margin: 0; }
+  .product-details .slick-slide img {
+    border: 1px solid #eaeaea; }
 
 .indirim-container {
   display: flex;
@@ -11127,7 +11129,7 @@ footer .footer-banner {
   .category-product-list:after {
     clear: both; }
   .category-product-list .product {
-    min-width: 214px; }
+    min-width: 210px; }
 
 .category_slider .slick-prev {
   left: calc(50% - 440px); }
@@ -11226,7 +11228,8 @@ footer .footer-banner {
   .product.listed .product-inner {
     display: flex;
     flex-direction: row;
-    align-items: center; }
+    align-items: center;
+    height: 210px; }
     .product.listed .product-inner img {
       max-height: 200px; }
     .product.listed .product-inner .product-description {
@@ -11384,6 +11387,13 @@ label {
   color: white;
   font-size: 16px;
   font-weight: bold; }
+
+.emptyAccordionHeader i {
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg); }
 
 .basket-container {
   margin-bottom: 30px; }

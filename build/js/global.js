@@ -5,30 +5,75 @@
 
 $(function() {
     'use strict';
-    $(".main_slider").slick({
-        centerMode: true,
-        centerPadding: '20px',
-        slidesToShow: 3,
+
+    var inputField = $('.inputFields input');
+    inputField.each(function () {
+        if( $(this).val() ) {
+            $(this).addClass("not-empty");
+            $(this).siblings().addClass("floating");
+        } else {
+            $(this).removeClass("not-empty");
+            $(this).siblings().removeClass("floating");
+        }
+    });
+
+    $(".recent-products-slider").slick({
+        slidesToShow: 5,
+        slidesToScroll: 5,
         arrows: true,
-        variableWidth: true,
-        dots: true,
         responsive: [
             {
-                breakpoint: 932,
+                breakpoint: 1200,
                 settings: {
                     centerMode:false,
                     variableWidth: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
                     infinite: true,
                     dots: true,
                     arrows: false
                 }
+            },
+            {
+                breakpoint: 990,
+                settings: {
+                    centerMode:false,
+                    variableWidth: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    variableWidth:true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 374,
+                settings: {
+                    variableWidth:true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
+
         ]
     });
 
-    $(".recent-products-slider").slick({
+    $(".suggest-products-slider").slick({
         slidesToShow: 5,
         slidesToScroll: 5,
         arrows: true,
@@ -231,10 +276,6 @@ $(function() {
 
     $('.close-banner').click(function(){
         $('.promotion-container').slideToggle();
-    });
-
-    $(".inputFields input").inputmask({
-        showMaskOnHover: false
     });
 
 });
