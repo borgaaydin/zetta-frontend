@@ -438,6 +438,43 @@ a.new-address-button {
     flex-direction: row;
     align-items: flex-end;
 
+    >div {
+      display: flex;
+      flex-direction: column;
+
+
+      &:last-child {
+        margin-left: 20px;
+      }
+    }
+
+    input  {
+      min-height: 45px;
+      outline: 0;
+    }
+
+    label {
+      float: left;
+    }
+
+    .nice-select {
+      outline: 0;
+
+      width: 80px;
+
+      .list {
+        max-height: 200px;
+        overflow-y: scroll;
+        border-radius: 0;
+        margin-top: 1px;
+      }
+
+      span.current {
+        top:0;
+        left: 20px;
+      }
+    }
+
     select.form-control {
       border-radius: 0;
       width: 90px;

@@ -11783,6 +11783,27 @@ a.new-address-button {
     display: flex;
     flex-direction: row;
     align-items: flex-end; }
+    .payment-details .payment-multiple-input > div {
+      display: flex;
+      flex-direction: column; }
+      .payment-details .payment-multiple-input > div:last-child {
+        margin-left: 20px; }
+    .payment-details .payment-multiple-input input {
+      min-height: 45px;
+      outline: 0; }
+    .payment-details .payment-multiple-input label {
+      float: left; }
+    .payment-details .payment-multiple-input .nice-select {
+      outline: 0;
+      width: 80px; }
+      .payment-details .payment-multiple-input .nice-select .list {
+        max-height: 200px;
+        overflow-y: scroll;
+        border-radius: 0;
+        margin-top: 1px; }
+      .payment-details .payment-multiple-input .nice-select span.current {
+        top: 0;
+        left: 20px; }
     .payment-details .payment-multiple-input select.form-control {
       border-radius: 0;
       width: 90px;
