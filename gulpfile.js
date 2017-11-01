@@ -23,6 +23,8 @@ gulp.task('default', function() {
 gulp.task('sass', function () {
     return gulp.src('./scss/**/*.scss')
         .pipe(sass.sync().on('error', sass.logError))
+        .pipe(stripCssComments({preserve: false}))
+        .pipe(nano())
         .pipe(gulp.dest('./css'));
 });
 
